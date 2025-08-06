@@ -15,5 +15,43 @@
     "description": "Over 30 years since the company was established in 1991, Bangkok Modern Granite Co., Ltd. has been a manufacturer and distributor of marble and granite imported from abroad.",
     "process": "Starting from selecting raw materials from stone sources both domestically and internationally, to quality control to achieve work that meets customer needs. We can support all types of stone production from stone slabs, cut-to-size stones, handicraft products, including turning work, marble columns, and granite columns. We have 2 production facilities.",
     "readMore": "Read More"
+  },
+  "showcase": {
+    "title": "Portfolio",
+    "subtitle": "of Pride",
+    "categories": {
+      "religious": "Buddha Statues",
+      "portraits": "Portraits",
+      "architecture": "Architecture",
+      "sculpture": "Sculpture",
+      "furniture": "Furniture & Home Decor"
+    }
+  },
+  "materials": {
+    "highlight": "Hightlight",
+    "viewAll": "View All",
+    "granite": "Granite",
+    "marble": "Marble",
+    "loadMore": "Load More"
+  },
+  "story": {
+    "title": "Our Story",
+    "companyTitle": "BMG Bangkok Modern Granite",
+    "section1Title": "Starting from a stone processing factory of all kinds, up to the present, we have expanded our work in sculpture, architecture, portrait carving, creating what you dream of, crafting what you think, to come out exactly as desired.",
+    "concept": "With the concept \"Create Dreams With Stones\", we carefully select quality stones from around the world, including Italy, Spain, Brazil, Zimbabwe, and India, to fulfill your dreams, whether for homes, condos, various offices, making them beautiful, elegant, luxurious, with the dream style you want. Because we are the leader in manufacturing and processing marble, granite, and other natural stones. We also have knowledge and understanding of all forms of stone processes with great expertise and long experience in stone work.",
+    "section2Title": "Throughout the working period, BMG Bangkok Modern Granite",
+    "section2SubTitle": "has gained trust and confidence from customers, both government and private sectors, creating many famous works, including exterior architectural decoration, Ubosot of Wat Sothorn Wararam Worawihan, Chedi of Wat Pa Phurithat Patipatharam, Wat Pa Dan Wiwek, Luang Ta Maha Bua Museum, Bangkok Gold flagship store, Erawan Hotel, FN Building Rama 9.",
+    "section3": "Nationally recognized sculptural works include stupas and stone inscriptions at Wat Pa Dan Wiwek, carved stone portraits of Luang Pu Man Phurithatto, THE WISDOM OF MIND Somdet Phra Nyanaviroj at Wat Thammamongkol Thao Bun Nonthavihar, carved stone Buddha statues at Wat Suwannaphumi Buddhachayanti to surround over 1,000 stupas, the principal Buddha image in the Vipassana meditation room at Wat Nawamintararachutis in Boston, USA, Pi Seah, Khmer art elephant lions, European-style lions",
+    "oemServices": "We also provide OEM product manufacturing services, stone products according to customer specifications with brand name engraving, ready-made stone products such as tables, clocks, The Echo coasters, or others. You can visit our online store. If you want to experience real pieces, you can visit all our works, including various production processes at our factory.",
+    "vision": "Vision",
+    "visionText": "BMG Bangkok Modern Granite is ready to create pieces from the beginning of the process to delivery of work, with attention to every detail from over 30 years of experience, which not only meets and satisfies customers, but is also our pride in creating valuable works that will remain with Thailand forever.",
+    "mission": "Mission",
+    "missionText": "BMG Bangkok Modern Granite is committed to developing work production technology to keep up with world changes by selecting modern production tools, ready to create works for customers that meet all needs, consistent with future needs."
+  },
+  "footer": {
+    "companyInfo": "Contact Us",
+    "siteMap": "SITE MAP",
+    "followUs": "Follow Us",
+    "privacyPolicy": "Privacy Policy"
   }
 }

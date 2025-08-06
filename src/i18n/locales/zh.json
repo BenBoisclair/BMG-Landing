@@ -7,5 +7,48 @@
     "articles": "文章",
     "news": "新闻",
     "contact": "联系我们"
+  },
+  "showcase": {
+    "title": "作品集",
+    "subtitle": "引以为豪",
+    "categories": {
+      "religious": "佛像作品",
+      "portraits": "肖像作品",
+      "architecture": "建筑作品",
+      "sculpture": "雕塑作品",
+      "furniture": "家具和装饰品"
+    }
+  },
+  "materials": {
+    "highlight": "精选推荐",
+    "viewAll": "查看全部",
+    "granite": "花岗岩",
+    "marble": "大理石",
+    "loadMore": "加载更多"
+  },
+  "story": {
+    "title": "我们的",
+    "subtitle": "故事",
+    "yearsBadge": "超过30年",
+    "yearsSubtitle": "成功历程",
+    "methodStatement": "METHOD STATEMENT",
+    "designTitle": "Design",
+    "designDescription": "从设计和咨询开始",
+    "shopDrawingTitle": "Shop Drawing",
+    "shopDrawingDescription": "根据客户要求绘制详细工作图",
+    "quarryTitle": "Quarry Selection",
+    "quarryDescription": "从采石场选择石材",
+    "dryLayTitle": "Dry Lay",
+    "dryLayDescription": "按照指定图案排列石材",
+    "cuttingTitle": "Cutting & Carving",
+    "cuttingDescription": "根据规格切割、钻孔和雕刻",
+    "waterRepellentTitle": "Water Repellent",
+    "waterRepellentDescription": "干燥，喷洒防水溶液以防止污渍",
+    "processTitle": "工作流程 - BMG专业设计公司的完整服务",
+    "processDescription": "帮助您获得美观、高质量、价格合理、满足您需求的作品",
+    "vision": "VISION",
+    "visionText": "一家因创造具有国际标准和高安全性的石雕作品而获得国际认可的公司",
+    "mission": "MISSION",
+    "missionText": "BMG是一家专业从事石材产品生产和雕刻的公司，拥有现代化的生产技术和专业人员，致力于生产高质量的产品"
   }
 }

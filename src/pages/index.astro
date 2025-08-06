@@ -3,10 +3,12 @@ import Hero from '../components/Hero.tsx';
 import About from '../components/About.tsx';
 import Layout from '../layouts/Layout.astro';
 import Showcase from '../components/Showcase.tsx';
+import Materials from '../components/Materials.tsx';
 ---
 
 <Layout title="BMG">
 	<Hero client:load />
 	<About client:load />
 	<Showcase client:load />
+	<Materials client:load />
 </Layout>

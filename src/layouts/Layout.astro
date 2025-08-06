@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/Footer";
 import Nav from "../components/Nav.tsx";
 import "../styles/global.css";
 
@@ -33,6 +34,9 @@ const lang = pathname.startsWith('/en/') ? 'en'
 		<main>
 			<slot />
 		</main>
+		<footer>
+			<Footer client:load />
+		</footer>
 	</body>
 </html>
 

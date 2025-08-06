@@ -7,5 +7,48 @@
     "articles": "Articoli",
     "news": "Notizie",
     "contact": "Contatti"
+  },
+  "showcase": {
+    "title": "Portfolio",
+    "subtitle": "di Orgoglio",
+    "categories": {
+      "religious": "Statue di Buddha",
+      "portraits": "Ritratti",
+      "architecture": "Architettura",
+      "sculpture": "Scultura",
+      "furniture": "Mobili e Arredamento"
+    }
+  },
+  "materials": {
+    "highlight": "In Evidenza",
+    "viewAll": "Vedi Tutto",
+    "granite": "Granito",
+    "marble": "Marmo",
+    "loadMore": "Carica Altri"
+  },
+  "story": {
+    "title": "La Nostra",
+    "subtitle": "Storia",
+    "yearsBadge": "Oltre 30 Anni",
+    "yearsSubtitle": "di Successo",
+    "methodStatement": "METHOD STATEMENT",
+    "designTitle": "Design",
+    "designDescription": "Iniziamo con il design e la consulenza",
+    "shopDrawingTitle": "Shop Drawing",
+    "shopDrawingDescription": "Disegnare lavori dettagliati secondo i requisiti del cliente",
+    "quarryTitle": "Quarry Selection",
+    "quarryDescription": "Selezionare pietre dalle cave",
+    "dryLayTitle": "Dry Lay",
+    "dryLayDescription": "Disporre le pietre secondo il modello specificato",
+    "cuttingTitle": "Cutting & Carving",
+    "cuttingDescription": "Tagliare, forare e scolpire secondo le specifiche",
+    "waterRepellentTitle": "Water Repellent",
+    "waterRepellentDescription": "Asciugare, spruzzare soluzione idrorepellente per prevenire macchie",
+    "processTitle": "Processo di Lavoro - Servizio Completo presso BMG, Azienda Esperta di Design",
+    "processDescription": "Ti aiutiamo a ottenere lavori belli e di alta qualità a prezzi ragionevoli che soddisfano le tue esigenze",
+    "vision": "VISION",
+    "visionText": "Un'azienda riconosciuta a livello internazionale per la creazione di opere di scultura in pietra con standard internazionali e alta sicurezza",
+    "mission": "MISSION",
+    "missionText": "BMG è un'azienda specializzata nella produzione e scultura di prodotti in pietra con tecnologia di produzione moderna e personale professionale per ottenere prodotti di alta qualità"
   }
 }
