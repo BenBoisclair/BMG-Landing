@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "home": "首页",
+    "story": "故事",
+    "portfolio": "作品集",
+    "products": "产品",
+    "articles": "文章",
+    "news": "新闻",
+    "contact": "联系我们"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Home",
+    "story": "Story",
+    "portfolio": "Portfolio",
+    "products": "Products",
+    "articles": "Articles",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "about": {
+    "years": "30 Years",
+    "subtitle": "of Success",
+    "companyName": "Bangkok Modern Granite",
+    "description": "Over 30 years since the company was established in 1991, Bangkok Modern Granite Co., Ltd. has been a manufacturer and distributor of marble and granite imported from abroad.",
+    "process": "Starting from selecting raw materials from stone sources both domestically and internationally, to quality control to achieve work that meets customer needs. We can support all types of stone production from stone slabs, cut-to-size stones, handicraft products, including turning work, marble columns, and granite columns. We have 2 production facilities.",
+    "readMore": "Read More"
+  }
+}

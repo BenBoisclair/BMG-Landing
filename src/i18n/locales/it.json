@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "home": "Home",
+    "story": "Storia",
+    "portfolio": "Portfolio",
+    "products": "Prodotti",
+    "articles": "Articoli",
+    "news": "Notizie",
+    "contact": "Contatti"
+  }
+}

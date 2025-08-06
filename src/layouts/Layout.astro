@@ -1,14 +1,38 @@
+---
+import Nav from "../components/Nav.tsx";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const pathname = Astro.url.pathname;
+const lang = pathname.startsWith('/en/') ? 'en' 
+  : pathname.startsWith('/it/') ? 'it'
+  : pathname.startsWith('/zh/') ? 'zh'
+  : 'th';
+---
+
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<header>
+			<Nav client:load />
+		</header>
+		<main>
+			<slot />
+		</main>
 	</body>
 </html>
 

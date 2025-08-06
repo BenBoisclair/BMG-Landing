@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #292567;
+  --color-secondary: #85152d;
+  --font-family-sans: "Kanit", sans-serif;
+}
+
+body {
+  font-family: var(--font-family-sans);
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
