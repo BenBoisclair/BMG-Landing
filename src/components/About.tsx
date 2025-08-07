@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaChevronRight } from 'react-icons/fa';
 import '../i18n/i18n';
+import thirtyYearImg from '../assets/30-Year.png';
 
 const About: React.FC = () => {
   const { t, ready } = useTranslation();
@@ -20,7 +21,7 @@ const About: React.FC = () => {
               {/* Left Column - Image and Title */}
               <div className="p-8 lg:p-12 flex flex-col items-center justify-center bg-gray-50">
                 <img 
-                  src="/src/assets/30-Year.png" 
+                  src={thirtyYearImg.src} 
                   alt="30 Years" 
                   className="w-48 h-48 mb-4 object-contain"
                 />
@@ -59,7 +60,7 @@ const About: React.FC = () => {
             {/* Left Column - Image and Title */}
             <div className="p-8 lg:p-12 flex flex-col items-center justify-center bg-gray-50">
               <img 
-                src="/src/assets/30-Year.png" 
+                src={thirtyYearImg.src} 
                 alt="30 Years" 
                 className="w-48 h-48 mb-4 object-contain"
               />
