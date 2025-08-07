@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useState, useRef, useEffect } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import "../i18n/i18n";
+import logoTransparent from "../assets/logo-transparent.svg";
 
 interface NavItem {
   key: string;
@@ -95,7 +96,7 @@ export default function Nav({}: NavProps) {
             <div>
               <a href="/">
                 <img
-                  src="/src/assets/bmg-logo.svg"
+                  src={logoTransparent.src}
                   alt="BMG Logo"
                   className="w-auto h-14 hover:opacity-80 transition-all duration-300"
                 />
@@ -122,7 +123,7 @@ export default function Nav({}: NavProps) {
           <div className="flex-shrink-0">
             <a href="/" className="block">
               <img
-                src="/src/assets/logo-transparent.svg"
+                src={logoTransparent.src}
                 alt="BMG Logo"
                 className={`w-auto hover:opacity-80 transition-all duration-300 ${
                   isScrolled ? "h-10" : "h-14"

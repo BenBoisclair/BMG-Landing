@@ -57,7 +57,7 @@ const NewsArticle: React.FC<NewsArticleProps> = ({ newsId }) => {
           
           <div className="prose prose-lg max-w-none mb-12">
             <div className="whitespace-pre-wrap text-gray-700 leading-relaxed break-words">
-              {(news.content ? news.content[currentLang] : news.excerpt[currentLang])
+              {((news.content && news.content[currentLang]) || news.excerpt[currentLang] || '')
                 .split('\n')
                 .map((paragraph, index) => {
                   // Check if paragraph contains a URL

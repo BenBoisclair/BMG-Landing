@@ -185,7 +185,7 @@ export default function StoneDetail({ stone }: StoneDetailProps) {
           <div className="space-y-6">
             <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl bg-gray-200">
               <img
-                src={stone.images[currentImageIndex]}
+                src={stone.images[currentImageIndex].src}
                 alt={stone.name}
                 className="w-full h-full object-cover"
               />
@@ -228,7 +228,7 @@ export default function StoneDetail({ stone }: StoneDetailProps) {
                         : "opacity-70 hover:opacity-100"
                     }`}>
                     <img
-                      src={image}
+                      src={image.src}
                       alt={`${stone.name} view ${index + 1}`}
                       className="w-full h-full object-cover"
                     />
@@ -396,7 +396,7 @@ export default function StoneDetail({ stone }: StoneDetailProps) {
                   onClick={() => handleRelatedStoneClick(relatedStone)}>
                   <div className="aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
                     <img
-                      src={relatedStone.image}
+                      src={relatedStone.image.src}
                       alt={relatedStone.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />

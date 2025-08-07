@@ -103,7 +103,7 @@ export default function ProductsListing() {
               onClick={() => handleStoneClick(stone)}>
               <div className="relative overflow-hidden rounded-lg aspect-square bg-gray-100 shadow-md hover:shadow-xl transition-shadow duration-300">
                 <img
-                  src={stone.image}
+                  src={stone.image.src}
                   alt={stone.name}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   loading="lazy"

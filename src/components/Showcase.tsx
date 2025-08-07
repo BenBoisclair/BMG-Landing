@@ -161,7 +161,7 @@ export default function Showcase() {
                       : "opacity-70 hover:opacity-100"
                   }`}>
                   <img
-                    src={thumb}
+                    src={thumb.src}
                     alt={`Thumbnail ${index + 1}`}
                     className="w-full h-full object-cover"
                   />
@@ -174,7 +174,7 @@ export default function Showcase() {
           <div className="relative order-1 lg:order-2">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src={currentItem.thumbnails[currentImageIndex]}
+                src={currentItem.thumbnails[currentImageIndex].src}
                 alt={getItemTitle(currentCategoryData.key, currentItem.id)}
                 className="w-full h-full object-cover"
               />

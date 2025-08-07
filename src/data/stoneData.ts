@@ -1,3 +1,37 @@
+// Import all granite images
+import balticBrownImg from "../assets/Materials/Granite/baltic_brown.jpg";
+import blackGalaxyImg from "../assets/Materials/Granite/black_galaxy.jpg";
+import blackZimbabweImg from "../assets/Materials/Granite/black_zimbabwe.jpg";
+import bluePearlImg from "../assets/Materials/Granite/blue_pearl.jpg";
+import cafeBahiaImg from "../assets/Materials/Granite/cafe_bahia.jpg";
+import chiliRedImg from "../assets/Materials/Granite/chili_red.jpg";
+import crystalBlueImg from "../assets/Materials/Granite/crystal_blue.jpg";
+import marronCubaImg from "../assets/Materials/Granite/marron_cuba.jpg";
+import moonWhiteImg from "../assets/Materials/Granite/moon_white.jpg";
+import newImperialRedImg from "../assets/Materials/Granite/new_imperial_red.jpg";
+import paradisoImg from "../assets/Materials/Granite/paradiso.jpg";
+import pinkPorrinoImg from "../assets/Materials/Granite/pink_porrino.jpg";
+import tanBrownImg from "../assets/Materials/Granite/tan_brown.jpg";
+import uthaiPinkImg from "../assets/Materials/Granite/uthai_pink.jpg";
+import velvetWhiteImg from "../assets/Materials/Granite/velvet_white.jpg";
+import volgaBlueImg from "../assets/Materials/Granite/volga_blue.jpg";
+
+// Import all marble images
+import arabescatoImg from "../assets/Materials/Marble/arabescato.jpg";
+import blackForestImg from "../assets/Materials/Marble/black_forest.jpg";
+import blackMarquinaImg from "../assets/Materials/Marble/black_marquina.jpg";
+import catEyeImg from "../assets/Materials/Marble/cat_eye.jpg";
+import darkGreenImg from "../assets/Materials/Marble/dark_green.jpg";
+import limestoneCloudyImg from "../assets/Materials/Marble/limestone_cloudy.jpg";
+import sunnyCremaImg from "../assets/Materials/Marble/sunny_creama.jpg";
+import superWhiteImg from "../assets/Materials/Marble/super_white.jpg";
+import titaniumBlackImg from "../assets/Materials/Marble/titanium_black.jpg";
+import tobaccoBrownImg from "../assets/Materials/Marble/tobacco_brown.jpg";
+import travertinoImg from "../assets/Materials/Marble/travertino.jpg";
+import whiteCarraraImg from "../assets/Materials/Marble/white_carrara.jpg";
+import whiteVenusImg from "../assets/Materials/Marble/white_venus.jpg";
+import whiteVolakasImg from "../assets/Materials/Marble/white_volakas.jpg";
+
 export interface Stone {
   id: string;
   name: string;
@@ -7,8 +41,8 @@ export interface Stone {
   slug: string;
   category: "granite" | "marble";
   categoryThai: string;
-  image: string;
-  images: string[];
+  image: ImageMetadata;
+  images: ImageMetadata[];
   colors: string[];
   colorsThai: string[];
   description: string;
@@ -35,8 +69,8 @@ const graniteStones: Stone[] = [
     slug: "baltic-brown",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/baltic_brown.jpg",
-    images: ["/src/assets/Materials/Granite/baltic_brown.jpg"],
+    image: balticBrownImg,
+    images: [balticBrownImg],
     colors: ["Brown", "Black", "Gold"],
     colorsThai: ["น้ำตาล", "ดำ", "ทอง"],
     description: "A beautiful brown granite with distinctive patterns and excellent durability.",
@@ -77,8 +111,8 @@ const graniteStones: Stone[] = [
     slug: "black-galaxy",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/black_galaxy.jpg",
-    images: ["/src/assets/Materials/Granite/black_galaxy.jpg"],
+    image: blackGalaxyImg,
+    images: [blackGalaxyImg],
     colors: ["Black", "Gold"],
     colorsThai: ["ดำ", "ทอง"],
     description: "Elegant black granite with golden specks that sparkle like stars in the night sky.",
@@ -119,8 +153,8 @@ const graniteStones: Stone[] = [
     slug: "black-zimbabwe",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/black_zimbabwe.jpg",
-    images: ["/src/assets/Materials/Granite/black_zimbabwe.jpg"],
+    image: blackZimbabweImg,
+    images: [blackZimbabweImg],
     colors: ["Black"],
     colorsThai: ["ดำ"],
     description: "Pure black granite with fine grain structure, perfect for sophisticated designs.",
@@ -161,8 +195,8 @@ const graniteStones: Stone[] = [
     slug: "blue-pearl",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/blue_pearl.jpg",
-    images: ["/src/assets/Materials/Granite/blue_pearl.jpg"],
+    image: bluePearlImg,
+    images: [bluePearlImg],
     colors: ["Blue", "Silver", "Gray"],
     colorsThai: ["น้ำเงิน", "เงิน", "เทา"],
     description: "Stunning blue granite with silver and metallic flecks creating a pearl-like shimmer.",
@@ -203,8 +237,8 @@ const graniteStones: Stone[] = [
     slug: "cafe-bahia",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/cafe_bahia.jpg",
-    images: ["/src/assets/Materials/Granite/cafe_bahia.jpg"],
+    image: cafeBahiaImg,
+    images: [cafeBahiaImg],
     colors: ["Brown", "Cream", "Beige"],
     colorsThai: ["น้ำตาล", "ครีม", "เบจ"],
     description: "Warm brown granite with cream and beige tones, perfect for cozy interiors.",
@@ -245,8 +279,8 @@ const graniteStones: Stone[] = [
     slug: "chili-red",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/chili_red.jpg",
-    images: ["/src/assets/Materials/Granite/chili_red.jpg"],
+    image: chiliRedImg,
+    images: [chiliRedImg],
     colors: ["Red", "Black", "Gray"],
     colorsThai: ["แดง", "ดำ", "เทา"],
     description: "Vibrant red granite with black and gray minerals creating striking contrast.",
@@ -287,8 +321,8 @@ const graniteStones: Stone[] = [
     slug: "crystal-blue",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/crystal_blue.jpg",
-    images: ["/src/assets/Materials/Granite/crystal_blue.jpg"],
+    image: crystalBlueImg,
+    images: [crystalBlueImg],
     colors: ["Blue", "White", "Gray"],
     colorsThai: ["น้ำเงิน", "ขาว", "เทา"],
     description: "Distinctive blue granite with crystalline formations and unique patterns.",
@@ -329,8 +363,8 @@ const graniteStones: Stone[] = [
     slug: "marron-cuba",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/marron_cuba.jpg",
-    images: ["/src/assets/Materials/Granite/marron_cuba.jpg"],
+    image: marronCubaImg,
+    images: [marronCubaImg],
     colors: ["Brown", "Tan", "Cream"],
     colorsThai: ["น้ำตาล", "แทน", "ครีม"],
     description: "Rich brown granite with varied patterns and excellent workability.",
@@ -371,8 +405,8 @@ const graniteStones: Stone[] = [
     slug: "moon-white",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/moon_white.jpg",
-    images: ["/src/assets/Materials/Granite/moon_white.jpg"],
+    image: moonWhiteImg,
+    images: [moonWhiteImg],
     colors: ["White", "Gray", "Beige"],
     colorsThai: ["ขาว", "เทา", "เบจ"],
     description: "Light-colored granite with subtle patterns perfect for bright, airy spaces.",
@@ -413,8 +447,8 @@ const graniteStones: Stone[] = [
     slug: "new-imperial-red",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/new_imperial_red.jpg",
-    images: ["/src/assets/Materials/Granite/new_imperial_red.jpg"],
+    image: newImperialRedImg,
+    images: [newImperialRedImg],
     colors: ["Red", "Black", "Gray"],
     colorsThai: ["แดง", "ดำ", "เทา"],
     description: "Deep red granite with black details creating a regal appearance.",
@@ -455,8 +489,8 @@ const graniteStones: Stone[] = [
     slug: "paradiso",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/paradiso.jpg",
-    images: ["/src/assets/Materials/Granite/paradiso.jpg"],
+    image: paradisoImg,
+    images: [paradisoImg],
     colors: ["Multi-colored", "Brown", "Gold", "Red"],
     colorsThai: ["หลากสี", "น้ำตาล", "ทอง", "แดง"],
     description: "Multi-colored granite with paradise-like beauty and unique patterns.",
@@ -497,8 +531,8 @@ const graniteStones: Stone[] = [
     slug: "pink-porrino",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/pink_porrino.jpg",
-    images: ["/src/assets/Materials/Granite/pink_porrino.jpg"],
+    image: pinkPorrinoImg,
+    images: [pinkPorrinoImg],
     colors: ["Pink", "Gray", "White"],
     colorsThai: ["ชมพู", "เทา", "ขาว"],
     description: "Elegant pink granite with gray details perfect for sophisticated designs.",
@@ -539,8 +573,8 @@ const graniteStones: Stone[] = [
     slug: "tan-brown",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/tan_brown.jpg",
-    images: ["/src/assets/Materials/Granite/tan_brown.jpg"],
+    image: tanBrownImg,
+    images: [tanBrownImg],
     colors: ["Tan", "Brown", "Black"],
     colorsThai: ["แทน", "น้ำตาล", "ดำ"],
     description: "Warm tan and brown granite perfect for traditional and modern designs.",
@@ -581,8 +615,8 @@ const graniteStones: Stone[] = [
     slug: "uthai-pink",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/uthai_pink.jpg",
-    images: ["/src/assets/Materials/Granite/uthai_pink.jpg"],
+    image: uthaiPinkImg,
+    images: [uthaiPinkImg],
     colors: ["Pink", "Gray", "White"],
     colorsThai: ["ชมพู", "เทา", "ขาว"],
     description: "Local Thai pink granite with unique characteristics and cultural significance.",
@@ -623,8 +657,8 @@ const graniteStones: Stone[] = [
     slug: "velvet-white",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/velvet_white.jpg",
-    images: ["/src/assets/Materials/Granite/velvet_white.jpg"],
+    image: velvetWhiteImg,
+    images: [velvetWhiteImg],
     colors: ["White", "Light Gray", "Cream"],
     colorsThai: ["ขาว", "เทาอ่อน", "ครีม"],
     description: "Soft white granite with velvet-like texture and elegant appearance.",
@@ -665,8 +699,8 @@ const graniteStones: Stone[] = [
     slug: "volga-blue",
     category: "granite",
     categoryThai: "หินแกรนิต",
-    image: "/src/assets/Materials/Granite/volga_blue.jpg",
-    images: ["/src/assets/Materials/Granite/volga_blue.jpg"],
+    image: volgaBlueImg,
+    images: [volgaBlueImg],
     colors: ["Blue", "White", "Gray"],
     colorsThai: ["น้ำเงิน", "ขาว", "เทา"],
     description: "Distinctive blue granite with unique patterns inspired by the Volga River.",
@@ -710,8 +744,8 @@ const marbleStones: Stone[] = [
     slug: "arabescato",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/arabescato.jpg",
-    images: ["/src/assets/Materials/Marble/arabescato.jpg"],
+    image: arabescatoImg,
+    images: [arabescatoImg],
     colors: ["White", "Gray"],
     colorsThai: ["ขาว", "เทา"],
     description: "Classic Italian marble with elegant veining patterns and timeless beauty.",
@@ -752,8 +786,8 @@ const marbleStones: Stone[] = [
     slug: "black-forest",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/black_forest.jpg",
-    images: ["/src/assets/Materials/Marble/black_forest.jpg"],
+    image: blackForestImg,
+    images: [blackForestImg],
     colors: ["Black", "White"],
     colorsThai: ["ดำ", "ขาว"],
     description: "Dramatic black marble with white veining creating forest-like patterns.",
@@ -794,8 +828,8 @@ const marbleStones: Stone[] = [
     slug: "black-marquina",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/black_marquina.jpg",
-    images: ["/src/assets/Materials/Marble/black_marquina.jpg"],
+    image: blackMarquinaImg,
+    images: [blackMarquinaImg],
     colors: ["Black", "White"],
     colorsThai: ["ดำ", "ขาว"],
     description: "Premium Spanish black marble with distinctive white veining.",
@@ -836,8 +870,8 @@ const marbleStones: Stone[] = [
     slug: "cat-eye",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/cat_eye.jpg",
-    images: ["/src/assets/Materials/Marble/cat_eye.jpg"],
+    image: catEyeImg,
+    images: [catEyeImg],
     colors: ["Gray", "White", "Brown"],
     colorsThai: ["เทา", "ขาว", "น้ำตาล"],
     description: "Unique marble with cat eye-like patterns and mesmerizing appearance.",
@@ -878,8 +912,8 @@ const marbleStones: Stone[] = [
     slug: "dark-green",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/dark_green.jpg",
-    images: ["/src/assets/Materials/Marble/dark_green.jpg"],
+    image: darkGreenImg,
+    images: [darkGreenImg],
     colors: ["Green", "Dark Green", "Black"],
     colorsThai: ["เขียว", "เขียวเข้ม", "ดำ"],
     description: "Rich green marble perfect for creating natural and calming environments.",
@@ -920,8 +954,8 @@ const marbleStones: Stone[] = [
     slug: "limestone-cloudy",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/limestone_cloudy.jpg",
-    images: ["/src/assets/Materials/Marble/limestone_cloudy.jpg"],
+    image: limestoneCloudyImg,
+    images: [limestoneCloudyImg],
     colors: ["Cream"],
     colorsThai: ["ครีม"],
     description: "Soft limestone with cloudy patterns perfect for traditional applications.",
@@ -960,8 +994,8 @@ const marbleStones: Stone[] = [
     slug: "sunny-creama",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/sunny_creama.jpg",
-    images: ["/src/assets/Materials/Marble/sunny_creama.jpg"],
+    image: sunnyCremaImg,
+    images: [sunnyCremaImg],
     colors: ["Cream", "Beige", "Light Brown"],
     colorsThai: ["ครีม", "เบจ", "น้ำตาลอ่อน"],
     description: "Warm cream-colored marble bringing sunshine and warmth to any space.",
@@ -1002,8 +1036,8 @@ const marbleStones: Stone[] = [
     slug: "super-white",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/super_white.jpg",
-    images: ["/src/assets/Materials/Marble/super_white.jpg"],
+    image: superWhiteImg,
+    images: [superWhiteImg],
     colors: ["White"],
     colorsThai: ["ขาว"],
     description: "Pure white marble with minimal veining for modern, clean aesthetics.",
@@ -1044,8 +1078,8 @@ const marbleStones: Stone[] = [
     slug: "titanium-black",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/titanium_black.jpg",
-    images: ["/src/assets/Materials/Marble/titanium_black.jpg"],
+    image: titaniumBlackImg,
+    images: [titaniumBlackImg],
     colors: ["Black", "Dark Gray"],
     colorsThai: ["ดำ", "เทาเข้ม"],
     description: "Modern black marble with titanium-like strength and contemporary appeal.",
@@ -1086,8 +1120,8 @@ const marbleStones: Stone[] = [
     slug: "tobacco-brown",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/tobacco_brown.jpg",
-    images: ["/src/assets/Materials/Marble/tobacco_brown.jpg"],
+    image: tobaccoBrownImg,
+    images: [tobaccoBrownImg],
     colors: ["Brown", "Tobacco Brown", "Cream"],
     colorsThai: ["น้ำตาล", "น้ำตาลยาสูบ", "ครีม"],
     description: "Rich brown marble with tobacco-like coloring for warm, inviting spaces.",
@@ -1128,8 +1162,8 @@ const marbleStones: Stone[] = [
     slug: "travertino",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/travertino.jpg",
-    images: ["/src/assets/Materials/Marble/travertino.jpg"],
+    image: travertinoImg,
+    images: [travertinoImg],
     colors: ["Cream", "Beige"],
     colorsThai: ["ครีม", "เบจ"],
     description: "Classic travertine with natural pores and ancient Roman heritage.",
@@ -1170,8 +1204,8 @@ const marbleStones: Stone[] = [
     slug: "white-carrara",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/white_carrara.jpg",
-    images: ["/src/assets/Materials/Marble/white_carrara.jpg"],
+    image: whiteCarraraImg,
+    images: [whiteCarraraImg],
     colors: ["White", "Gray"],
     colorsThai: ["ขาว", "เทา"],
     description: "World-famous Italian marble used by Michelangelo and other masters.",
@@ -1212,8 +1246,8 @@ const marbleStones: Stone[] = [
     slug: "white-venus",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/white_venus.jpg",
-    images: ["/src/assets/Materials/Marble/white_venus.jpg"],
+    image: whiteVenusImg,
+    images: [whiteVenusImg],
     colors: ["White", "Light Gray"],
     colorsThai: ["ขาว", "เทาอ่อน"],
     description: "Elegant white marble with goddess-like beauty and timeless appeal.",
@@ -1254,8 +1288,8 @@ const marbleStones: Stone[] = [
     slug: "white-volakas",
     category: "marble",
     categoryThai: "หินอ่อน",
-    image: "/src/assets/Materials/Marble/white_volakas.jpg",
-    images: ["/src/assets/Materials/Marble/white_volakas.jpg"],
+    image: whiteVolakasImg,
+    images: [whiteVolakasImg],
     colors: ["White", "Gray"],
     colorsThai: ["ขาว", "เทา"],
     description: "Greek white marble with distinctive veining patterns and ancient heritage.",

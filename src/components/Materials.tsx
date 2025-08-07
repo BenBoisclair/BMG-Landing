@@ -76,7 +76,7 @@ export default function Materials() {
               onClick={() => handleMaterialClick(stone)}>
               <div className="relative overflow-hidden rounded-lg aspect-square bg-gray-800">
                 <img
-                  src={stone.image}
+                  src={stone.image.src}
                   alt={stone.name}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
