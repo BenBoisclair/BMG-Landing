@@ -1,0 +1,46 @@
+# Robots.txt for BMG Bangkok Modern Granite
+# https://bmgranite.com
+
+User-agent: *
+Allow: /
+
+# Important pages
+Allow: /
+Allow: /story
+Allow: /contact
+Allow: /news
+Allow: /news/
+
+# Assets
+Allow: /favicon.svg
+Allow: /src/assets/
+
+# Privacy Policy
+Allow: /20220531-BMG-Privacy-Notice-Thai.pdf
+
+# Sitemap location
+Sitemap: https://bmgranite.com/sitemap.xml
+Sitemap: https://bmgranite.com/sitemap-index.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Additional directives for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Block access to sensitive files (if any exist)
+Disallow: /.env
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /tsconfig.json
+Disallow: /astro.config.mjs

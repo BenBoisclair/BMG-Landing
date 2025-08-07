@@ -1,42 +1,120 @@
 ---
-import Footer from "../components/Footer";
+import Footer from "../components/Footer.tsx";
 import Nav from "../components/Nav.tsx";
+import ScrollToTop from "../components/ScrollToTop.tsx";
 import "../styles/global.css";
 
 interface Props {
   title: string;
+  description?: string;
+  image?: string;
+  type?: string;
+  canonical?: string;
+  noindex?: boolean;
 }
 
-const { title } = Astro.props;
-const pathname = Astro.url.pathname;
-const lang = pathname.startsWith('/en/') ? 'en' 
-  : pathname.startsWith('/it/') ? 'it'
-  : pathname.startsWith('/zh/') ? 'zh'
-  : 'th';
+const { title, description, image, type = 'website', canonical, noindex = false } = Astro.props;
+
+// Language will be handled by i18next in React components
+const lang = 'th'; // Default language for HTML tag
+
+// Default meta values
+const defaultDescription = "BMG Bangkok Modern Granite - Leading manufacturer and distributor of premium marble and granite from Italy, Spain, Brazil, and India for over 30 years.";
+const defaultImage = `${Astro.url.origin}/favicon.svg`;
+const currentUrl = canonical || Astro.url.href;
+
+// Determine page description
+const pageDescription = description || defaultDescription;
+const pageImage = image || defaultImage;
+
+// For single-domain multilingual site, all languages use same URL
+const alternateUrl = currentUrl;
+
+// Organization schema markup
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Bangkok Modern Granite Co., Ltd.",
+  "alternateName": "BMG",
+  "url": Astro.url.origin,
+  "logo": `${Astro.url.origin}/favicon.svg`,
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+66-2-889-2328",
+    "contactType": "customer service",
+    "areaServed": "TH",
+    "availableLanguage": ["Thai", "English"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "111 Moo 5 Bangkruai-Sainoi Road, Bangrak Pattana",
+    "addressLocality": "Bang Bua Thong",
+    "addressRegion": "Nonthaburi",
+    "postalCode": "11110",
+    "addressCountry": "TH"
+  },
+  "foundingDate": "1991",
+  "description": "Leading manufacturer and distributor of premium marble and granite with over 30 years of experience",
+  "sameAs": []
+};
 ---
 
 <!doctype html>
 <html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		
+		<!-- SEO Meta Tags -->
+		<title>{title}</title>
+		<meta name="description" content={pageDescription} />
+		<link rel="canonical" href={currentUrl} />
+		{noindex && <meta name="robots" content="noindex, nofollow" />}
+		
+		<!-- Open Graph Meta Tags -->
+		<meta property="og:type" content={type} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={pageDescription} />
+		<meta property="og:image" content={pageImage} />
+		<meta property="og:url" content={currentUrl} />
+		<meta property="og:site_name" content="Bangkok Modern Granite" />
+		<meta property="og:locale" content="th_TH" />
+		
+		<!-- Twitter Card Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={pageDescription} />
+		<meta name="twitter:image" content={pageImage} />
+		
+		<!-- Language Meta Tags (single domain, multiple languages) -->
+		<meta name="language" content="th,en,it,zh" />
+		<link rel="alternate" hreflang="th" href={alternateUrl} />
+		<link rel="alternate" hreflang="en" href={alternateUrl} />
+		<link rel="alternate" hreflang="it" href={alternateUrl} />
+		<link rel="alternate" hreflang="zh" href={alternateUrl} />
+		<link rel="alternate" hreflang="x-default" href={alternateUrl} />
+		
+		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-		<title>{title}</title>
+		
+		<!-- Structured Data -->
+		<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)}></script>
 	</head>
 	<body>
 		<header>
 			<Nav client:load />
 		</header>
-		<main>
+		<main class="pt-20">
 			<slot />
 		</main>
 		<footer>
 			<Footer client:load />
 		</footer>
+		<ScrollToTop client:load />
 	</body>
 </html>
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import DotIndicator from './DotIndicator';
+import DotIndicator from "./DotIndicator";
 
 // Import all hero images
 import hero1 from "../assets/Hero/hero_1.jpg";
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative w-full h-[90vh] overflow-hidden">
       {/* Slides Container */}
       <div className="relative w-full h-full">
         {slides.map((slide, index) => (

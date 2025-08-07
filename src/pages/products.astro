@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProductsListing from '../components/ProductsListing';
+import bgProducts from '../assets/Hero/hero_2.jpg';
+import bgProductsMobile from '../assets/Hero/hero_2.jpg';
+---
+
+<Layout title="Products - BMG">
+  <main class="products-page">
+    <section class="hero-section relative overflow-hidden">
+      <picture>
+        <source media="(max-width: 768px)" srcset={bgProductsMobile.src} />
+        <img src={bgProducts.src} alt="BMG Products" class="w-full h-[200px] md:h-[300px] object-cover" />
+      </picture>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
+      <div class="absolute bottom-0 left-0 right-0 container py-2 md:py-4 text-white">
+          <h1 class="text-4xl md:text-6xl font-bold">ผลิตภัณฑ์</h1>
+          <p class="text-xl mt-2">Products</p>
+      </div>
+    </section>
+
+    <ProductsListing client:load />
+  </main>
+</Layout>
+
+<style>
+  .products-page {
+    min-height: 100vh;
+  }
+</style>

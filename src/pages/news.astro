@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NewsListing from '../components/NewsListing.tsx';
+import bgNews from '../assets/Hero/hero_3.jpg';
+import bgNewsMobile from '../assets/Hero/hero_3.jpg';
+
+// SEO data for news page
+const title = "News & Updates - BMG Bangkok Modern Granite | ข่าวสาร - บางกอกโมเดอร์นแกรนิต";
+const description = "Latest news, projects, and updates from BMG Bangkok Modern Granite. Discover our recent marble and granite installations, community contributions, and company achievements. Stay informed about Thailand's leading stone specialist. | ข่าวสารล่าสุด โครงการ และความเคลื่อนไหวจาก BMG บางกอกโมเดอร์นแกรนิต";
+const image = `${Astro.url.origin}/favicon.svg`;
+
+// CollectionPage Schema for news listing
+const newsPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": `${Astro.url.origin}/news#webpage`,
+  "url": `${Astro.url.origin}/news`,
+  "name": "BMG News & Updates",
+  "description": "Latest news and updates from BMG Bangkok Modern Granite",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": `${Astro.url.origin}/#website`
+  },
+  "about": {
+    "@type": "Organization",
+    "@id": `${Astro.url.origin}/#organization`,
+    "name": "Bangkok Modern Granite Co., Ltd."
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": Astro.url.origin
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "News",
+        "item": `${Astro.url.origin}/news`
+      }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "BMG News Articles",
+    "description": "Collection of news articles and updates from BMG Bangkok Modern Granite",
+    "numberOfItems": 4,
+    "itemListElement": [
+      {
+        "@type": "Article",
+        "headline": "BMG บางกอกโมเดอร์นแกรนิต ปูพื้นหินแกรนิตพิงค์พอรีโน่ ณ โบสถ์ วัดป่าดอยแสงธรรมญาณสัมปันโน",
+        "url": `${Astro.url.origin}/news/1`,
+        "datePublished": "2022-02-01"
+      },
+      {
+        "@type": "Article", 
+        "headline": "BMG บริจาคชุด PPE, เครื่อง Oximeter และ Antigen Test ป้องกันไวรัสโควิด-19",
+        "url": `${Astro.url.origin}/news/2`,
+        "datePublished": "2021-08-21"
+      },
+      {
+        "@type": "Article",
+        "headline": "BMG สนับสนุนการจัดทำของที่ระลึกงานมุทิตาสักการะ ธรรมมงคลวัฒนายุกาล ๙๙ปี",
+        "url": `${Astro.url.origin}/news/3`, 
+        "datePublished": "2019-01-07"
+      },
+      {
+        "@type": "Article",
+        "headline": "บริจาคเครื่องฟอกไต มูลค่า 460,000 บาท ณ วัดถ้ำจุนโท อ.แม่สอด จ.ตาก",
+        "url": `${Astro.url.origin}/news/4`,
+        "datePublished": "2021-02-11"
+      }
+    ]
+  }
+};
+---
+
+<Layout title={title} description={description} image={image}>
+  <script type="application/ld+json" set:html={JSON.stringify(newsPageSchema)}></script>
+  <main class="news-page">
+    <section class="hero-section relative overflow-hidden">
+      <picture>
+        <source media="(max-width: 768px)" srcset={bgNewsMobile.src} />
+        <img src={bgNews.src} alt="BMG News" class="w-full h-[200px] md:h-[300px] object-cover" />
+      </picture>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
+      <div class="absolute bottom-0 left-0 right-0 container py-2 md:py-4 text-white">
+          <h1 class="text-4xl md:text-6xl font-bold">ข่าวสาร</h1>
+          <p class="text-xl mt-2">News & Updates</p>
+      </div>
+    </section>
+
+    <NewsListing client:load />
+  </main>
+</Layout>
+
+<style>
+  .news-page {
+    min-height: 100vh;
+  }
+</style>

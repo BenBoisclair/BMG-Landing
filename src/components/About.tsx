@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { FaChevronRight } from 'react-icons/fa';
 import '../i18n/i18n';
 
 const About: React.FC = () => {
@@ -41,9 +42,7 @@ const About: React.FC = () => {
                   className="inline-flex items-center text-gray-700 hover:text-gray-900 transition-colors font-medium"
                 >
                   อ่านเพิ่มเติม
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                  <FaChevronRight className="w-5 h-5 ml-2" />
                 </a>
               </div>
             </div>
@@ -85,12 +84,10 @@ const About: React.FC = () => {
               </p>
               <a 
                 href="/story" 
-                className="inline-flex items-center text-gray-700 hover:text-gray-900 transition-colors font-medium"
+                className="inline-flex items-center text-gray-700 hover:text-gray-900 hover:underline transition-colors font-medium"
               >
                 {t('about.readMore')}
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+                <FaChevronRight className="w-5 h-5 ml-2" />
               </a>
             </div>
           </div>

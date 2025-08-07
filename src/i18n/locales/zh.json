@@ -8,6 +8,14 @@
     "news": "新闻",
     "contact": "联系我们"
   },
+  "about": {
+    "years": "30年",
+    "subtitle": "成功历程",
+    "companyName": "曼谷现代花岗岩",
+    "description": "自1991年公司成立以来的30多年里，曼谷现代花岗岩有限公司一直是进口大理石和花岗岩的制造商和分销商。",
+    "process": "从国内外石材来源选择原材料开始，到质量控制以实现满足客户需求的工作。我们可以支持所有类型的石材生产，从石板、定制切割石材、手工艺品，包括车削工作、大理石柱和花岗岩柱。我们有2个生产设施。",
+    "readMore": "阅读更多"
+  },
   "showcase": {
     "title": "作品集",
     "subtitle": "引以为豪",
@@ -27,28 +35,172 @@
     "loadMore": "加载更多"
   },
   "story": {
-    "title": "我们的",
+    "title": "我们的故事",
+    "companyTitle": "BMG 曼谷现代花岗岩",
+    "section1Title": "从各种石材加工厂开始，到现在，我们已经扩展了雕塑、建筑、肖像雕刻等工作，创造您梦想的东西，打造您所想的，使其完全符合您的期望。",
+    "concept": "通过\"用石头创造梦想\"的理念，我们精心挑选来自世界各地的优质石材，包括意大利、西班牙、巴西、津巴布韦和印度，来实现您的梦想，无论是住宅、公寓、各种办公室，使其美丽、优雅、奢华，拥有您想要的梦想风格。因为我们是大理石、花岗岩和其他天然石材制造和加工的领导者。我们还对所有形式的石材工艺有着深入的了解和专业知识，在石材工作方面拥有丰富的经验。",
+    "section2Title": "在整个工作期间，BMG 曼谷现代花岗岩",
+    "section2SubTitle": "获得了政府和私营部门客户的信任和信心，创造了许多著名作品，包括外部建筑装饰、Wat Sothorn Wararam Worawihan的大殿、Wat Pa Phurithat Patipatharam的佛塔、Wat Pa Dan Wiwek、Luang Ta Maha Bua博物馆、Bangkok Gold旗舰店、Erawan酒店、FN Building Rama 9。",
+    "section3": "全国公认的雕塑作品包括Wat Pa Dan Wiwek的佛塔和石刻、Luang Pu Man Phurithatto的石雕肖像、Wat Thammamongkol Thao Bun Nonthavihar的THE WISDOM OF MIND Somdet Phra Nyanaviroj、Wat Suwannaphumi Buddhachayanti环绕1000多座佛塔的石雕佛像、美国波士顿Wat Nawamintararachutis禅修室的主佛像、貔貅、高棉艺术大象狮子、欧式狮子",
+    "oemServices": "我们还提供OEM产品制造服务，根据客户规格制作石材产品并刻印品牌名称，现成的石材产品如桌子、时钟、The Echo杯垫或其他产品。您可以访问我们的在线商店。如果您想体验真实的作品，可以访问我们的所有作品，包括我们工厂的各种生产流程。",
+    "vision": "愿景",
+    "visionText": "BMG 曼谷现代花岗岩准备从流程开始到交付作品创造作品，凭借30多年的经验关注每一个细节，这不仅满足客户并让客户满意，也是我们创造有价值作品的骄傲，这些作品将永远与泰国同在。",
+    "mission": "使命",
+    "missionText": "BMG 曼谷现代花岗岩致力于发展工作生产技术，以跟上世界变化，通过选择现代化的生产工具，准备为客户创造满足所有需求的作品，符合未来需求。"
+  },
+  "news": {
     "subtitle": "故事",
-    "yearsBadge": "超过30年",
-    "yearsSubtitle": "成功历程",
-    "methodStatement": "METHOD STATEMENT",
-    "designTitle": "Design",
-    "designDescription": "从设计和咨询开始",
-    "shopDrawingTitle": "Shop Drawing",
-    "shopDrawingDescription": "根据客户要求绘制详细工作图",
-    "quarryTitle": "Quarry Selection",
-    "quarryDescription": "从采石场选择石材",
-    "dryLayTitle": "Dry Lay",
-    "dryLayDescription": "按照指定图案排列石材",
-    "cuttingTitle": "Cutting & Carving",
-    "cuttingDescription": "根据规格切割、钻孔和雕刻",
-    "waterRepellentTitle": "Water Repellent",
-    "waterRepellentDescription": "干燥，喷洒防水溶液以防止污渍",
-    "processTitle": "工作流程 - BMG专业设计公司的完整服务",
-    "processDescription": "帮助您获得美观、高质量、价格合理、满足您需求的作品",
-    "vision": "VISION",
-    "visionText": "一家因创造具有国际标准和高安全性的石雕作品而获得国际认可的公司",
-    "mission": "MISSION",
-    "missionText": "BMG是一家专业从事石材产品生产和雕刻的公司，拥有现代化的生产技术和专业人员，致力于生产高质量的产品"
+    "title": "新闻",
+    "readMore": "阅读更多"
+  },
+  "footer": {
+    "companyInfo": "联系我们",
+    "siteMap": "网站地图",
+    "followUs": "关注我们",
+    "privacyPolicy": "隐私政策"
+  },
+  "products": {
+    "title": "我们的产品",
+    "subtitle": "高端天然石材系列",
+    "description": "探索我们来自世界各地最优质采石场的高端花岗岩和大理石系列。每块石材都经过精心挑选，确保品质、美观和耐用性。",
+    "totalVarieties": "石材品种",
+    "yearsExperience": "年经验",
+    "naturalStone": "天然石材",
+    "graniteInfo": {
+      "title": "高端花岗岩系列",
+      "description": "我们的花岗岩选择涵盖了世界上最耐用和美丽的石材。从津巴布韦的深黑色到印度的温暖棕色，每种花岗岩品种都具有独特的特性，非常适合台面、地板和建筑应用。"
+    },
+    "marbleInfo": {
+      "title": "精致大理石选择",
+      "description": "体验我们大理石系列的永恒优雅。从文艺复兴时期大师使用的经典白色卡拉拉大理石到现代设计师石材，我们的大理石为任何空间带来奢华和精致。"
+    },
+    "stoneDetail": {
+      "colors": "色彩调色板",
+      "properties": "技术性能",
+      "hardness": "硬度",
+      "density": "密度",
+      "absorption": "吸水率",
+      "origin": "产地",
+      "finishes": "可选饰面",
+      "applications": "推荐应用",
+      "maintenance": "护理与维护",
+      "relatedStones": "相关石材"
+    }
+  },
+  "common": {
+    "back": "返回产品"
+  },
+  "contact": {
+    "title": "联系信息",
+    "subtitle": "与我们联系",
+    "address": "地址",
+    "contact": "联系我们",
+    "companyName": "曼谷现代花岗岩",
+    "addressLine1": "111 Moo 5 Bangkruai-Sainoi路",
+    "addressLine2": "Bangrak Pattana, Bang Bua Thong",
+    "addressLine3": "暖武里府 11110",
+    "phoneLabel": "电话：",
+    "emailLabel": "邮箱：",
+    "form": {
+      "title": "意见和建议",
+      "subtitle": "向我们发送您的反馈和建议",
+      "name": "姓名*",
+      "namePlaceholder": "输入您的姓名",
+      "email": "邮箱*",
+      "emailPlaceholder": "example@email.com",
+      "phone": "电话",
+      "phonePlaceholder": "089-xxx-xxxx",
+      "company": "公司/组织",
+      "companyPlaceholder": "公司名称",
+      "message": "留言*",
+      "messagePlaceholder": "输入您的留言...",
+      "send": "发送消息",
+      "sending": "发送中...",
+      "success": "消息发送成功",
+      "notRobot": "我不是机器人",
+      "recaptchaError": "请验证您不是机器人"
+    }
+  },
+  "showcaseItems": {
+    "religious": {
+      "wat-navamintararachuthit": {
+        "title": "纳瓦明达拉朱提寺",
+        "location": "马萨诸塞州，美国",
+        "description": "大理石雕刻佛像，采用禅定姿势。使用白色塔索斯大理石（White Thassos）雕刻，这种石材具有类似白玉的光泽品质。安装在美国马萨诸塞州纳瓦明达拉朱提寺内观禅修中心2楼。"
+      },
+      "wat-pa-klang-non-phu": {
+        "title": "巴康农普寺",
+        "location": "色军府",
+        "description": "大理石雕刻佛像，采用禅定姿势。使用云雾大理石（Cloudy）雕刻，这种石材表面无光泽，呈浅奶油色，质感类似石灰岩。安装在色军府巴康农普寺。"
+      },
+      "wat-cholprathan-rangsrit": {
+        "title": "春帕坦朗斯里寺",
+        "location": "暖武里府",
+        "description": "大理石雕刻佛像，采用犍陀罗艺术风格，赐福姿势。使用白色塔索斯大理石（White Thassos）雕刻，表面光滑抛光，具有类似白玉的光泽品质。安装在暖武里府春帕坦朗斯里寺般若南达纪念楼3楼。"
+      }
+    },
+    "portraits": {
+      "luang-pu-man": {
+        "title": "龙普满·富里塔多",
+        "location": "巴苏塔瓦寺，色军府",
+        "description": "龙普满·富里塔多大理石肖像雕塑，来自乌汶叻差他尼府巴苏塔瓦寺。采用白色卡拉拉大理石（White Carrara）雕刻，表面光滑无光泽，真人大小比例。"
+      },
+      "luang-ta-maha-bua": {
+        "title": "龙达摩诃布瓦·智三班诺",
+        "location": "葛沙西侃寺，乌隆他尼府",
+        "description": "龙达摩诃布瓦·智三班诺大理石肖像雕塑，来自乌隆他尼府葛沙西侃寺。采用白色卡拉拉大理石（White Carrara）雕刻，表面光滑无光泽，真人大小比例。"
+      },
+      "luang-pu-kruba-wong": {
+        "title": "龙普克鲁巴翁",
+        "location": "帕佛陀巴淮汤寺，南奔府",
+        "description": "龙普克鲁巴翁大理石肖像雕塑，来自南奔府帕佛陀巴淮汤寺。采用白色卡拉拉大理石（White Carrara）雕刻，表面光滑无光泽，真人大小比例。"
+      },
+      "luang-pho-sod": {
+        "title": "龙婆索·詹达沙罗",
+        "location": "帕南寺，帕司乍能，曼谷",
+        "description": "龙婆索·詹达沙罗大理石肖像雕塑，来自曼谷帕司乍能帕南寺。采用白色卡拉拉大理石（White Carrara）雕刻，表面光滑无光泽，真人大小比例。"
+      },
+      "mae-chi-tossaporn": {
+        "title": "美芝多沙彭",
+        "location": "班佩班彭，佛丕府",
+        "description": "美芝多沙彭大理石肖像雕塑，位于佛丕府班佩班彭。采用白色塔索斯大理石（White Thassos）雕刻，具有类似白玉的光泽品质，真人大小比例。"
+      },
+      "president-chusak": {
+        "title": "主席朱萨·斯里却仁兰森",
+        "location": "BMG 曼谷现代花岗岩",
+        "description": "主席朱萨·斯里却仁兰森大理石肖像雕塑，位于BMG曼谷现代花岗岩。采用白色卡拉拉大理石（White Carrara）雕刻，表面光滑无光泽，真人大小肖像。"
+      }
+    },
+    "architecture": {
+      "wat-sothorn": {
+        "title": "索通瓦拉兰卧拉威汉寺",
+        "location": "春武里府",
+        "description": "在春武里府索通瓦拉兰卧拉威汉寺建造的新式戒堂，采用改良拉达那哥欣风格。外墙装饰使用来自意大利的白色卡拉拉大理石（White Carrara）。"
+      },
+      "dharma-museum": {
+        "title": "法塔博物馆 帕达摩威素提蒙功",
+        "location": "",
+        "description": "龙达帕摩诃布瓦·智三班诺，乌隆他尼府。法塔博物馆 帕达摩威素提蒙功。"
+      },
+      "wat-pa-amparo": {
+        "title": "占塔卡拉努颂博物馆",
+        "location": "巴安帕罗般若瓦纳兰寺，春武里府",
+        "description": ""
+      }
+    },
+    "sculpture": {
+      "phra-that-buddha-ratana": {
+        "title": "佛陀罗摩诃蒙功佛塔雕塑",
+        "location": "巴丹威未寺，汶干府",
+        "description": "采用考通花岗岩（Kaothone）雕刻，共5层。每层都刻有佛陀的教诲，顶部是莲花花蕾。"
+      }
+    },
+    "furniture": {
+      "circle-plate": {
+        "title": "现代风格桌子 - 长方形桌子",
+        "location": "采用100%纯正大理石制作",
+        "description": ""
+      }
+    }
   }
 }

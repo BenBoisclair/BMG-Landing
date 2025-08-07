@@ -1,0 +1,176 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "story": "Historia",
+    "portfolio": "Portafolio",
+    "products": "Productos",
+    "articles": "Artículos",
+    "news": "Noticias",
+    "contact": "Contacto"
+  },
+  "about": {
+    "years": "30 Años",
+    "subtitle": "de Éxito",
+    "companyName": "Bangkok Modern Granite",
+    "description": "Más de 30 años desde que la empresa fue establecida en 1991, Bangkok Modern Granite Co., Ltd. ha sido fabricante y distribuidor de mármol y granito importado del extranjero.",
+    "process": "Comenzando desde la selección de materias primas de fuentes de piedra tanto nacionales como internacionales, hasta el control de calidad para lograr trabajos que satisfagan las necesidades del cliente. Podemos soportar todo tipo de producción de piedra, desde losas de piedra, piedras cortadas a medida, productos artesanales, incluyendo trabajos de torneado, columnas de mármol y columnas de granito. Tenemos 2 instalaciones de producción.",
+    "readMore": "Leer Más"
+  },
+  "showcase": {
+    "title": "Portafolio",
+    "subtitle": "de Orgullo",
+    "categories": {
+      "religious": "Estatuas de Buda",
+      "portraits": "Retratos",
+      "architecture": "Arquitectura",
+      "sculpture": "Escultura",
+      "furniture": "Muebles y Decoración"
+    }
+  },
+  "materials": {
+    "highlight": "Destacados",
+    "viewAll": "Ver Todo",
+    "granite": "Granito",
+    "marble": "Mármol",
+    "loadMore": "Cargar Más"
+  },
+  "story": {
+    "title": "Nuestra Historia",
+    "companyTitle": "BMG Bangkok Modern Granite",
+    "section1Title": "Comenzando desde una fábrica de procesamiento de piedra de todo tipo, hasta el presente, hemos expandido nuestro trabajo en escultura, arquitectura, tallado de retratos, creando lo que sueñas, elaborando lo que piensas, para que salga exactamente como deseas.",
+    "concept": "Con el concepto \"Crear Sueños con Piedras\", seleccionamos cuidadosamente piedras de calidad de todo el mundo, incluyendo Italia, España, Brasil, Zimbabwe e India, para cumplir tus sueños, ya sea para hogares, condominios, varias oficinas, haciéndolos hermosos, elegantes, lujosos, con el estilo de ensueño que deseas. Porque somos líderes en la fabricación y procesamiento de mármol, granito y otras piedras naturales. También tenemos conocimiento y comprensión de todas las formas de procesos de piedra con gran experiencia y larga trayectoria en el trabajo de piedra.",
+    "section2Title": "A lo largo del período de trabajo, BMG Bangkok Modern Granite",
+    "section2SubTitle": "ha ganado confianza y credibilidad de los clientes, tanto del sector gubernamental como privado, creando muchas obras famosas, incluyendo decoración arquitectónica exterior, Ubosot de Wat Sothorn Wararam Worawihan, Chedi de Wat Pa Phurithat Patipatharam, Wat Pa Dan Wiwek, Museo Luang Ta Maha Bua, tienda insignia Bangkok Gold, Hotel Erawan, FN Building Rama 9.",
+    "section3": "Las obras escultóricas reconocidas a nivel nacional incluyen estupas e inscripciones en piedra en Wat Pa Dan Wiwek, retratos en piedra tallada de Luang Pu Man Phurithatto, THE WISDOM OF MIND Somdet Phra Nyanaviroj en Wat Thammamongkol Thao Bun Nonthavihar, estatuas de Buda en piedra tallada en Wat Suwannaphumi Buddhachayanti para rodear más de 1,000 estupas, la imagen principal de Buda en la sala de meditación Vipassana en Wat Nawamintararachutis en Boston, EE.UU., Pi Seah, leones elefante de arte jemer, leones de estilo europeo",
+    "oemServices": "También proporcionamos servicios de fabricación de productos OEM, productos de piedra según las especificaciones del cliente con grabado de marca, productos de piedra listos para usar como mesas, relojes, posavasos The Echo u otros. Puedes visitar nuestra tienda en línea. Si deseas experimentar piezas reales, puedes visitar todas nuestras obras, incluyendo varios procesos de producción en nuestra fábrica.",
+    "vision": "Visión",
+    "visionText": "BMG Bangkok Modern Granite está lista para crear piezas desde el inicio del proceso hasta la entrega del trabajo, con atención a cada detalle de más de 30 años de experiencia, lo que no solo satisface a los clientes, sino que también es nuestro orgullo crear obras valiosas que permanecerán con Tailandia para siempre.",
+    "mission": "Misión",
+    "missionText": "BMG Bangkok Modern Granite está comprometida con el desarrollo de tecnología de producción de trabajo para mantenerse al día con los cambios mundiales seleccionando herramientas de producción modernas, listas para crear obras para clientes que satisfagan todas las necesidades, consistentes con las necesidades futuras."
+  },
+  "news": {
+    "subtitle": "Historias",
+    "title": "Noticias",
+    "readMore": "Leer Más",
+    "viewAll": "Ver Todas las Noticias"
+  },
+  "footer": {
+    "companyInfo": "Contáctanos",
+    "siteMap": "MAPA DEL SITIO",
+    "followUs": "Síguenos",
+    "privacyPolicy": "Política de Privacidad"
+  },
+  "contact": {
+    "title": "Información de Contacto",
+    "subtitle": "Ponte en contacto con nosotros",
+    "address": "Dirección",
+    "contact": "Contáctanos",
+    "companyName": "Bangkok Modern Granite",
+    "addressLine1": "111 Moo 5 Carretera Bangkruai-Sainoi",
+    "addressLine2": "Bangrak Pattana, Bang Bua Thong",
+    "addressLine3": "Nonthaburi 11110",
+    "phoneLabel": "Teléfono:",
+    "emailLabel": "Correo:",
+    "form": {
+      "title": "Comentarios y Sugerencias",
+      "subtitle": "Envíanos tus comentarios y sugerencias",
+      "name": "Nombre*",
+      "namePlaceholder": "Ingresa tu nombre",
+      "email": "Correo*",
+      "emailPlaceholder": "ejemplo@email.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "089-xxx-xxxx",
+      "company": "Empresa/Organización",
+      "companyPlaceholder": "Nombre de la empresa",
+      "message": "Mensaje*",
+      "messagePlaceholder": "Ingresa tu mensaje...",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "Mensaje enviado exitosamente",
+      "notRobot": "No soy un robot",
+      "recaptchaError": "Por favor verifica que no eres un robot"
+    }
+  },
+  "showcaseItems": {
+    "religious": {
+      "wat-navamintararachuthit": {
+        "title": "Wat Nawamintararachutis",
+        "location": "Massachusetts, Estados Unidos",
+        "description": "Estatua de Buda tallada en mármol en postura de meditación. Hecha de mármol White Thassos con calidad luminosa que recuerda al jade blanco. Instalada en el 2º piso del Centro de Meditación Vipassana en Wat Nawamintararachutis, Massachusetts, Estados Unidos."
+      },
+      "wat-pa-klang-non-phu": {
+        "title": "Wat Pa Klang Non Phu",
+        "location": "Provincia de Sakon Nakhon",
+        "description": "Estatua de Buda tallada en mármol en postura de meditación. Hecha de mármol Cloudy que tiene un acabado no brillante, color crema claro y una textura similar a la piedra caliza. Instalada en Wat Pa Klang Non Phu, Provincia de Sakon Nakhon."
+      },
+      "wat-cholprathan-rangsrit": {
+        "title": "Wat Cholprathan Rangsrit",
+        "location": "Provincia de Nonthaburi",
+        "description": "Estatua de Buda tallada en mármol en estilo artístico Gandhara, postura de bendición. Hecha de mármol White Thassos con superficie pulida lisa y calidad luminosa que recuerda al jade blanco. Instalada en el 3er piso del Edificio Memorial Panyanananda en Wat Cholprathan Rangsrit, Provincia de Nonthaburi."
+      }
+    },
+    "portraits": {
+      "luang-pu-man": {
+        "title": "Luang Pu Man Phurithatto",
+        "location": "Wat Pa Sutthawat, Provincia de Sakon Nakhon",
+        "description": "Escultura retrato en mármol de Luang Pu Man Phurithatto de Wat Pa Sutthawat, Provincia de Ubon Ratchathani. Tallada en mármol White Carrara con acabado liso, no brillante, proporciones de tamaño natural."
+      },
+      "luang-ta-maha-bua": {
+        "title": "Luang Ta Maha Bua Ñanasampanno",
+        "location": "Wat Ketkesi Sikhun, Provincia de Udon Thani",
+        "description": "Escultura retrato en mármol de Luang Ta Maha Bua Ñanasampanno de Wat Ketkesi Sikhun, Provincia de Udon Thani. Tallada en mármol White Carrara con acabado liso, no brillante, proporciones de tamaño natural."
+      },
+      "luang-pu-kruba-wong": {
+        "title": "Luang Pu Kruba Wong",
+        "location": "Wat Phra Phutthabat Huai Tom, Provincia de Lamphun",
+        "description": "Escultura retrato en mármol de Luang Pu Kruba Wong de Wat Phra Phutthabat Huai Tom, Provincia de Lamphun. Tallada en mármol White Carrara con acabado liso, no brillante, proporciones de tamaño natural."
+      },
+      "luang-pho-sod": {
+        "title": "Luang Pho Sod Candasaro",
+        "location": "Wat Paknam, Phasi Charoen, Bangkok",
+        "description": "Escultura retrato en mármol de Luang Pho Sod Candasaro de Wat Paknam, Phasi Charoen, Bangkok. Tallada en mármol White Carrara con acabado liso, no brillante, proporciones de tamaño natural."
+      },
+      "mae-chi-tossaporn": {
+        "title": "Mae Chi Tossaporn",
+        "location": "Ban Phet Bampen, Provincia de Phetchaburi",
+        "description": "Escultura retrato en mármol de Mae Chi Tossaporn ubicada en Ban Phet Bampen, Provincia de Phetchaburi. Tallada en mármol White Thassos con calidad luminosa que recuerda al jade blanco, proporciones de tamaño natural."
+      },
+      "president-chusak": {
+        "title": "Presidente Chusak Sricharoenlamsum",
+        "location": "BMG Bangkok Modern Granite",
+        "description": "Escultura retrato en mármol del Presidente Chusak Sricharoenlamsum ubicada en BMG Bangkok Modern Granite. Tallada en mármol White Carrara con acabado liso, no brillante, retrato de tamaño natural."
+      }
+    },
+    "architecture": {
+      "wat-sothorn": {
+        "title": "Wat Sothorn Wararam Worawihan",
+        "location": "Provincia de Chachoengsao",
+        "description": "Nueva sala de ordenación construida en estilo Rattanakosin adaptado en Wat Sothorn Wararam Worawihan, Provincia de Chachoengsao. La decoración de paredes exteriores utiliza mármol White Carrara de Italia."
+      },
+      "dharma-museum": {
+        "title": "Museo Dhamma Chedi Phra Dhammavisuddhi Mongkol",
+        "location": "",
+        "description": "Luang Ta Phra Maha Bua Ñanasampanno, Provincia de Udon Thani. Museo Dhamma Chedi Phra Dhammavisuddhi Mongkol."
+      },
+      "wat-pa-amparo": {
+        "title": "Museo Chantakaranusorn",
+        "location": "Wat Pa Amparo Panyawanaram, Provincia de Chonburi",
+        "description": ""
+      }
+    },
+    "sculpture": {
+      "phra-that-buddha-ratana": {
+        "title": "Escultura Phra That Buddha Ratana Maha Mongkol",
+        "location": "Wat Pa Dan Wiwek, Provincia de Bueng Kan",
+        "description": "Tallada en granito Kaothone con 5 niveles. Cada nivel tiene las enseñanzas de Buda grabadas, con un capullo de loto en la parte superior."
+      }
+    },
+    "furniture": {
+      "circle-plate": {
+        "title": "Mesa Estilo Moderno - Mesa Rectangular",
+        "location": "Hecha de mármol genuino 100%",
+        "description": ""
+      }
+    }
+  }
+}

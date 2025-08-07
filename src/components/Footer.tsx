@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import {
   FaFacebookF,
@@ -9,8 +10,15 @@ import {
 import { FaLine } from "react-icons/fa6";
 import "../i18n/i18n";
 
-export default function Footer() {
-  const { t } = useTranslation();
+interface FooterProps {}
+
+export default function Footer({}: FooterProps) {
+  const { t, i18n, ready } = useTranslation();
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const socialLinks = [
     {
@@ -42,12 +50,24 @@ export default function Footer() {
   const siteMapLinks = [
     { key: "home", href: "/" },
     { key: "story", href: "/story" },
-    { key: "portfolio", href: "/portfolio" },
     { key: "products", href: "/products" },
-    { key: "articles", href: "/articles" },
+    // { key: "portfolio", href: "/portfolio" },
+    // { key: "articles", href: "/articles" },
     { key: "news", href: "/news" },
     { key: "contact", href: "/contact" },
   ];
+
+  if (!isClient || !ready) {
+    return (
+      <footer className="bg-primary text-white">
+        <div className="container mx-auto px-4 py-12">
+          <div className="text-center">
+            <div className="text-white">Loading...</div>
+          </div>
+        </div>
+      </footer>
+    );
+  }
 
   return (
     <footer className="bg-primary text-white">
@@ -133,7 +153,9 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
               <a
-                href="/privacy"
+                href="/20220531-BMG-Privacy-Notice-Thai.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm text-gray-300 hover:text-white transition-colors duration-200">
                 {t("footer.privacyPolicy")}
               </a>

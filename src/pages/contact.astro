@@ -1,0 +1,132 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContactInfo from '../components/ContactInfo';
+import ContactForm from '../components/ContactForm';
+import bgContact from '../assets/Contact/bg-contact.jpg';
+import bgContactMobile from '../assets/Contact/bg-contact-mobile.jpg';
+
+// SEO data for contact page
+const title = "Contact Us - BMG Bangkok Modern Granite | ติดต่อเรา - บางกอกโมเดอร์นแกรนิต";
+const description = "Contact BMG Bangkok Modern Granite for premium marble and granite services. Located in Nonthaburi, Thailand. Call +66-2-889-2328 or visit our showroom. Expert consultation for architecture, sculpture, and home decoration projects. | ติดต่อ BMG บางกอกโมเดอร์นแกรนิต สำหรับบริการหินอ่อนและแกรนิตพรีเมียม";
+const image = `${Astro.url.origin}/favicon.svg`;
+
+// Contact Page Schema with LocalBusiness
+const contactPageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": `${Astro.url.origin}/contact#webpage`,
+      "url": `${Astro.url.origin}/contact`,
+      "name": "Contact BMG Bangkok Modern Granite",
+      "isPartOf": {
+        "@id": `${Astro.url.origin}/#website`
+      },
+      "about": {
+        "@id": `${Astro.url.origin}/#organization`
+      },
+      "description": "Contact information and inquiry form for BMG Bangkok Modern Granite",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": Astro.url.origin
+          },
+          {
+            "@type": "ListItem",
+            "position": 2, 
+            "name": "Contact",
+            "item": `${Astro.url.origin}/contact`
+          }
+        ]
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": `${Astro.url.origin}/#organization`,
+      "name": "Bangkok Modern Granite Co., Ltd.",
+      "alternateName": "BMG",
+      "image": `${Astro.url.origin}/favicon.svg`,
+      "logo": `${Astro.url.origin}/favicon.svg`,
+      "url": Astro.url.origin,
+      "telephone": "+66-2-889-2328",
+      "email": "info@bmgranite.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "111 Moo 5 Bangkruai-Sainoi Road, Bangrak Pattana",
+        "addressLocality": "Bang Bua Thong", 
+        "addressRegion": "Nonthaburi",
+        "postalCode": "11110",
+        "addressCountry": "TH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 13.9,
+        "longitude": 100.4
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
+      "priceRange": "$$-$$$",
+      "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
+      "currenciesAccepted": "THB",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Thailand"
+      }
+    }
+  ]
+};
+---
+
+<Layout title={title} description={description} image={image}>
+  <script type="application/ld+json" set:html={JSON.stringify(contactPageSchema)}></script>
+  <main class="contact-page">
+    <section class="hero-section relative overflow-hidden">
+      <picture>
+        <source media="(max-width: 768px)" srcset={bgContactMobile.src} />
+        <img src={bgContact.src} alt="BMG Contact" class="w-full h-[200px] md:h-[300px] object-cover" />
+      </picture>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
+      <div class="absolute bottom-0 left-0 right-0 container py-2 md:py-4 text-white">
+          <h1 class="text-4xl md:text-6xl font-bold">ติดต่อเรา</h1>
+          <p class="text-xl mt-2">Contact Us</p>
+      </div>
+    </section>
+
+    <ContactInfo client:load />
+
+    <section class="map-section py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <iframe 
+            src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY}&q=place_id:ChIJtbRJs0qR4jAR5d-y2jucBI0&zoom=16&maptype=roadmap`}
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <ContactForm client:load />
+  </main>
+</Layout>
+
+<style>
+  .contact-page {
+    min-height: 100vh;
+  }
+</style>

@@ -8,6 +8,14 @@
     "news": "Notizie",
     "contact": "Contatti"
   },
+  "about": {
+    "years": "30 Anni",
+    "subtitle": "di Successo",
+    "companyName": "Bangkok Modern Granite",
+    "description": "Oltre 30 anni da quando l'azienda è stata fondata nel 1991, Bangkok Modern Granite Co., Ltd. è stata un produttore e distributore di marmo e granito importato dall'estero.",
+    "process": "A partire dalla selezione delle materie prime dalle cave di pietra sia nazionali che internazionali, fino al controllo qualità per ottenere lavori che soddisfino le esigenze dei clienti. Possiamo supportare tutti i tipi di produzione di pietra, dalle lastre di pietra, pietre tagliate su misura, prodotti artigianali, inclusi lavori di tornitura, colonne di marmo e colonne di granito. Abbiamo 2 stabilimenti produttivi.",
+    "readMore": "Leggi di Più"
+  },
   "showcase": {
     "title": "Portfolio",
     "subtitle": "di Orgoglio",
@@ -27,28 +35,172 @@
     "loadMore": "Carica Altri"
   },
   "story": {
-    "title": "La Nostra",
-    "subtitle": "Storia",
-    "yearsBadge": "Oltre 30 Anni",
-    "yearsSubtitle": "di Successo",
-    "methodStatement": "METHOD STATEMENT",
-    "designTitle": "Design",
-    "designDescription": "Iniziamo con il design e la consulenza",
-    "shopDrawingTitle": "Shop Drawing",
-    "shopDrawingDescription": "Disegnare lavori dettagliati secondo i requisiti del cliente",
-    "quarryTitle": "Quarry Selection",
-    "quarryDescription": "Selezionare pietre dalle cave",
-    "dryLayTitle": "Dry Lay",
-    "dryLayDescription": "Disporre le pietre secondo il modello specificato",
-    "cuttingTitle": "Cutting & Carving",
-    "cuttingDescription": "Tagliare, forare e scolpire secondo le specifiche",
-    "waterRepellentTitle": "Water Repellent",
-    "waterRepellentDescription": "Asciugare, spruzzare soluzione idrorepellente per prevenire macchie",
-    "processTitle": "Processo di Lavoro - Servizio Completo presso BMG, Azienda Esperta di Design",
-    "processDescription": "Ti aiutiamo a ottenere lavori belli e di alta qualità a prezzi ragionevoli che soddisfano le tue esigenze",
-    "vision": "VISION",
-    "visionText": "Un'azienda riconosciuta a livello internazionale per la creazione di opere di scultura in pietra con standard internazionali e alta sicurezza",
-    "mission": "MISSION",
-    "missionText": "BMG è un'azienda specializzata nella produzione e scultura di prodotti in pietra con tecnologia di produzione moderna e personale professionale per ottenere prodotti di alta qualità"
+    "title": "La Nostra Storia",
+    "companyTitle": "BMG Bangkok Modern Granite",
+    "section1Title": "Partendo da una fabbrica di lavorazione della pietra di tutti i tipi, fino ad oggi, abbiamo ampliato il nostro lavoro nella scultura, architettura, intaglio di ritratti, creando ciò che sogni, realizzando ciò che pensi, per ottenere esattamente ciò che desideri.",
+    "concept": "Con il concetto \"Create Dreams With Stones\", selezioniamo accuratamente pietre di qualità da tutto il mondo, tra cui Italia, Spagna, Brasile, Zimbabwe e India, per realizzare i tuoi sogni, che si tratti di case, condomini, vari uffici, rendendoli belli, eleganti, lussuosi, con lo stile dei sogni che desideri. Perché siamo leader nella produzione e lavorazione di marmo, granito e altre pietre naturali. Abbiamo anche conoscenza e comprensione di tutti i processi della pietra con grande esperienza e lunga esperienza nel lavoro della pietra.",
+    "section2Title": "Durante tutto il periodo di lavoro, BMG Bangkok Modern Granite",
+    "section2SubTitle": "ha guadagnato fiducia e affidamento dai clienti, sia dal settore pubblico che privato, creando molte opere famose, tra cui decorazioni architettoniche esterne, Ubosot del Wat Sothorn Wararam Worawihan, Chedi del Wat Pa Phurithat Patipatharam, Wat Pa Dan Wiwek, Museo Luang Ta Maha Bua, negozio principale Bangkok Gold, Hotel Erawan, FN Building Rama 9.",
+    "section3": "Opere scultoree riconosciute a livello nazionale includono stupa e iscrizioni in pietra al Wat Pa Dan Wiwek, ritratti in pietra scolpita di Luang Pu Man Phurithatto, THE WISDOM OF MIND Somdet Phra Nyanaviroj al Wat Thammamongkol Thao Bun Nonthavihar, statue di Buddha in pietra scolpita al Wat Suwannaphumi Buddhachayanti per circondare oltre 1.000 stupa, l'immagine principale del Buddha nella sala di meditazione Vipassana al Wat Nawamintararachutis a Boston, USA, Pi Seah, leoni elefante arte Khmer, leoni in stile europeo",
+    "oemServices": "Forniamo anche servizi di produzione OEM, prodotti in pietra secondo le specifiche del cliente con incisione del marchio, prodotti in pietra pronti come tavoli, orologi, sottobicchieri The Echo o altri. Puoi visitare il nostro negozio online. Se vuoi sperimentare pezzi reali, puoi visitare tutte le nostre opere, compresi i vari processi di produzione nella nostra fabbrica.",
+    "vision": "Vision",
+    "visionText": "BMG Bangkok Modern Granite è pronta a creare pezzi dall'inizio del processo alla consegna del lavoro, con attenzione ad ogni dettaglio da oltre 30 anni di esperienza, che non solo soddisfa i clienti, ma è anche il nostro orgoglio nel creare opere preziose che rimarranno con la Thailandia per sempre.",
+    "mission": "Mission",
+    "missionText": "BMG Bangkok Modern Granite si impegna a sviluppare la tecnologia di produzione del lavoro per stare al passo con i cambiamenti del mondo selezionando strumenti di produzione moderni, pronti a creare opere per i clienti che soddisfino tutte le esigenze, coerenti con le esigenze future."
+  },
+  "news": {
+    "subtitle": "Storie",
+    "title": "Notizie",
+    "readMore": "Leggi di Più"
+  },
+  "footer": {
+    "companyInfo": "Contattaci",
+    "siteMap": "MAPPA DEL SITO",
+    "followUs": "Seguici",
+    "privacyPolicy": "Politica sulla Privacy"
+  },
+  "products": {
+    "title": "I Nostri Prodotti",
+    "subtitle": "Collezione di Pietre Naturali Premium",
+    "description": "Scopri la nostra vasta collezione di granito e marmo premium provenienti dalle migliori cave del mondo. Ogni pietra è accuratamente selezionata per qualità, bellezza e durata.",
+    "totalVarieties": "Varietà di Pietra",
+    "yearsExperience": "Anni di Esperienza",
+    "naturalStone": "Pietra Naturale",
+    "graniteInfo": {
+      "title": "Collezione Granito Premium",
+      "description": "La nostra selezione di granito presenta alcune delle pietre più durevoli e belle del mondo. Dai neri profondi dello Zimbabwe ai marroni caldi dell'India, ogni varietà di granito offre caratteristiche uniche perfette per piani da cucina, pavimenti e applicazioni architettoniche."
+    },
+    "marbleInfo": {
+      "title": "Squisita Selezione di Marmo",
+      "description": "Sperimenta l'eleganza senza tempo della nostra collezione di marmo. Dal classico Carrara bianco usato dai maestri del Rinascimento alle pietre moderne di design, i nostri marmi portano lusso e raffinatezza in ogni spazio."
+    },
+    "stoneDetail": {
+      "colors": "Palette di Colori",
+      "properties": "Proprietà Tecniche",
+      "hardness": "Durezza",
+      "density": "Densità",
+      "absorption": "Assorbimento d'Acqua",
+      "origin": "Origine",
+      "finishes": "Finiture Disponibili",
+      "applications": "Applicazioni Consigliate",
+      "maintenance": "Cura e Manutenzione",
+      "relatedStones": "Pietre Correlate"
+    }
+  },
+  "common": {
+    "back": "Torna ai Prodotti"
+  },
+  "contact": {
+    "title": "Informazioni di Contatto",
+    "subtitle": "Mettiti in contatto con noi",
+    "address": "Indirizzo",
+    "contact": "Contattaci",
+    "companyName": "Bangkok Modern Granite",
+    "addressLine1": "111 Moo 5 Strada Bangkruai-Sainoi",
+    "addressLine2": "Bangrak Pattana, Bang Bua Thong",
+    "addressLine3": "Nonthaburi 11110",
+    "phoneLabel": "Telefono:",
+    "emailLabel": "Email:",
+    "form": {
+      "title": "Commenti e Suggerimenti",
+      "subtitle": "Inviaci il tuo feedback e i tuoi suggerimenti",
+      "name": "Nome*",
+      "namePlaceholder": "Inserisci il tuo nome",
+      "email": "Email*",
+      "emailPlaceholder": "esempio@email.com",
+      "phone": "Telefono",
+      "phonePlaceholder": "089-xxx-xxxx",
+      "company": "Azienda/Organizzazione",
+      "companyPlaceholder": "Nome azienda",
+      "message": "Messaggio*",
+      "messagePlaceholder": "Inserisci il tuo messaggio...",
+      "send": "Invia Messaggio",
+      "sending": "Invio in corso...",
+      "success": "Messaggio inviato con successo",
+      "notRobot": "Non sono un robot",
+      "recaptchaError": "Per favore verifica di non essere un robot"
+    }
+  },
+  "showcaseItems": {
+    "religious": {
+      "wat-navamintararachuthit": {
+        "title": "Wat Nawamintararachutis",
+        "location": "Massachusetts, Stati Uniti",
+        "description": "Statua del Buddha scolpita in marmo in posizione di meditazione. Realizzata in marmo White Thassos con qualità luminosa che ricorda la giada bianca. Installata al 2° piano del Centro di Meditazione Vipassana al Wat Nawamintararachutis, Massachusetts, Stati Uniti."
+      },
+      "wat-pa-klang-non-phu": {
+        "title": "Wat Pa Klang Non Phu",
+        "location": "Provincia di Sakon Nakhon",
+        "description": "Statua del Buddha scolpita in marmo in posizione di meditazione. Realizzata in marmo Cloudy che ha una finitura non lucida, colore crema chiaro e una texture simile al calcare. Installata al Wat Pa Klang Non Phu, Provincia di Sakon Nakhon."
+      },
+      "wat-cholprathan-rangsrit": {
+        "title": "Wat Cholprathan Rangsrit",
+        "location": "Provincia di Nonthaburi",
+        "description": "Statua del Buddha scolpita in marmo in stile artistico Gandhara, posizione di benedizione. Realizzata in marmo White Thassos con superficie levigata liscia e qualità luminosa che ricorda la giada bianca. Installata al 3° piano dell'Edificio Memoriale Panyanananda al Wat Cholprathan Rangsrit, Provincia di Nonthaburi."
+      }
+    },
+    "portraits": {
+      "luang-pu-man": {
+        "title": "Luang Pu Man Phurithatto",
+        "location": "Wat Pa Sutthawat, Provincia di Sakon Nakhon",
+        "description": "Scultura ritratto in marmo di Luang Pu Man Phurithatto del Wat Pa Sutthawat, Provincia di Ubon Ratchathani. Scolpita in marmo White Carrara con finitura liscia, non lucida, proporzioni a grandezza naturale."
+      },
+      "luang-ta-maha-bua": {
+        "title": "Luang Ta Maha Bua Ñanasampanno",
+        "location": "Wat Ketkesi Sikhun, Provincia di Udon Thani",
+        "description": "Scultura ritratto in marmo di Luang Ta Maha Bua Ñanasampanno del Wat Ketkesi Sikhun, Provincia di Udon Thani. Scolpita in marmo White Carrara con finitura liscia, non lucida, proporzioni a grandezza naturale."
+      },
+      "luang-pu-kruba-wong": {
+        "title": "Luang Pu Kruba Wong",
+        "location": "Wat Phra Phutthabat Huai Tom, Provincia di Lamphun",
+        "description": "Scultura ritratto in marmo di Luang Pu Kruba Wong del Wat Phra Phutthabat Huai Tom, Provincia di Lamphun. Scolpita in marmo White Carrara con finitura liscia, non lucida, proporzioni a grandezza naturale."
+      },
+      "luang-pho-sod": {
+        "title": "Luang Pho Sod Candasaro",
+        "location": "Wat Paknam, Phasi Charoen, Bangkok",
+        "description": "Scultura ritratto in marmo di Luang Pho Sod Candasaro del Wat Paknam, Phasi Charoen, Bangkok. Scolpita in marmo White Carrara con finitura liscia, non lucida, proporzioni a grandezza naturale."
+      },
+      "mae-chi-tossaporn": {
+        "title": "Mae Chi Tossaporn",
+        "location": "Ban Phet Bampen, Provincia di Phetchaburi",
+        "description": "Scultura ritratto in marmo di Mae Chi Tossaporn situata a Ban Phet Bampen, Provincia di Phetchaburi. Scolpita in marmo White Thassos con qualità luminosa che ricorda la giada bianca, proporzioni a grandezza naturale."
+      },
+      "president-chusak": {
+        "title": "Presidente Chusak Sricharoenlamsum",
+        "location": "BMG Bangkok Modern Granite",
+        "description": "Scultura ritratto in marmo del Presidente Chusak Sricharoenlamsum situata presso BMG Bangkok Modern Granite. Scolpita in marmo White Carrara con finitura liscia, non lucida, ritratto a grandezza naturale."
+      }
+    },
+    "architecture": {
+      "wat-sothorn": {
+        "title": "Wat Sothorn Wararam Worawihan",
+        "location": "Provincia di Chachoengsao",
+        "description": "Nuova sala di ordinazione costruita in stile Rattanakosin adattato al Wat Sothorn Wararam Worawihan, Provincia di Chachoengsao. La decorazione delle pareti esterne utilizza marmo White Carrara dall'Italia."
+      },
+      "dharma-museum": {
+        "title": "Museo Dhamma Chedi Phra Dhammavisuddhi Mongkol",
+        "location": "",
+        "description": "Luang Ta Phra Maha Bua Ñanasampanno, Provincia di Udon Thani. Museo Dhamma Chedi Phra Dhammavisuddhi Mongkol."
+      },
+      "wat-pa-amparo": {
+        "title": "Museo Chantakaranusorn",
+        "location": "Wat Pa Amparo Panyawanaram, Provincia di Chonburi",
+        "description": ""
+      }
+    },
+    "sculpture": {
+      "phra-that-buddha-ratana": {
+        "title": "Scultura Phra That Buddha Ratana Maha Mongkol",
+        "location": "Wat Pa Dan Wiwek, Provincia di Bueng Kan",
+        "description": "Scolpita in granito Kaothone con 5 livelli. Ogni livello ha gli insegnamenti del Buddha incisi, con un bocciolo di loto in cima."
+      }
+    },
+    "furniture": {
+      "circle-plate": {
+        "title": "Tavolo Stile Moderno - Tavolo Rettangolare",
+        "location": "Realizzato in marmo genuino al 100%",
+        "description": ""
+      }
+    }
   }
 }

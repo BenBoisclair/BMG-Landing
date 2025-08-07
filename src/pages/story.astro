@@ -1,8 +1,68 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import StoryComponent from '../components/Story.tsx';
+
+// SEO data for story page
+const title = "Our Story - BMG Bangkok Modern Granite | เรื่องราวของเรา";
+const description = "Discover BMG's 30+ year journey as Thailand's leading marble and granite specialist. From stone processing to architectural masterpieces, sculpture, and home decoration. Learn about our vision, mission, and commitment to quality craftsmanship. | เรื่องราวการเดินทางกว่า 30 ปีของ BMG ผู้นำด้านหินอ่อนและหินแกรนิตในไทย";
+const image = `${Astro.url.origin}/favicon.svg`;
+
+// About Page Schema
+const aboutPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "mainEntity": {
+    "@type": "Organization",
+    "@id": `${Astro.url.origin}/#organization`,
+    "name": "Bangkok Modern Granite Co., Ltd.",
+    "alternateName": "BMG",
+    "foundingDate": "1991",
+    "description": "Leading manufacturer and distributor of premium marble and granite with over 30 years of experience",
+    "url": Astro.url.origin,
+    "slogan": "Create Dreams With Stones",
+    "knowsAbout": [
+      "Marble Processing",
+      "Granite Manufacturing", 
+      "Stone Sculpture",
+      "Architectural Stone Work",
+      "Portrait Carving",
+      "Religious Art",
+      "Home Decoration"
+    ],
+    "areaServed": "Thailand",
+    "hasCredential": "30+ years experience",
+    "award": [
+      "Trusted by government and private sectors",
+      "Famous architectural works including Wat Sothorn Wararam",
+      "International stone sourcing from Italy, Spain, Brazil, India, Zimbabwe"
+    ]
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "BMG History and Expertise",
+    "description": "BMG Bangkok Modern Granite has been creating premium stone works for over 30 years, specializing in marble and granite processing, architectural decoration, sculpture, and custom stone products."
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": Astro.url.origin
+      },
+      {
+        "@type": "ListItem", 
+        "position": 2,
+        "name": "Our Story",
+        "item": `${Astro.url.origin}/story`
+      }
+    ]
+  }
+};
 ---
 
-<Layout title="เรื่องราว - BMG">
-  <StoryComponent client:load />
+<Layout title={title} description={description} image={image}>
+  <script type="application/ld+json" set:html={JSON.stringify(aboutPageSchema)}></script>
+  <StoryComponent client:only />
 </Layout>

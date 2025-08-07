@@ -13,58 +13,89 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture Overview
 
-This is an Astro-based multilingual landing page for BMG (likely a marble/granite business) with the following architecture:
+This is an Astro-based multilingual landing page for BMG (a marble/granite business) with a modern island architecture combining static generation with interactive React components.
 
 ### Tech Stack
-- **Astro 5.12.8** - Static site generator with islands architecture
-- **React 19** - Component framework for interactive UI elements
-- **Tailwind CSS v4** - Utility-first CSS framework (configured via @tailwindcss/vite)
-- **TypeScript** - Type safety with strict configuration extending Astro's defaults
-- **i18next** - Internationalization framework with React integration
+- **Astro 5.12.8** - Static site generator with islands architecture for optimal performance
+- **React 19** - Interactive UI components with selective hydration
+- **Tailwind CSS v4** - Utility-first CSS framework configured via @tailwindcss/vite
+- **TypeScript** - Strict type safety extending Astro's defaults
+- **i18next** - Full internationalization support with React integration
+- **React Google reCAPTCHA** - Form protection on contact forms
 
 ### Internationalization (i18n)
 - **Default locale**: Thai (th)
 - **Supported locales**: Thai (th), English (en), Italian (it), Chinese (zh)
-- **Routing**: No prefix for default locale, other locales use path prefixes
-- **Implementation**: 
-  - i18next configured in `src/i18n/i18n.ts`
-  - Translations stored in `src/i18n/locales/*.json`
-  - Language detection via localStorage and browser settings
+- **Routing Strategy**: 
+  - Default locale (Thai) uses root path: `/`
+  - Other locales use prefixed paths: `/en/`, `/it/`, `/zh/`
+  - Locale detected from URL path in Layout component
+- **Implementation Details**:
+  - i18next configuration in `src/i18n/i18n.ts` with localStorage persistence
+  - Translation files in `src/i18n/locales/*.json`
   - React components use `useTranslation` hook
+  - Language switcher in Nav component handles URL redirection
 
 ### Component Architecture
-1. **Mixed Components**: 
-   - Astro components (.astro) for static content and layouts
-   - React components (.tsx) for interactive elements with client-side hydration
-2. **Hydration Strategy**: React components use `client:load` directive for immediate hydration
-3. **Image Assets**: Organized by category in `src/assets/`:
-   - `/Hero/` - Hero section images
-   - `/Materials/Granite/` - Granite product images
-   - `/Materials/Marble/` - Marble product images
-   - `/Portfolio/` - Project portfolio images organized by categories
+1. **Astro Components (.astro)**:
+   - Static layouts and page structures
+   - Server-side rendered content
+   - Minimal JavaScript footprint
+   
+2. **React Components (.tsx)**:
+   - Interactive UI elements with `client:load` directive
+   - Form handling (ContactForm with reCAPTCHA)
+   - Dynamic navigation with mobile menu
+   - Image carousels and galleries
+   
+3. **Key Components**:
+   - `Nav` - Responsive navigation with language switcher and mobile menu
+   - `Hero` - Landing page hero section with rotating banners
+   - `About` - Company information section
+   - `Showcase` - Portfolio/project showcase
+   - `Materials` - Product catalog display
+   - `ContactForm` - Contact form with validation and reCAPTCHA
+   - `NewsListing` & `NewsArticle` - News/blog functionality
+   - `Footer` - Site footer with links and information
+   - `ScrollToTop` - Scroll-to-top button functionality
+
+### Page Structure
+- `/` - Homepage with Hero, About, Showcase, and Materials sections
+- `/story` - Company story/history page
+- `/news` - News listing page
+- `/news/[id]` - Dynamic news article pages
+- `/contact` - Contact page with form and company information
 
 ### Styling System
-- **Tailwind CSS v4** with custom theme configuration:
-  - Primary color: `#292567`
-  - Secondary color: `#85152d`
-  - Custom font: Kanit (Google Fonts)
-- **Global styles** in `src/styles/global.css` using CSS layers and theme variables
-- **Container utilities** with responsive padding
-
-### TypeScript Configuration
-- Extends Astro's strict TypeScript configuration
-- Configured for React JSX with `"jsx": "react-jsx"`
-- Includes all source files except `dist/` directory
-
-### Current Implementation
-- **Nav Component** (React): Responsive navigation with language switcher, mobile menu, and i18n support
-- **Layout Component** (Astro): Base HTML structure with language detection based on URL path
-- **Hero Component** (React): Landing page hero section (exists but not analyzed)
-- **About Component** (React): About section component (exists but not analyzed)
+- **Tailwind CSS v4** with custom theme:
+  ```css
+  --color-primary: #292567
+  --color-secondary: #85152d
+  --font-family-sans: "Kanit", sans-serif
+  ```
+- Global styles in `src/styles/global.css` using CSS theme variables
+- Responsive container utilities with breakpoint-specific padding
+- Mobile-first responsive design approach
 
 ### Asset Organization
-Static assets follow a clear structure for a marble/granite business:
-- Logo files in multiple formats (SVG)
-- Hero images for rotating banners
-- Product catalogs for Granite and Marble materials
-- Portfolio organized by project categories with multiple views per project
+```
+src/assets/
+├── Hero/          # Hero carousel images
+├── Materials/     # Product images
+│   ├── Granite/   # Granite varieties
+│   └── Marble/    # Marble varieties
+├── Portfolio/     # Project galleries (numbered categories)
+├── News/          # News article images
+├── Contact/       # Contact page backgrounds
+├── Story/         # Company story assets
+└── [logos]        # Company logos and branding
+```
+
+### Data Management
+- `src/data/showcaseData.ts` - Portfolio/showcase content
+- `src/data/newsData.ts` - News articles and metadata
+
+### TypeScript Configuration
+- Extends `astro/tsconfigs/strict` for maximum type safety
+- React JSX configured with `"jsx": "react-jsx"`
+- All source files included except `dist/` directory

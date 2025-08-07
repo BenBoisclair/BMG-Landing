@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "../i18n/i18n";
 import DotIndicator from "./DotIndicator";
 import { showcaseData } from "../data/showcaseData";
@@ -31,6 +32,18 @@ export default function Showcase() {
 
   const currentCategoryData = showcaseData[activeCategory];
   const currentItem = currentCategoryData.items[activeItem];
+  
+  const getItemTitle = (categoryKey: string, itemId: string) => {
+    return t(`showcaseItems.${categoryKey}.${itemId}.title`, { defaultValue: itemId });
+  };
+  
+  const getItemLocation = (categoryKey: string, itemId: string) => {
+    return t(`showcaseItems.${categoryKey}.${itemId}.location`, { defaultValue: '' });
+  };
+  
+  const getItemDescription = (categoryKey: string, itemId: string) => {
+    return t(`showcaseItems.${categoryKey}.${itemId}.description`, { defaultValue: '' });
+  };
 
   const goToNextImage = () => {
     setCurrentImageIndex((prev) =>
@@ -69,10 +82,10 @@ export default function Showcase() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-white text-3xl md:text-5xl font-bold mb-4">
             {t("showcase.title")}
           </h2>
-          <h3 className="text-white text-xl md:text-2xl font-medium">
+          <h3 className="text-white text-xl md:text-3xl font-medium">
             {t("showcase.subtitle")}
           </h3>
         </div>
@@ -111,7 +124,7 @@ export default function Showcase() {
                         ? "bg-white/20 text-white shadow-md"
                         : "text-white/70 hover:text-white hover:bg-white/10"
                     }`}>
-                    {item.title}
+                    {getItemTitle(currentCategoryData.key, item.id)}
                   </button>
                 ))}
               </div>
@@ -127,13 +140,13 @@ export default function Showcase() {
               {categories[activeCategory].label}
             </div>
             <h3 className="text-2xl md:text-3xl font-bold leading-tight">
-              {currentItem.title}
+              {getItemTitle(currentCategoryData.key, currentItem.id)}
             </h3>
             <h4 className="text-lg md:text-xl text-white/80 font-medium">
-              {currentItem.location}
+              {getItemLocation(currentCategoryData.key, currentItem.id)}
             </h4>
             <p className="text-white/90 leading-relaxed text-base">
-              {currentItem.description}
+              {getItemDescription(currentCategoryData.key, currentItem.id)}
             </p>
 
             {/* Thumbnail Gallery */}
@@ -162,43 +175,21 @@ export default function Showcase() {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={currentItem.thumbnails[currentImageIndex]}
-                alt={currentItem.title}
+                alt={getItemTitle(currentCategoryData.key, currentItem.id)}
                 className="w-full h-full object-cover"
               />
 
               {/* Navigation Arrows */}
               <button
                 onClick={goToPrevImage}
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 cursor-pointer">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 19l-7-7 7-7"
-                  />
-                </svg>
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 cursor-pointer">
+                <FaChevronLeft className="w-6 h-6" />
               </button>
 
               <button
                 onClick={goToNextImage}
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 cursor-pointer">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
+                className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 cursor-pointer">
+                <FaChevronRight className="w-6 h-6" />
               </button>
             </div>
 

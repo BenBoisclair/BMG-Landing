@@ -4,11 +4,89 @@ import About from '../components/About.tsx';
 import Layout from '../layouts/Layout.astro';
 import Showcase from '../components/Showcase.tsx';
 import Materials from '../components/Materials.tsx';
+import NewsHighlight from '../components/NewsHighlight.tsx';
+
+// SEO data for homepage
+const title = "BMG Bangkok Modern Granite - Premium Marble & Granite Thailand | บางกอกโมเดอร์นแกรนิต";
+const description = "Leading manufacturer and distributor of premium marble and granite in Thailand for over 30 years. Import quality stones from Italy, Spain, Brazil, India. Expert craftsmanship for architecture, sculpture, and home decoration. | ผู้นำด้านหินอ่อนและหินแกรนิตพรีเมียมในไทยมากกว่า 30 ปี";
+const image = `${Astro.url.origin}/favicon.svg`;
+
+// Local Business Schema for homepage
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": `${Astro.url.origin}/#organization`,
+  "name": "Bangkok Modern Granite Co., Ltd.",
+  "alternateName": "BMG",
+  "description": "Leading manufacturer and distributor of premium marble and granite with over 30 years of experience",
+  "url": Astro.url.origin,
+  "telephone": "+66-2-889-2328",
+  "email": "info@bmgranite.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "111 Moo 5 Bangkruai-Sainoi Road, Bangrak Pattana",
+    "addressLocality": "Bang Bua Thong",
+    "addressRegion": "Nonthaburi",
+    "postalCode": "11110",
+    "addressCountry": "TH"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 13.9,
+    "longitude": 100.4
+  },
+  "openingHours": "Mo-Sa 08:00-17:00",
+  "foundingDate": "1991",
+  "logo": `${Astro.url.origin}/favicon.svg`,
+  "image": `${Astro.url.origin}/favicon.svg`,
+  "priceRange": "$$-$$$",
+  "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+  "currenciesAccepted": "THB",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Thailand"
+  },
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 13.9,
+      "longitude": 100.4
+    },
+    "geoRadius": "1000000"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Marble and Granite Products",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "Marble",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Italian Carrara Marble" }},
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Thassos White Marble" }},
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Spanish Crema Marfil" }}
+        ]
+      },
+      {
+        "@type": "OfferCatalog", 
+        "name": "Granite",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Brazil Black Granite" }},
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Indian Kashmir White" }},
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Zimbabwe Black Granite" }}
+        ]
+      }
+    ]
+  }
+};
 ---
 
-<Layout title="BMG">
+<Layout title={title} description={description} image={image}>
+	<script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)}></script>
 	<Hero client:load />
 	<About client:load />
 	<Showcase client:load />
 	<Materials client:load />
+	<NewsHighlight client:load />
 </Layout>

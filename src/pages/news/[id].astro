@@ -1,0 +1,133 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import NewsArticle from '../../components/NewsArticle.tsx';
+import { newsData } from '../../data/newsData.ts';
+
+export function getStaticPaths() {
+  return [
+    { params: { id: '1' } },
+    { params: { id: '2' } },
+    { params: { id: '3' } },
+    { params: { id: '4' } },
+  ];
+}
+
+const { id } = Astro.params;
+
+// Get news article data
+const article = newsData.find(item => item.id === id);
+
+if (!article) {
+  throw new Error(`News article with id ${id} not found`);
+}
+
+// SEO data for news article
+const title = `${article.title.th} | ${article.title.en} - BMG News`;
+const description = `${article.excerpt.th} | ${article.excerpt.en}`;
+const image = article.image ? `${Astro.url.origin}${article.image.replace('/src/assets/', '/src/assets/')}` : `${Astro.url.origin}/favicon.svg`;
+
+// Parse date for schema
+const parseThaiDate = (thaiDate: string) => {
+  const months = {
+    'ม.ค.': '01', 'ก.พ.': '02', 'มี.ค.': '03', 'เม.ย.': '04',
+    'พ.ค.': '05', 'มิ.ย.': '06', 'ก.ค.': '07', 'ส.ค.': '08',
+    'ก.ย.': '09', 'ต.ค.': '10', 'พ.ย.': '11', 'ธ.ค.': '12'
+  };
+  
+  const parts = thaiDate.split(' ');
+  if (parts.length >= 3) {
+    const day = parts[0].padStart(2, '0');
+    const month = months[parts[1] as keyof typeof months] || '01';
+    const year = parts[2];
+    const gregorianYear = parseInt(year) > 2400 ? (parseInt(year) - 543).toString() : year;
+    return `${gregorianYear}-${month}-${day}`;
+  }
+  return new Date().toISOString().split('T')[0];
+};
+
+const publishedDate = parseThaiDate(article.date);
+
+// NewsArticle Schema
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "@id": `${Astro.url.origin}/news/${id}#article`,
+  "url": `${Astro.url.origin}/news/${id}`,
+  "headline": article.title.en,
+  "alternativeHeadline": article.title.th,
+  "description": article.excerpt.en,
+  "articleBody": article.content?.en || article.excerpt.en,
+  "datePublished": publishedDate,
+  "dateModified": publishedDate,
+  "author": {
+    "@type": "Organization",
+    "@id": `${Astro.url.origin}/#organization`,
+    "name": "Bangkok Modern Granite Co., Ltd.",
+    "url": Astro.url.origin
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": `${Astro.url.origin}/#organization`,
+    "name": "Bangkok Modern Granite Co., Ltd.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${Astro.url.origin}/favicon.svg`,
+      "width": 79,
+      "height": 79
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": image,
+    "caption": article.title.en
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `${Astro.url.origin}/news/${id}`
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": `${Astro.url.origin}/#website`
+  },
+  "inLanguage": ["th", "en", "it", "zh"],
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Marble and Granite",
+      "sameAs": "https://en.wikipedia.org/wiki/Marble"
+    },
+    {
+      "@type": "Organization",
+      "@id": `${Astro.url.origin}/#organization`
+    }
+  ],
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home", 
+        "item": Astro.url.origin
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "News",
+        "item": `${Astro.url.origin}/news`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": article.title.en,
+        "item": `${Astro.url.origin}/news/${id}`
+      }
+    ]
+  }
+};
+---
+
+<Layout title={title} description={description} image={image} type="article">
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
+  <NewsArticle newsId={id} client:load />
+</Layout>

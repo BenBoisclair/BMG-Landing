@@ -48,10 +48,159 @@
     "mission": "Mission",
     "missionText": "BMG Bangkok Modern Granite is committed to developing work production technology to keep up with world changes by selecting modern production tools, ready to create works for customers that meet all needs, consistent with future needs."
   },
+  "news": {
+    "subtitle": "Stories",
+    "title": "News",
+    "readMore": "Read More"
+  },
   "footer": {
     "companyInfo": "Contact Us",
     "siteMap": "SITE MAP",
     "followUs": "Follow Us",
     "privacyPolicy": "Privacy Policy"
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Premium Natural Stone Collection",
+    "description": "Discover our extensive collection of premium granite and marble sourced from the finest quarries around the world. Each stone is carefully selected for its quality, beauty, and durability.",
+    "totalVarieties": "Stone Varieties",
+    "yearsExperience": "Years Experience", 
+    "naturalStone": "Natural Stone",
+    "graniteInfo": {
+      "title": "Premium Granite Collection",
+      "description": "Our granite selection features some of the world's most durable and beautiful stones. From the deep blacks of Zimbabwe to the warm browns of India, each granite variety offers unique characteristics perfect for countertops, flooring, and architectural applications."
+    },
+    "marbleInfo": {
+      "title": "Exquisite Marble Selection",
+      "description": "Experience the timeless elegance of our marble collection. From the classic white Carrara used by Renaissance masters to modern designer stones, our marbles bring luxury and sophistication to any space."
+    },
+    "stoneDetail": {
+      "colors": "Color Palette",
+      "properties": "Technical Properties",
+      "hardness": "Hardness",
+      "density": "Density", 
+      "absorption": "Water Absorption",
+      "origin": "Origin",
+      "finishes": "Available Finishes",
+      "applications": "Recommended Applications",
+      "maintenance": "Care & Maintenance",
+      "relatedStones": "Related Stones"
+    }
+  },
+  "common": {
+    "back": "Back to Products"
+  },
+  "contact": {
+    "title": "Contact Information",
+    "subtitle": "Get in touch with us",
+    "address": "Address",
+    "contact": "Contact Us",
+    "companyName": "Bangkok Modern Granite",
+    "addressLine1": "111 Moo 5 Bangkruai-Sainoi Road",
+    "addressLine2": "Bangrak Pattana, Bang Bua Thong",
+    "addressLine3": "Nonthaburi 11110",
+    "phoneLabel": "Phone:",
+    "emailLabel": "Email:",
+    "form": {
+      "title": "Comments & Suggestions",
+      "subtitle": "Send us your feedback and suggestions",
+      "name": "Name*",
+      "namePlaceholder": "Enter your name",
+      "email": "Email*",
+      "emailPlaceholder": "example@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "089-xxx-xxxx",
+      "company": "Company/Organization",
+      "companyPlaceholder": "Company name",
+      "message": "Message*",
+      "messagePlaceholder": "Enter your message...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully",
+      "notRobot": "I'm not a robot",
+      "recaptchaError": "Please verify that you are not a robot"
+    }
+  },
+  "showcaseItems": {
+    "religious": {
+      "wat-navamintararachuthit": {
+        "title": "Wat Nawamintararachutis",
+        "location": "Massachusetts, United States",
+        "description": "Buddha statue carved from marble in meditation posture. Made from White Thassos marble with a luminous quality resembling white jade. Installed on the 2nd floor of the Vipassana Meditation Center at Wat Nawamintararachutis, Massachusetts, United States."
+      },
+      "wat-pa-klang-non-phu": {
+        "title": "Wat Pa Klang Non Phu",
+        "location": "Sakon Nakhon Province",
+        "description": "Buddha statue carved from marble in meditation posture. Made from Cloudy marble which has a non-glossy finish, light cream color, and a texture similar to limestone. Installed at Wat Pa Klang Non Phu, Sakon Nakhon Province."
+      },
+      "wat-cholprathan-rangsrit": {
+        "title": "Wat Cholprathan Rangsrit",
+        "location": "Nonthaburi Province",
+        "description": "Buddha statue carved from marble in Gandhara art style, blessing posture. Made from White Thassos marble with smooth polished surface and luminous quality resembling white jade. Installed on the 3rd floor of Panyanananda Memorial Building at Wat Cholprathan Rangsrit, Nonthaburi Province."
+      }
+    },
+    "portraits": {
+      "luang-pu-man": {
+        "title": "Luang Pu Man Phurithatto",
+        "location": "Wat Pa Sutthawat, Sakon Nakhon Province",
+        "description": "Marble portrait sculpture of Luang Pu Man Phurithatto from Wat Pa Sutthawat, Ubon Ratchathani Province. Carved from White Carrara marble with smooth, non-glossy finish, life-size proportions."
+      },
+      "luang-ta-maha-bua": {
+        "title": "Luang Ta Maha Bua Ñanasampanno",
+        "location": "Wat Ketkesi Sikhun, Udon Thani Province",
+        "description": "Marble portrait sculpture of Luang Ta Maha Bua Ñanasampanno from Wat Ketkesi Sikhun, Udon Thani Province. Carved from White Carrara marble with smooth, non-glossy finish, life-size proportions."
+      },
+      "luang-pu-kruba-wong": {
+        "title": "Luang Pu Kruba Wong",
+        "location": "Wat Phra Phutthabat Huai Tom, Lamphun Province",
+        "description": "Marble portrait sculpture of Luang Pu Kruba Wong from Wat Phra Phutthabat Huai Tom, Lamphun Province. Carved from White Carrara marble with smooth, non-glossy finish, life-size proportions."
+      },
+      "luang-pho-sod": {
+        "title": "Luang Pho Sod Candasaro",
+        "location": "Wat Paknam, Phasi Charoen, Bangkok",
+        "description": "Marble portrait sculpture of Luang Pho Sod Candasaro from Wat Paknam, Phasi Charoen, Bangkok. Carved from White Carrara marble with smooth, non-glossy finish, life-size proportions."
+      },
+      "mae-chi-tossaporn": {
+        "title": "Mae Chi Tossaporn",
+        "location": "Ban Phet Bampen, Phetchaburi Province",
+        "description": "Marble portrait sculpture of Mae Chi Tossaporn located at Ban Phet Bampen, Phetchaburi Province. Carved from White Thassos marble with luminous quality resembling white jade, life-size proportions."
+      },
+      "president-chusak": {
+        "title": "President Chusak Sricharoenlamsum",
+        "location": "BMG Bangkok Modern Granite",
+        "description": "Marble portrait sculpture of President Chusak Sricharoenlamsum located at BMG Bangkok Modern Granite. Carved from White Carrara marble with smooth, non-glossy finish, life-size portrait."
+      }
+    },
+    "architecture": {
+      "wat-sothorn": {
+        "title": "Wat Sothorn Wararam Worawihan",
+        "location": "Chachoengsao Province",
+        "description": "New ordination hall built in adapted Rattanakosin style at Wat Sothorn Wararam Worawihan, Chachoengsao Province. Exterior wall decoration uses White Carrara marble from Italy."
+      },
+      "dharma-museum": {
+        "title": "Dhamma Chedi Museum Phra Dhammavisuddhi Mongkol",
+        "location": "",
+        "description": "Luang Ta Phra Maha Bua Ñanasampanno, Udon Thani Province. Dhamma Chedi Museum Phra Dhammavisuddhi Mongkol."
+      },
+      "wat-pa-amparo": {
+        "title": "Chantakaranusorn Museum",
+        "location": "Wat Pa Amparo Panyawanaram, Chonburi Province",
+        "description": ""
+      }
+    },
+    "sculpture": {
+      "phra-that-buddha-ratana": {
+        "title": "Phra That Buddha Ratana Maha Mongkol Sculpture",
+        "location": "Wat Pa Dan Wiwek, Bueng Kan Province",
+        "description": "Carved from Kaothone granite with 5 tiers. Each tier has Buddha's teachings engraved, with a lotus bud on top."
+      }
+    },
+    "furniture": {
+      "circle-plate": {
+        "title": "Modern Style Table - Rectangular Table",
+        "location": "Made from 100% genuine marble",
+        "description": ""
+      }
+    }
   }
 }

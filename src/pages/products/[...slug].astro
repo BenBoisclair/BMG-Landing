@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import StoneDetail from '../../components/StoneDetail';
+import { getStoneBySlug, stoneData } from '../../data/stoneData';
+
+export async function getStaticPaths() {
+  const paths = stoneData.map((stone) => ({
+    params: { 
+      slug: `${stone.category}/${stone.slug}` 
+    },
+    props: { stone },
+  }));
+  
+  console.log('Generated static paths:', paths.length, 'total paths');
+  return paths;
+}
+
+const { stone } = Astro.props;
+
+console.log('Stone detail page - stone prop:', stone ? `${stone.name} (${stone.category})` : 'MISSING!');
+
+if (!stone) {
+  console.error('No stone found in props, redirecting to products');
+  return Astro.redirect('/products');
+}
+
+const title = `${stone.name} - ${stone.category === 'granite' ? 'Granite' : 'Marble'} - BMG`;
+const description = stone.description;
+---
+
+<Layout title={title}>
+  <main class="stone-detail-page">
+    <StoneDetail stone={stone} client:load />
+  </main>
+</Layout>
+
+<style>
+  .stone-detail-page {
+    min-height: 100vh;
+  }
+</style>

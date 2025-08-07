@@ -1,0 +1,185 @@
+export interface NewsItem {
+  id: string;
+  date: string;
+  title: {
+    th: string;
+    en: string;
+    it: string;
+    zh: string;
+    es: string;
+    ar: string;
+    hi: string;
+  };
+  excerpt: {
+    th: string;
+    en: string;
+    it: string;
+    zh: string;
+    es: string;
+    ar: string;
+    hi: string;
+  };
+  content?: {
+    th: string;
+    en: string;
+    it: string;
+    zh: string;
+    es: string;
+    ar: string;
+    hi: string;
+  };
+  image: string;
+  images?: string[];
+  link: string;
+}
+
+export const newsData: NewsItem[] = [
+  {
+    id: "1",
+    date: "1 ก.พ. 2565",
+    title: {
+      th: 'BMG บางกอกโมเดอร์นแกรนิต "ปูพื้นหินแกรนิตพิงค์พอรีโน่ ณ โบสถ์ วัดป่าดอยแสงธรรมญาณสัมปันโน ตำบลแม่นาวาง อำเภอแม่อาย จังหวัดเชียงใหม่"',
+      en: 'BMG Bangkok Modern Granite "Pink Porrino Granite Flooring Installation at Wat Pa Doi Saeng Dhamma Temple, Mae Na Wang, Mae Ai District, Chiang Mai Province"',
+      it: 'BMG Bangkok Modern Granite "Installazione Pavimento in Granito Rosa Porrino al Tempio Wat Pa Doi Saeng Dhamma, Mae Na Wang, Distretto Mae Ai, Provincia di Chiang Mai"',
+      zh: 'BMG曼谷现代花岗岩"在清迈府湄艾县Mae Na Wang的Wat Pa Doi Saeng Dhamma寺安装粉红色波里诺花岗岩地板"',
+      es: 'BMG Bangkok Modern Granite "Instalación de Suelo de Granito Rosa Porrino en el Templo Wat Pa Doi Saeng Dhamma, Mae Na Wang, Distrito Mae Ai, Provincia de Chiang Mai"',
+      ar: 'بي إم جي بانكوك مودرن جرانيت "تركيب أرضية الجرانيت الوردي بورينو في معبد وات با دوي سينج دهاما، ماي نا وانغ، مقاطعة ماي آي، محافظة شيانغ ماي"',
+      hi: 'बीएमजी बैंकॉक मॉडर्न ग्रेनाइट "वाट पा दोई सेंग धम्म मंदिर, माए ना वांग, माए आई जिला, चियांग माई प्रांत में पिंक पोरिनो ग्रेनाइट फ्लोरिंग स्थापना"',
+    },
+    excerpt: {
+      th: 'ด้วยทีมช่างฝีมือด้านการปูพื้นหินแกรนิตโดยเฉพาะ จากบริษัท บางกอกโมเดอร์นแกรนิต จำกัด โดยคุณศิริชัย ศรีเจริญล่ำซำ ตำแหน่งผู้จัดการ',
+      en: "With a specialized team of skilled granite flooring craftsmen from Bangkok Modern Granite Co., Ltd. under the management of Mr. Sirichai Sricharoenlamsa",
+      it: "Con un team specializzato di artigiani esperti nella posa di pavimenti in granito da Bangkok Modern Granite Co., Ltd. sotto la direzione del Sig. Sirichai Sricharoenlamsa",
+      zh: "由曼谷现代花岗岩有限公司的专业花岗岩地板工匠团队在经理Sirichai Sricharoenlamsa先生的管理下完成",
+      es: "Con un equipo especializado de artesanos expertos en pavimentos de granito de Bangkok Modern Granite Co., Ltd. bajo la gerencia del Sr. Sirichai Sricharoenlamsa",
+      ar: "مع فريق متخصص من الحرفيين المهرة في أرضيات الجرانيت من شركة بانكوك مودرن جرانيت المحدودة تحت إدارة السيد سيريشاي سريشارونلامسا",
+      hi: "बैंकॉक मॉडर्न ग्रेनाइट कंपनी लिमिटेड के श्री सिरिचाई श्रीचरोएनलामसा के प्रबंधन के तहत कुशल ग्रेनाइट फ्लोरिंग कारीगरों की एक विशेष टीम के साथ",
+    },
+    content: {
+      th: 'ด้วยทีมช่างฝีมือด้านการปูพื้นหินแกรนิตโดยเฉพาะ จากบริษัท บางกอกโมเดอร์นแกรนิต จำกัด โดยคุณศิริชัย ศรีเจริญล่ำซำ ตำแหน่งผู้จัดการ มีสำนักงานใหญ่ที่ถนนบรมราชชนนี กรุงเทพฯ และโรงงานแปรรูปหินที่อำเภอเมือง จังหวัดตาก\n\nหินแกรนิต พิงค์พอริโน่ อาบน้ำยากันซึม มีทั้งแบบผิวมันปูพื้นภายใน และผิวแอนทีคสำหรับปูบันไดกันลื่น ที่เห็นในภาพงานนี้คุณศิริชัย ออกแบบให้เป็นพิเศษ สั่งตัดขนาด 60 x 90 นิ้ว คัดสีและลายให้กลมกลืนเข้ากันได้หมด ทำให้เราไม่ต้องเกรงกลัวว่าจะได้หินแกรนิตไม่มีมาตรฐาน หรือลายไม่สวยไม่เข้ากัน\n\nใครที่เคยสั่งทำหินแกรนิตคงจะรู้ดีว่า ถ้าเจอคนขายไม่ดี ช่างไม่ดี คงจะมีเรื่องปวดหัวให้ได้ตามแก้กันไม่หวาดไม่ไหว แต่งานนี้ เราปล่อยคุณศิริชัย ทำเต็มที่เลย เพราะเห็นศรัทธา และความตั้งใจอย่างแรงกล้า ก็ต้องยอมรับว่า คุณศิริชัย เป็นคนเก่ง และตั้งใจทำงานจริงๆ เอาใจใส่ดีมากทุกขั้นตอนเลยทีเดียว ทั้งใจบุญอีกต่างหาก\n\nเราก็เลยไม่ต้องปวดเศียรเวียนเกล้าเรื่องหินแกรนิตอีกต่อไป มิฉะนั้นแล้ว ก็ยังไม่รู้ว่า งานจะดำเนินไปได้อย่างไร เพราะโบสถ์เราก็หลังใหญ่ไม่ใช่น้อย 555 เพราะเราเอง นิสัยไม่ค่อยชอบอะไรที่มันเล็กๆ\n\nเอ้า! ใครจะว่าโฆษณาให้ก็ยอมรับล่ะ เพราะของเขาดีจริงๆนี่ ไม่ส่งเสริมคนดี จะไปส่งเสริมใคร ดังนั้น ใครจะปูหินแกรนิต อยากได้ของดีมีมาตรฐาน งานเนี๊ยบ และที่สำคัญ คือ ซื่อตรง ก็ต้องนี่เลย ติดต่อไปที่นี่ บริษัทบางกอกโมเดอร์นแกรนิต จำกัด โดยทีมงานของ คุณศิริชัย ศรีเจริญล่ำซำ และทีมงานมืออาชีพทุกคนแน่นอน\n\nอ่านเพิ่มเติม: www.doisaengdham.org/สายธารธรรม-โดยเจ้าอาวาส/ในที่สุดก็ถึงเวลาที่ต้องปูหินแกรนิต-พื้นโบสถ์',
+      en: "With a specialized team of skilled granite flooring craftsmen from Bangkok Modern Granite Co., Ltd. under Mr. Sirichai Sricharoenlamsa, Manager, with headquarters on Borommaratchachonnani Road, Bangkok, and a stone processing factory in Muang District, Tak Province.\n\nPink Porrino granite, treated with waterproofing solution, available in both glossy finish for interior flooring and antique finish for non-slip stairs. In this project, Mr. Sirichai specially designed and ordered custom-cut sizes of 60 x 90 inches, carefully selecting colors and patterns to harmoniously blend together, ensuring we don't have to worry about substandard granite or mismatched patterns.\n\nAnyone who has ordered granite work knows that if you encounter bad sellers or poor craftsmen, you'll have endless headaches trying to fix problems. But for this job, we let Mr. Sirichai work to his full potential because we saw his faith and strong commitment. We must admit that Mr. Sirichai is skilled and genuinely dedicated to his work, paying great attention to every step, plus having a generous heart.\n\nSo we no longer have to worry about granite issues. Otherwise, we still wouldn't know how the work would proceed, because our temple hall is quite large, not small at all! Because personally, I don't really like anything small.\n\nWell! Anyone who says this is advertising, I accept it, because his work is truly good. If we don't promote good people, who will we promote? Therefore, anyone who wants granite flooring, wants good quality with standards, neat work, and most importantly, honesty, this is the place to go. Contact Bangkok Modern Granite Co., Ltd. through Mr. Sirichai Sricharoenlamsa's team and all professional team members.\n\nRead more: www.doisaengdham.org/สายธารธรรม-โดยเจ้าอาวาส/ในที่สุดก็ถึงเวลาที่ต้องปูหินแกรนิต-พื้นโบสถ์",
+      it: "Con un team specializzato di artigiani esperti nella posa di pavimenti in granito da Bangkok Modern Granite Co., Ltd. sotto il Sig. Sirichai Sricharoenlamsa, Manager, con sede principale su Borommaratchachonnani Road, Bangkok, e una fabbrica di lavorazione della pietra nel Distretto di Muang, Provincia di Tak.\n\nGranito Rosa Porrino, trattato con soluzione impermeabilizzante, disponibile sia in finitura lucida per pavimenti interni che in finitura anticata per scale antiscivolo. In questo progetto, il Sig. Sirichai ha progettato appositamente e ordinato taglie personalizzate di 60 x 90 pollici, selezionando attentamente colori e motivi per armoniosamente fondersi insieme, assicurando che non dobbiamo preoccuparci di granito di qualità inferiore o motivi non coordinati.\n\nChiunque abbia ordinato lavori in granito sa che se incontri cattivi venditori o artigiani scadenti, avrai infiniti mal di testa cercando di risolvere i problemi. Ma per questo lavoro, abbiamo lasciato che il Sig. Sirichai lavorasse al massimo delle sue potenzialità perché abbiamo visto la sua fede e forte impegno. Dobbiamo ammettere che il Sig. Sirichai è abile e genuinamente dedicato al suo lavoro, prestando grande attenzione ad ogni passo, oltre ad avere un cuore generoso.\n\nQuindi non dobbiamo più preoccuparci dei problemi del granito. Altrimenti, non sapremmo ancora come procederebbe il lavoro, perché la nostra sala del tempio è piuttosto grande, non piccola affatto! Perché personalmente, non mi piace molto nulla di piccolo.\n\nBene! Chiunque dica che questa è pubblicità, lo accetto, perché il suo lavoro è davvero buono. Se non promuoviamo le brave persone, chi promuoveremo? Pertanto, chiunque voglia pavimenti in granito, voglia buona qualità con standard, lavoro ordinato e, soprattutto, onestà, questo è il posto giusto. Contattate Bangkok Modern Granite Co., Ltd. attraverso il team del Sig. Sirichai Sricharoenlamsa e tutti i membri del team professionale.\n\nLeggi di più: www.doisaengdham.org/สายธารธรรม-โดยเจ้าอาวาส/ในที่สุดก็ถึงเวลาที่ต้องปูหินแกรนิต-พื้นโบสถ์",
+      zh: "由曼谷现代花岗岩有限公司的专业花岗岩地板工匠团队在经理Sirichai Sricharoenlamsa先生的领导下完成，公司总部位于曼谷Borommaratchachonnani路，在达府府城区设有石材加工厂。\\n\\n粉红色波里诺花岗岩，经防水溶液处理，有光面室内地板和仿古防滑楼梯两种表面处理。在这个项目中，Sirichai先生特别设计并定制切割60 x 90英寸的尺寸，精心挑选颜色和图案以和谐融合，确保我们不必担心低标准的花岗岩或不匹配的图案。\\n\\n任何订购过花岗岩工程的人都知道，如果遇到不好的卖家或差劲的工匠，你会有无尽的头痛试图解决问题。但对于这项工作，我们让Sirichai先生发挥他的全部潜力，因为我们看到了他的信仰和强烈的承诺。我们必须承认Sirichai先生技术娴熟，真正致力于他的工作，对每一个步骤都非常用心，而且还有一颗慷慨的心。\\n\\n所以我们不再需要担心花岗岩问题。否则，我们仍然不知道工作将如何进行，因为我们的寺庙大厅相当大，一点也不小！因为就我个人而言，我不太喜欢任何小的东西。\\n\\n好吧！任何人说这是广告，我都接受，因为他的工作确实很好。如果我们不推广好人，我们要推广谁呢？因此，任何想要花岗岩地板、想要有标准的好质量、整洁的工作，最重要的是诚实的人，这里就是正确的地方。请通过Sirichai Sricharoenlamsa先生的团队和所有专业团队成员联系曼谷现代花岗岩有限公司。\\n\\n阅读更多：www.doisaengdham.org/สายธารธรรม-โดยเจ้าอาวาส/ในที่สุดก็ถึงเวลาที่ต้องปูหินแกรนิต-พื้นโบสถ์",
+      es: "Con un equipo especializado de artesanos expertos en pavimentos de granito de Bangkok Modern Granite Co., Ltd. bajo el Sr. Sirichai Sricharoenlamsa, Gerente, con sede en Borommaratchachonnani Road, Bangkok, y una fábrica de procesamiento de piedra en el Distrito Muang, Provincia de Tak.\\n\\nGranito Rosa Porrino, tratado con solución impermeabilizante, disponible tanto en acabado brillante para pisos interiores como en acabado antiguo para escaleras antideslizantes. En este proyecto, el Sr. Sirichai diseñó especialmente y ordenó tamaños cortados a medida de 60 x 90 pulgadas, seleccionando cuidadosamente colores y patrones para fusionarse armoniosamente, asegurando que no tengamos que preocuparnos por granito de calidad inferior o patrones descoordinados.\\n\\nCualquiera que haya ordenado trabajo de granito sabe que si encuentras malos vendedores o artesanos deficientes, tendrás dolores de cabeza infinitos tratando de arreglar problemas. Pero para este trabajo, dejamos que el Sr. Sirichai trabajara a su máximo potencial porque vimos su fe y fuerte compromiso. Debemos admitir que el Sr. Sirichai es hábil y genuinamente dedicado a su trabajo, prestando gran atención a cada paso, además de tener un corazón generoso.\\n\\nAsí que ya no tenemos que preocuparnos por problemas de granito. De otra manera, aún no sabríamos cómo procedería el trabajo, porque nuestro salón del templo es bastante grande, ¡no pequeño en absoluto! Porque personalmente, realmente no me gusta nada pequeño.\\n\\n¡Bueno! Cualquiera que diga que esto es publicidad, lo acepto, porque su trabajo es verdaderamente bueno. Si no promovemos a las buenas personas, ¿a quién vamos a promover? Por lo tanto, cualquiera que quiera pisos de granito, quiera buena calidad con estándares, trabajo ordenado y, lo más importante, honestidad, este es el lugar correcto. Contacta a Bangkok Modern Granite Co., Ltd. a través del equipo del Sr. Sirichai Sricharoenlamsa y todos los miembros del equipo profesional.\\n\\nLee más: www.doisaengdham.org/สายธารธรรม-โดยเจ้าอาวาส/ในที่สุดก็ถึงเวลาที่ต้องปูหินแกรนิต-พื้นโบสถ์",
+      ar: "مع فريق متخصص من الحرفيين المهرة في أرضيات الجرانيت من شركة بانكوك مودرن جرانيت المحدودة تحت إدارة السيد سيريشاي سريشارونلامسا، المدير، مع المقر الرئيسي في طريق بوروماراتشاتشونناني، بانكوك، ومصنع معالجة الأحجار في منطقة موانغ، محافظة تاك.\\n\\nالجرانيت الوردي بورينو، معالج بمحلول مقاوم للماء، متوفر بكل من التشطيب اللامع للأرضيات الداخلية والتشطيب العتيق للسلالم المضادة للانزلاق. في هذا المشروع، صمم السيد سيريشاي خصيصاً وطلب أحجاماً مقطوعة حسب الطلب بقياس 60 × 90 بوصة، مختاراً بعناية الألوان والأنماط لتنسجم بشكل متناغم، مضمناً أننا لا نحتاج للقلق حول الجرانيت دون المستوى أو الأنماط غير المتطابقة.\\n\\nأي شخص طلب أعمال الجرانيت يعرف أنه إذا واجهت بائعين سيئين أو حرفيين ضعفاء، ستواجه صداعاً لا نهائياً في محاولة إصلاح المشاكل. لكن لهذا العمل، تركنا السيد سيريشاي يعمل بكامل إمكانياته لأننا رأينا إيمانه والتزامه القوي. يجب أن نعترف أن السيد سيريشاي ماهر ومكرس حقاً لعمله، يولي اهتماماً كبيراً لكل خطوة، بالإضافة إلى كونه صاحب قلب كريم.\\n\\nلذا لم نعد بحاجة للقلق حول مسائل الجرانيت. وإلا، ما زلنا لا نعرف كيف سيمضي العمل، لأن قاعة معبدنا كبيرة جداً، وليست صغيرة على الإطلاق! لأنني شخصياً، لا أحب حقاً أي شيء صغير.\\n\\nحسناً! أي شخص يقول أن هذا إعلان، أقبل ذلك، لأن عمله جيد حقاً. إذا لم نروج للأشخاص الجيدين، فمن سنروج له؟ لذلك، أي شخص يريد أرضيات الجرانيت، يريد جودة جيدة بمعايير، عمل مرتب، والأهم من ذلك، الصدق، هذا هو المكان الصحيح. اتصل ببانكوك مودرن جرانيت المحدودة من خلال فريق السيد سيريشاي سريشارونلامسا وجميع أعضاء الفريق المحترفين.\\n\\nاقرأ المزيد: www.doisaengdham.org/สายธารธรรม-โดยเจ้าอาวาส/ในที่สุดก็ถึงเวลาที่ต้องปูหินแกรนิต-พื้นโบสถ์",
+      hi: "बैंकॉक मॉडर्न ग्रेनाइट कंपनी लिमिटेड के श्री सिरिचाई श्रीचरोएनलामसा, प्रबंधक के नेतृत्व में कुशल ग्रेनाइट फ्लोरिंग कारीगरों की एक विशेष टीम के साथ, जिसका मुख्यालय बोरोमराचचोनानी रोड, बैंकॉक में है और तक प्रांत के मुआंग जिले में एक पत्थर प्रसंस्करण कारखाना है।\\n\\nपिंक पोरिनो ग्रेनाइट, वाटरप्रूफिंग सॉल्यूशन के साथ उपचारित, आंतरिक फर्श के लिए चमकदार फिनिश और एंटी-स्लिप सीढ़ियों के लिए एंटीक फिनिश दोनों में उपलब्ध है। इस परियोजना में, श्री सिरिचाई ने विशेष रूप से डिज़ाइन किया और 60 x 90 इंच के कस्टम-कट आकार का आदेश दिया, रंगों और पैटर्न को सावधानी से चुना ताकि वे सामंजस्यपूर्ण रूप से मिश्रित हों, यह सुनिश्चित करते हुए कि हमें घटिया ग्रेनाइट या गैर-मिलान पैटर्न के बारे में चिंता करने की आवश्यकता नहीं है।\\n\\nकोई भी व्यक्ति जिसने ग्रेनाइट का काम ऑर्डर किया है, जानता है कि यदि आप बुरे विक्रेताओं या खराब कारीगरों का सामना करते हैं, तो आपको समस्याओं को ठीक करने की कोशिश में अनंत सिरदर्द होगा। लेकिन इस काम के लिए, हमने श्री सिरिचाई को अपनी पूरी क्षमता से काम करने दिया क्योंकि हमने उनकी आस्था और मजबूत प्रतिबद्धता देखी। हमें स्वीकार करना चाहिए कि श्री सिरिचाई कुशल हैं और वास्तव में अपने काम के लिए समर्पित हैं, हर कदम पर बहुत ध्यान देते हैं, साथ ही एक उदार दिल रखते हैं।\\n\\nइसलिए हमें अब ग्रेनाइट के मुद्दों के बारे में चिंता करने की आवश्यकता नहीं है। अन्यथा, हम अभी भी नहीं जानते कि काम कैसे आगे बढ़ेगा, क्योंकि हमारा मंदिर हॉल काफी बड़ा है, बिल्कुल भी छोटा नहीं! क्योंकि व्यक्तिगत रूप से, मुझे वास्तव में कोई भी छोटी चीज़ पसंद नहीं है।\\n\\nअच्छा! कोई भी व्यक्ति जो कहता है कि यह विज्ञापन है, मैं इसे स्वीकार करता हूं, क्योंकि उनका काम वास्तव में अच्छा है। यदि हम अच्छे लोगों को बढ़ावा नहीं देते, तो हम किसे बढ़ावा देंगे? इसलिए, कोई भी व्यक्ति जो ग्रेनाइट फ्लोरिंग चाहता है, मानकों के साथ अच्छी गुणवत्ता, साफ-सुथरा काम, और सबसे महत्वपूर्ण, ईमानदारी चाहता है, यह सही जगह है। श्री सिरिचाई श्रीचरोएनलामसा की टीम और सभी पेशेवर टीम सदस्यों के माध्यम से बैंकॉक मॉडर्न ग्रेनाइट कंपनी लिमिटेड से संपर्क करें।\\n\\nऔर पढ़ें: www.doisaengdham.org/สายธารธรรม-โดยเจ้าอาวาส/ในที่สุดก็ถึงเวลาที่ต้องปูหินแกรนิต-พื้นโบสถ์",
+    },
+    image: "/src/assets/News/1/img_2202011649020.png",
+    images: [
+      "/src/assets/News/1/img_2202011649020.png",
+      "/src/assets/News/1/img_2202011653380.png",
+      "/src/assets/News/1/img_2202011653381.png",
+      "/src/assets/News/1/img_2202011653382.png",
+      "/src/assets/News/1/img_2202011653383.png",
+      "/src/assets/News/1/img_2202011653384.png",
+      "/src/assets/News/1/img_2202011653385.png",
+      "/src/assets/News/1/img_2202011653386.png",
+      "/src/assets/News/1/img_2202011653387.png",
+      "/src/assets/News/1/img_2202011655420.png",
+      "/src/assets/News/1/img_2202011655421.png",
+      "/src/assets/News/1/img_2202011655560.png"
+    ],
+    link: "/news/1",
+  },
+  {
+    id: "2",
+    date: "21 ส.ค. 2564",
+    title: {
+      th: 'BMG บางกอกโมเดอร์นแกรนิต "ร่วมบริจาคชุด PPE 100 ชุด, เครื่อง Oximeter จำนวน 20 เครื่อง, Antigen Test จำนวน 20 ชุด ป้องกันไวรัสโควิด-19"',
+      en: 'BMG Bangkok Modern Granite "Donated 100 PPE Suits, 20 Oximeters, and 20 Antigen Test Kits for COVID-19 Protection"',
+      it: 'BMG Bangkok Modern Granite "Donato 100 Tute PPE, 20 Ossimetri e 20 Kit Test Antigenici per Protezione COVID-19"',
+      zh: 'BMG曼谷现代花岗岩"捐赠100套PPE、20台血氧仪和20套抗原检测试剂盒用于COVID-19防护"',
+      es: 'BMG Bangkok Modern Granite "Donó 100 Trajes PPE, 20 Oxímetros y 20 Kits de Pruebas de Antígenos para Protección contra COVID-19"',
+      ar: 'بي إم جي بانكوك مودرن جرانيت "تبرعت بـ 100 بدلة PPE و20 جهاز قياس الأكسجين و20 مجموعة اختبار مستضد للحماية من كوفيد-19"',
+      hi: 'बीएमजी बैंकॉक मॉडर्न ग्रेनाइट "ने COVID-19 सुरक्षा के लिए 100 PPE सूट, 20 ऑक्सीमीटर, और 20 एंटीजन टेस्ट किट दान किए"',
+    },
+    excerpt: {
+      th: "วันที่ 21 ส.ค.64 บจก.บางกอกโมเดอร์นแกรนิต ร่วมบริจาคชุด PPE, เครื่อง Oximeter และ Antigen Test ให้กับสมาคมหนังสือพิมพ์ส่วนภูมิภาคแห่งประเทศไทย",
+      en: "On August 21, 2021, Bangkok Modern Granite Co., Ltd. donated PPE suits, Oximeters, and Antigen Tests to the Provincial Newspaper Association of Thailand",
+      it: "Il 21 agosto 2021, Bangkok Modern Granite Co., Ltd. ha donato tute PPE, ossimetri e test antigenici all'Associazione dei Giornali Provinciali della Thailandia",
+      zh: "2021年8月21日，曼谷现代花岗岩有限公司向泰国省级报纸协会捐赠了PPE防护服、血氧仪和抗原检测",
+      es: "El 21 de agosto de 2021, Bangkok Modern Granite Co., Ltd. donó trajes PPE, oxímetros y pruebas de antígenos a la Asociación de Periódicos Provinciales de Tailandia",
+      ar: "في 21 أغسطس 2021، تبرعت شركة بانكوك مودرن جرانيت المحدودة ببدل PPE وأجهزة قياس الأكسجين واختبارات المستضد إلى جمعية الصحف الإقليمية في تايلاند",
+      hi: "21 अगस्त 2021 को, बैंकॉक मॉडर्न ग्रेनाइट कंपनी लिमिटेड ने थाईलैंड के प्रांतीय अखबार संघ को PPE सूट, ऑक्सीमीटर और एंटीजन टेस्ट दान किए",
+    },
+    content: {
+      th: 'วันที่ 21 ส.ค.64 ที่ บจก.บางกอกโมเดอร์นแกรนิต ถนนบรมราชชนนี เขตทวีวัฒนา กรุงเทพฯ นายวิศิษฎ์ ลิมป์ธีระกุล อดีตรองอธิบดีกรมที่ดิน ร่วมกับนายศิริชัย ศรีเจริญล่ำซำ ผู้บริหาร บจก.บางกอกโมเดอร์นแกรนิต และคณะ ร่วมบริจาคชุด PPE 100 ชุด, เครื่อง Oximeter จำนวน 20 เครื่อง, Antigen Test จำนวน 20 ชุด, มอบให้แก่นายอนันต์ นิลมานนท์ นายกสมาคมหนังสือพิมพ์ส่วนภูมิภาคแห่งประเทศไทย (สภท.56ปี) เพื่อส่งมอบต่อให้แก่กลุ่ม "ทีมงานทำดีในความมืด" และ กลุ่ม "ทำดีเพื่อพ่อหลวง"\n\nซึ่งทั้งสองกลุ่มนี้เป็นจิตอาสาที่มีทั้งข้าราชการ และผู้สื่อข่าว/สื่อมวลชน มาร่วมช่วยเหลือประชาชน ที่ได้รับผลกระทบจากไวรัส โควิด-19 ทั้งระดับสีเขียว สีเหลือง และสีแดง แม้กระทั่งผู้ที่เสียชีวิตจากโควิด-19 โดยการมอบอุปกรณ์ป้องกันเชื้อไวรัสโควิด\n\nนายศิริชัย กล่าวว่า "ท่านรองวิศิษฎ์ และคณะ ได้ปรึกษาหารือกันเกี่ยวกับปัญหาไวรัสโควิด-19 ระบาด ในเขตกรุงเทพฯ และปริมณฑล จนมียอดผู้ป่วยและเสียชีวิตวันละหลายคน ตนและคณะจึงได้ร่วมกันบริจาคเงินในกลุ่มเพื่อนได้มาเป็นจำนวนหนึ่ง และนำเงินดังกล่าว ไปจัดซื้อเครื่องทำออกซิเจน, ชุดPPE, หมวกคลุมผม, ผ้าคลุมร้องเท้า, เครื่อง Oximeter, Antigen Test, ฯลฯ มอบให้กับประชาชนผู้เดือดร้อนทั้งส่วนกลางและส่วนภูมิภาค\n\nโดยในวันนี้ได้มีโอกาสได้มอบอุปกรณ์ป้องกันโควิดให้กับนายกสมาคมหนังสือพิมพ์ส่วนภูมิภาคแห่งประเทศไทย และยังได้มอบเครื่องทำออกซิเจน 2 เครื่อง มูลค่าประมาณ 40,000 บาท ให้กับชุมชนในตำบลที่ห่างไกลของจังหวัดร้อยเอ็ด ที่มีผู้ป่วยโควิดร่วมร้อยคน โดยมีเจ้าหน้าที่เดินทางมารับด้วยตนเอง ซึ่งตนและคณะ มีความยินดีที่จะช่วยเหลือสังคมและผู้ที่ได้รับความเดือดร้อนในช่วงโควิดระบาดนี้ต่อไป"',
+      en: "On August 21, 2021, at Bangkok Modern Granite Co., Ltd. on Borommaratchachonnani Road, Thawi Watthana District, Bangkok, Mr. Wisit Limtheerakul, former Deputy Director-General of the Department of Lands, together with Mr. Sirichai Sricharoenlamsa, Executive of Bangkok Modern Granite Co., Ltd. and their team, donated 100 PPE suits, 20 Oximeters, and 20 Antigen Test kits to Mr. Anant Nilmanon, President of the Provincial Newspaper Association of Thailand (56 years), to be delivered to the 'Good Deeds in the Dark Team' and the 'Good Deeds for the King' groups.\n\nBoth groups are volunteers consisting of government officials and journalists/media personnel who help people affected by COVID-19 across green, yellow, and red zones, including those who have died from COVID-19, by providing virus protection equipment.\n\nMr. Sirichai said, 'Mr. Deputy Wisit and the team discussed the COVID-19 outbreak problem in Bangkok and surrounding areas, with daily casualties of several patients and deaths. We and the team have jointly donated money among friends to a certain amount and used that money to purchase oxygen machines, PPE suits, hair covers, shoe covers, Oximeters, Antigen Tests, etc., to give to distressed people both centrally and regionally.\n\nToday, we had the opportunity to provide COVID protection equipment to the President of the Provincial Newspaper Association of Thailand and also donated 2 oxygen machines worth approximately 40,000 baht to remote communities in Roi Et Province with about a hundred COVID patients, with officials traveling to receive them personally. We and the team are pleased to continue helping society and those suffering during this COVID outbreak.'",
+      it: "Il 21 agosto 2021, presso Bangkok Modern Granite Co., Ltd. su Borommaratchachonnani Road, Distretto Thawi Watthana, Bangkok, il Sig. Wisit Limtheerakul, ex Vice Direttore Generale del Dipartimento delle Terre, insieme al Sig. Sirichai Sricharoenlamsa, Dirigente di Bangkok Modern Granite Co., Ltd. e il loro team, hanno donato 100 tute PPE, 20 ossimetri e 20 kit di test antigenici al Sig. Anant Nilmanon, Presidente dell'Associazione dei Giornali Provinciali della Thailandia (56 anni), da consegnare ai gruppi 'Team delle Buone Azioni nel Buio' e 'Buone Azioni per il Re'.\n\nEntrambi i gruppi sono volontari composti da funzionari governativi e giornalisti/personale dei media che aiutano le persone colpite da COVID-19 nelle zone verdi, gialle e rosse, compresi coloro che sono morti di COVID-19, fornendo attrezzature di protezione contro i virus.\n\nIl Sig. Sirichai ha detto: 'Il Vice Sig. Wisit e il team hanno discusso il problema dell'epidemia COVID-19 a Bangkok e nelle aree circostanti, con vittime giornaliere di diversi pazienti e morti. Noi e il team abbiamo congiuntamente donato denaro tra amici per un certo importo e usato quel denaro per acquistare macchine per l'ossigeno, tute PPE, copricapo, copriscarpe, ossimetri, test antigenici, ecc., da dare alle persone in difficoltà sia centralmente che regionalmente. Oggi, abbiamo avuto l'opportunità di fornire attrezzature di protezione COVID al Presidente dell'Associazione dei Giornali Provinciali della Thailandia e abbiamo anche donato 2 macchine per l'ossigeno del valore di circa 40.000 baht alle comunità remote nella Provincia di Roi Et con circa cento pazienti COVID, con funzionari che viaggiano per riceverli personalmente. Noi e il team siamo lieti di continuare ad aiutare la società e coloro che soffrono durante questa epidemia COVID.'",
+      zh: "2021年8月21日，在曼谷Thawi Watthana区Borommaratchachonnani路的曼谷现代花岗岩有限公司，前土地厅副厅长Wisit Limtheerakul先生与曼谷现代花岗岩有限公司执行官Sirichai Sricharoenlamsa先生及其团队，向泰国省级报纸协会主席Anant Nilmanon先生（56年）捐赠了100套PPE防护服、20台血氧仪和20套抗原检测试剂盒，用于交付给黑暗中的善行团队和为国王行善团体。\\n\\n这两个团体都是由政府官员和记者媒体人员组成的志愿者，他们通过提供病毒防护设备来帮助绿色、黄色和红色区域受COVID-19影响的人们，包括那些死于COVID-19的人。\\n\\nSirichai先生说，Wisit副先生和团队讨论了曼谷和周边地区COVID-19疫情爆发问题，每天有数名患者和死亡病例。我们和团队在朋友中共同捐款到一定数额，并用这些钱购买制氧机、PPE防护服、帽子、鞋套、血氧仪、抗原检测等，给予中央和地区的困难民众。今天，我们有机会向泰国省级报纸协会主席提供COVID防护设备，还向有约一百名COVID患者的呵叻府偏远社区捐赠了2台价值约40000泰铢的制氧机，官员们亲自前往接收。我们和团队很高兴在这次COVID疫情期间继续帮助社会和那些受苦的人们。"
+    },
+    image: "/src/assets/News/2/1.jpg",
+    images: ["/src/assets/News/2/1.jpg"],
+    link: "/news/2",
+  },
+  {
+    id: "3",
+    date: "7 ม.ค. 2562",
+    title: {
+      th: "BMG บางกอกโมเดอร์น สนับสนุนการจัดทำของที่ระลึกงานมุทิตาสักการะ ธรรมมงคลวัฒนายุกาล ๙๙ปี The wisdom of mind",
+      en: "BMG Bangkok Modern Supports Creating Commemorative Items for the 99th Birthday Celebration of Dharma Mongkol Wattana",
+      it: "BMG Bangkok Modern Supporta la Creazione di Oggetti Commemorativi per la Celebrazione del 99º Compleanno di Dharma Mongkol Wattana",
+      zh: "BMG曼谷现代支持制作法蒙功瓦塔纳99岁生日庆典纪念品",
+      es: "BMG Bangkok Modern Apoya la Creación de Artículos Conmemorativos para la Celebración del 99º Cumpleaños de Dharma Mongkol Wattana",
+      ar: "بي إم جي بانكوك مودرن تدعم إنشاء العناصر التذكارية للاحتفال بعيد الميلاد الـ99 لدارما مونغكول واتانا",
+      hi: "बीएमजी बैंकॉक मॉडर्न धर्म मंगल वत्तन की 99वीं जयंती समारोह के लिए स्मारक वस्तुओं के निर्माण का समर्थन करता है",
+    },
+    excerpt: {
+      th: "ที่ระลึกงานมุทิตาสักการะ ธรรมมงคลวัฒนายุกาล ๙๙ ปี พระธรรมมงคลญาณ (หลวงพ่อวิริยังค์ สิรินธโร) ตามอายุวัฒนะมงคล ๙๙ ปีของพระอาจาร์ยหลวงพ่อ",
+      en: "Commemorative items for the 99th birthday celebration of Phra Dharma Mongkol Yana (Luang Por Wiriyangk Sirinthoro) in honor of the venerable master's 99th auspicious age",
+      it: "Oggetti commemorativi per la celebrazione del 99º compleanno di Phra Dharma Mongkol Yana (Luang Por Wiriyangk Sirinthoro) in onore dei 99 anni di età propizia del venerabile maestro",
+      zh: "法蒙功雅纳师父（隆波威里扬·西林陀罗）99岁生日庆典纪念品，纪念这位尊敬导师99岁的吉祥年龄",
+      es: "Artículos conmemorativos para la celebración del 99º cumpleaños de Phra Dharma Mongkol Yana (Luang Por Wiriyangk Sirinthoro) en honor a los 99 años auspiciosos del venerable maestro",
+      ar: "العناصر التذكارية للاحتفال بعيد الميلاد الـ99 للأستاذ فرا دارما مونغكول يانا (لوانغ بور ويريانغك سيرينثورو) تكريماً للعمر المبارك الـ99 للمعلم الجليل",
+      hi: "आदरणीय गुरु की 99वीं शुभ आयु के सम्मान में फ्रा धर्म मंगल याना (लुआंग पोर विरियंग सिरिंथोरो) की 99वीं जन्मदिन समारोह की स्मारक वस्तुएं",
+    },
+    content: {
+      th: "ที่ระลึกงานมุทิตาสักการะ ธรรมมงคลวัฒนายุกาล ๙้ ปี พระธรรมมงคลญาณ (หลวงพ่อวิริยังค์ สิรินธโร) ตามอายุวัฒนะมงคล ๙๙ ปีของพระอาจาร์ยหลวงพ่อ\n\nโดยชิ้นงานแกะสลักขึ้นรูปด้วยหินอ่อนไวท์คาราร่าสีขาวจากประเทศอิตาลี และฐานเป็นหินอ่อนสีเขียวอิตาลี\n\nBMG บางกอกโมเดอร์นแกรนิต ได้ให้เกียรติและมีความยินดีที่ได้ร่วมสนับสนุนการจัดทำของที่ระลึกอันมีคุณค่านี้ เพื่อเป็นการแสดงความเคารพและศรัทธาต่อพระอาจาร์ยหลวงพ่อที่ได้อุทิศตนเพื่อการเผยแผ่พระธรรม และเป็นแสงสว่างทางจิตใจให้กับผู้คน\n\nการสร้างสรรค์ชิ้นงานนี้สะท้อนถึงปรัชญา 'The wisdom of mind' ที่เป็นแก่นแท้ของคำสอนที่พระอาจาร์ยได้ถ่ายทอด ด้วยความประณีตและความใส่ใจในทุกรายละเอียด เพื่อให้เกิดเป็นสิ่งที่มีคุณค่าทั้งทางศิลปะและจิตวิญญาณ",
+      en: "Commemorative items for the 99th birthday celebration of Phra Dharma Mongkol Yana (Luang Por Wiriyangk Sirinthoro) in honor of the venerable master's 99th auspicious age.\n\nThe carved artwork is crafted from white Italian Carrara marble with a base made from Italian green marble.\n\nBMG Bangkok Modern Granite is honored and pleased to support the creation of this valuable commemorative item, as an expression of respect and faith toward the venerable master who has dedicated himself to spreading the Dharma and being a spiritual light for people.\n\nThe creation of this piece reflects the philosophy of 'The wisdom of mind,' which is the essence of the teachings that the master has transmitted, with meticulous care and attention to every detail to create something valuable both artistically and spiritually.",
+      it: "Oggetti commemorativi per la celebrazione del 99º compleanno di Phra Dharma Mongkol Yana (Luang Por Wiriyangk Sirinthoro) in onore dei 99 anni di età propizia del venerabile maestro.\n\nL'opera d'arte scolpita è realizzata in marmo bianco di Carrara italiano con una base in marmo verde italiano.\n\nBMG Bangkok Modern Granite è onorata e lieta di sostenere la creazione di questo prezioso oggetto commemorativo, come espressione di rispetto e fede verso il venerabile maestro che si è dedicato alla diffusione del Dharma ed è stato una luce spirituale per le persone.\n\nLa creazione di questo pezzo riflette la filosofia de 'La saggezza della mente,' che è l'essenza degli insegnamenti che il maestro ha trasmesso, con cura meticolosa e attenzione ad ogni dettaglio per creare qualcosa di prezioso sia artisticamente che spiritualmente.",
+      zh: "法蒙功雅纳师父（隆波威里扬·西林陀罗）99岁生日庆典纪念品，纪念这位尊敬导师99岁的吉祥年龄。\\n\\n雕刻艺术品采用意大利卡拉拉白色大理石制作，底座为意大利绿色大理石。\\n\\nBMG曼谷现代花岗岩很荣幸也很高兴能够支持制作这件珍贵的纪念品，以表达对这位献身于弘扬佛法、为人们带来精神光明的尊敬导师的敬意和信仰。\\n\\n这件作品的创作体现了心灵智慧的哲学，这是导师所传授教诲的精髓，以精心细致的关怀和对每一个细节的关注，创造出在艺术和精神上都有价值的东西。",
+    },
+    image: "/src/assets/News/4/img01.jpg",
+    images: [
+      "/src/assets/News/4/img01.jpg",
+      "/src/assets/News/4/img_2202021354090.jpg",
+      "/src/assets/News/4/img_2202021354091.jpg",
+      "/src/assets/News/4/img_2202021354092.jpg",
+      "/src/assets/News/4/img_2202021354093.jpg",
+      "/src/assets/News/4/img_2202021354094.jpg",
+      "/src/assets/News/4/img_2202021354095.jpg"
+    ],
+    link: "/news/3",
+  },
+  {
+    id: "4",
+    date: "11 ก.พ. 2564",
+    title: {
+      th: "คุณพ่อชูศักดิ์ คุณแม่ศรี ศรีเจริญล่ำซำ คุณศิริชัย ศรีเจริญล่ำซำ และครอบครัว ณ วัดถ้ำจุนโท อ.แม่สอด จ.ตาก บริจาคเครื่องฟอกไต มูลค่า 460,000 บาท",
+      en: "Mr. Chusak, Mrs. Sri Sricharoenlamsa, Mr. Sirichai Sricharoenlamsa and Family at Wat Tham Jun To, Mae Sot District, Tak Province Donated Dialysis Machine Worth 460,000 Baht",
+      it: "Il Sig. Chusak, la Sig.ra Sri Sricharoenlamsa, il Sig. Sirichai Sricharoenlamsa e Famiglia al Tempio Wat Tham Jun To, Distretto di Mae Sot, Provincia di Tak Hanno Donato una Macchina per Dialisi del Valore di 460.000 Baht",
+      zh: "Chusak先生、Sri Sricharoenlamsa女士、Sirichai Sricharoenlamsa先生及家人在达府湄索县Wat Tham Jun To寺捐赠价值460,000泰铢的透析机",
+      es: "El Sr. Chusak, la Sra. Sri Sricharoenlamsa, el Sr. Sirichai Sricharoenlamsa y Familia en el Templo Wat Tham Jun To, Distrito de Mae Sot, Provincia de Tak Donaron una Máquina de Diálisis por Valor de 460,000 Bahts",
+      ar: "السيد تشوساك، السيدة سري سريشارونلامسا، السيد سيريشاي سريشارونلامسا والعائلة في معبد وات ثام جون تو، منطقة ماي سوت، محافظة تاك تبرعوا بجهاز غسيل الكلى بقيمة 460,000 باهت",
+      hi: "श्री चुसाक, श्रीमती श्री श्रीचरोएनलामसा, श्री सिरिचाई श्रीचरोएनलामसा और परिवार ने वाट थाम जुन तो, माए सोत जिला, ताक प्रांत में 460,000 बाह्त मूल्य की डायलिसिस मशीन दान की",
+    },
+    excerpt: {
+      th: "คุณพ่อชูศักดิ์ คุณแม่ศรี ศรีเจริญล่ำซำ, คุณศิริชัย ศรีเจริญล่ำซำ และครอบครัว บริจาคเครื่องฟอกไต มูลค่า 460,000 บาท มอบให้โรงพยาบาลสมเด็จพระเจ้าตากสินมหาราช จังหวัดตาก",
+      en: "Mr. Chusak, Mrs. Sri Sricharoenlamsa, Mr. Sirichai Sricharoenlamsa and family donated a dialysis machine worth 460,000 baht to King Taksin the Great Hospital, Tak Province",
+      it: "Il Sig. Chusak, la Sig.ra Sri Sricharoenlamsa, il Sig. Sirichai Sricharoenlamsa e la famiglia hanno donato una macchina per dialisi del valore di 460.000 baht all'Ospedale Re Taksin il Grande, Provincia di Tak",
+      zh: "Chusak先生、Sri Sricharoenlamsa女士、Sirichai Sricharoenlamsa先生及家人向达府达信大帝医院捐赠了价值460,000泰铢的透析机",
+      es: "El Sr. Chusak, la Sra. Sri Sricharoenlamsa, el Sr. Sirichai Sricharoenlamsa y la familia donaron una máquina de diálisis por valor de 460,000 bahts al Hospital Rey Taksin el Grande, Provincia de Tak",
+      ar: "تبرع السيد تشوساك، السيدة سري سريشارونلامسا، السيد سيريشاي سريشارونلامسا والعائلة بجهاز غسيل الكلى بقيمة 460,000 باهت إلى مستشفى الملك تاكسين الكبير، محافظة تاك",
+      hi: "श्री चुसाक, श्रीमती श्री श्रीचरोएनलामसा, श्री सिरिचाई श्रीचरोएनलामसा और परिवार ने तक प्रांत के किंग तक्सिन द ग्रेट अस्पताल को 460,000 बाह्त मूल्य की डायलिसिस मशीन दान की",
+    },
+    content: {
+      th: "คุณพ่อชูศักดิ์ คุณแม่ศรี ศรีเจริญล่ำซำ, คุณศิริชัย ศรีเจริญล่ำซำ และครอบครัว ณ วัดถ้ำจุนโท อ.แม่สอด จ.ตาก บริจาคเครื่องฟอกไต มูลค่า 460,000 บาท มอบให้โรงพยาบาลสมเด็จพระเจ้าตากสินมหาราช จังหวัดตาก\n\nการบริจาคครั้งนี้เป็นส่วนหนึ่งของการแสดงจิตศรัทธาและการช่วยเหลือสังคม เพื่อให้ประชาชนในพื้นที่ห่างไกลได้รับการรักษาพยาบาลที่ดีขึ้น โดยเฉพาะผู้ป่วยไตวายที่ต้องการการฟอกไต อันจะช่วยลดภาระค่าใช้จ่ายในการเดินทางไปรักษาตัวในกรุงเทพมหานครหรือเมืองใหญ่\n\nอ่านเพิ่มเติม: https://www.tsm.go.th/%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%8A%E0%B8%B9%E0%B8%A8%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%B4%E0%B9%8C-%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A8%E0%B8%A3/",
+      en: "Mr. Chusak, Mrs. Sri Sricharoenlamsa, Mr. Sirichai Sricharoenlamsa and family at Wat Tham Jun To Temple, Mae Sot District, Tak Province donated a dialysis machine worth 460,000 baht to King Taksin the Great Hospital, Tak Province.\n\nThis donation is part of showing faith and helping society, so that people in remote areas can receive better medical treatment, especially kidney failure patients who need dialysis. This will help reduce the burden of travel expenses for treatment in Bangkok or major cities.\n\nRead more: https://www.tsm.go.th/%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%8A%E0%B8%B9%E0%B8%A8%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%B4%E0%B9%8C-%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A8%E0%B8%A3/",
+      it: "Il Sig. Chusak, la Sig.ra Sri Sricharoenlamsa, il Sig. Sirichai Sricharoenlamsa e la famiglia al Tempio Wat Tham Jun To, Distretto di Mae Sot, Provincia di Tak hanno donato una macchina per dialisi del valore di 460.000 baht all'Ospedale Re Taksin il Grande, Provincia di Tak.\n\nQuesta donazione fa parte della dimostrazione di fede e dell'aiuto alla società, in modo che le persone nelle aree remote possano ricevere cure mediche migliori, soprattutto i pazienti con insufficienza renale che necessitano di dialisi. Questo aiuterà a ridurre il peso delle spese di viaggio per le cure a Bangkok o nelle grandi città.\n\nLeggi di più: https://www.tsm.go.th/%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%8A%E0%B8%B9%E0%B8%A8%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%B4%E0%B9%8C-%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A8%E0%B8%A3/",
+      zh: "Chusak先生、Sri Sricharoenlamsa女士、Sirichai Sricharoenlamsa先生及家人在达府湄索县Wat Tham Jun To寺向达府达信大帝医院捐赠了价值460,000泰铢的透析机。\\n\\n这次捐赠是表达信仰和帮助社会的一部分，让偏远地区的人们能够获得更好的医疗服务，特别是需要透析的肾衰竭患者。这将有助于减轻前往曼谷或大城市治疗的旅行费用负担。\\n\\n阅读更多：https://www.tsm.go.th/%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%9E%E0%B9%88%E0%B8%AD%E0%B8%8A%E0%B8%B9%E0%B8%A8%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%B4%E0%B9%8C-%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%A8%E0%B8%A3/",
+    },
+    image: "/src/assets/News/3/1.jpg",
+    images: ["/src/assets/News/3/1.jpg", "/src/assets/News/3/2.jpeg"],
+    link: "/news/4",
+  },
+];
