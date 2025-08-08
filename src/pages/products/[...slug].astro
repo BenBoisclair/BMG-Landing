@@ -26,9 +26,72 @@ if (!stone) {
 
 const title = `${stone.name} - ${stone.category === 'granite' ? 'Granite' : 'Marble'} - BMG`;
 const description = stone.description;
+
+// Product structured data with offers
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": `https://bmgstone.com/products/${stone.category}/${stone.slug}`,
+  "name": stone.name,
+  "description": stone.description,
+  "image": stone.image.src,
+  "brand": {
+    "@type": "Brand",
+    "name": "BMG"
+  },
+  "category": stone.category === 'granite' ? 'Granite' : 'Marble',
+  "material": stone.material || stone.category,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "THB",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "0",
+      "priceCurrency": "THB",
+      "valueAddedTaxIncluded": true
+    },
+    "availability": "https://schema.org/InStock",
+    "availableDeliveryMethod": "https://schema.org/OnSitePickup",
+    "seller": {
+      "@type": "Organization",
+      "@id": "https://bmgstone.com/#organization",
+      "name": "BMG Stone",
+      "url": "https://bmgstone.com"
+    },
+    "priceValidUntil": new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0],
+    "url": `https://bmgstone.com/products/${stone.category}/${stone.slug}`,
+    "itemCondition": "https://schema.org/NewCondition",
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 30,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    }
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Origin",
+      "value": stone.origin || "Various"
+    },
+    {
+      "@type": "PropertyValue", 
+      "name": "Colors",
+      "value": stone.colors?.join(", ") || "Various"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Applications",
+      "value": stone.applications?.join(", ") || "Flooring, Countertops, Wall Cladding"
+    }
+  ]
+};
 ---
 
-<Layout title={title}>
+<Layout title={title} description={description}>
+  <script type="application/ld+json" set:html={JSON.stringify(productSchema)}></script>
   <main class="stone-detail-page">
     <StoneDetail stone={stone} client:load />
   </main>

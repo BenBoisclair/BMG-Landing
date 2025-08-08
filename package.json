@@ -17,6 +17,7 @@
     "@types/react-dom": "^19.1.7",
     "@types/react-google-recaptcha": "^2.1.9",
     "astro": "^5.12.8",
+    "country-flag-icons": "^1.5.19",
     "i18next": "^25.3.2",
     "i18next-browser-languagedetector": "^8.2.0",
     "react": "^19.1.1",

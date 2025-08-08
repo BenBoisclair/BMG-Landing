@@ -307,7 +307,8 @@ export default function StoneDetail({ stone }: StoneDetailProps) {
             {/* Advantages */}
             <div className="bg-white rounded-lg p-6 shadow-md">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                {isThaiLanguage ? "ข้อดี :" : "Advantages:"}
+                {t("products.stoneDetail.advantages") ||
+                  (isThaiLanguage ? "ข้อดี :" : "Advantages:")}
               </h3>
               <ul className="space-y-2">
                 {stoneContent.advantages.map((advantage, index) => (
@@ -322,7 +323,8 @@ export default function StoneDetail({ stone }: StoneDetailProps) {
             {/* Standard Sizes */}
             <div className="bg-white rounded-lg p-6 shadow-md">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                {isThaiLanguage ? "ขนาด: มาตรฐาน" : "Standard Sizes"}
+                {t("products.stoneDetail.standardSizes") ||
+                  (isThaiLanguage ? "ขนาดมาตรฐาน" : "Standard Sizes")}
               </h3>
               <div className="grid grid-cols-2 gap-2">
                 {stone.standardSizes.map((size, index) => (
@@ -348,16 +350,18 @@ export default function StoneDetail({ stone }: StoneDetailProps) {
             {/* Technical Specifications */}
             <div className="bg-white rounded-lg p-6 shadow-md">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                {isThaiLanguage
-                  ? "รายละเอียดทางเทคนิค"
-                  : "Technical Specifications"}
+                {t("products.stoneDetail.technicalSpecs") ||
+                  (isThaiLanguage
+                    ? "รายละเอียดทางเทคนิค"
+                    : "Technical Specifications")}
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                 <div>
                   <span className="font-medium text-gray-700">
-                    {isThaiLanguage
-                      ? "น้ำหนักต่อ 1 ตารางเมตร :"
-                      : "Weight per sqm:"}
+                    {t("products.stoneDetail.weightPerSqm") ||
+                      (isThaiLanguage
+                        ? "น้ำหนักต่อ 1 ตารางเมตร :"
+                        : "Weight per sqm:")}
                   </span>
                   <span className="text-gray-600 ml-2">
                     {stone.weightPerSqm}
@@ -365,7 +369,8 @@ export default function StoneDetail({ stone }: StoneDetailProps) {
                 </div>
                 <div>
                   <span className="font-medium text-gray-700">
-                    {isThaiLanguage ? "ความหนา :" : "Thickness:"}
+                    {t("products.stoneDetail.thickness") ||
+                      (isThaiLanguage ? "ความหนา :" : "Thickness:")}
                   </span>
                   <span className="text-gray-600 ml-2">{stone.thickness}</span>
                 </div>
@@ -375,7 +380,8 @@ export default function StoneDetail({ stone }: StoneDetailProps) {
             {/* Note */}
             <div className="p-6">
               <h3 className="text-lg font-semibold  mb-2">
-                {isThaiLanguage ? "หมายเหตุ :" : "Note:"}
+                {t("products.stoneDetail.note") ||
+                  (isThaiLanguage ? "หมายเหตุ :" : "Note:")}
               </h3>
               <p className="text-sm">{stoneContent.note}</p>
             </div>

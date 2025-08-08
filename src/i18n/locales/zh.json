@@ -84,7 +84,13 @@
       "finishes": "可选饰面",
       "applications": "推荐应用",
       "maintenance": "护理与维护",
-      "relatedStones": "相关石材"
+      "relatedStones": "相关石材",
+      "advantages": "优势:",
+      "standardSizes": "标准尺寸",
+      "technicalSpecs": "技术规格",
+      "weightPerSqm": "每平方米重量:",
+      "thickness": "厚度:",
+      "note": "注意:"
     }
   },
   "common": {

@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useState, useRef, useEffect } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
+import { TH, GB, IT, CN, ES, IN, SA, KR, JP, IL } from 'country-flag-icons/react/3x2';
 import "../i18n/i18n";
 import logoTransparent from "../assets/logo-transparent.svg";
 
@@ -12,7 +13,7 @@ interface NavItem {
 interface Language {
   code: string;
   name: string;
-  flag?: string;
+  FlagIcon: React.ComponentType<any>;
 }
 
 interface NavProps {}
@@ -28,13 +29,16 @@ const navItems: NavItem[] = [
 ];
 
 const languages: Language[] = [
-  { code: "th", name: "ไทย", flag: "🇹🇭" },
-  { code: "en", name: "English", flag: "🇬🇧" },
-  { code: "it", name: "Italiano", flag: "🇮🇹" },
-  { code: "zh", name: "中文", flag: "🇨🇳" },
-  { code: "es", name: "Español", flag: "🇪🇸" },
-  { code: "hi", name: "हिंदी", flag: "🇮🇳" },
-  { code: "ar", name: "العربية", flag: "🇸🇦" },
+  { code: "th", name: "ไทย", FlagIcon: TH },
+  { code: "en", name: "English", FlagIcon: GB },
+  { code: "it", name: "Italiano", FlagIcon: IT },
+  { code: "zh", name: "中文", FlagIcon: CN },
+  { code: "es", name: "Español", FlagIcon: ES },
+  { code: "hi", name: "हिंदी", FlagIcon: IN },
+  { code: "ar", name: "العربية", FlagIcon: SA },
+  { code: "ko", name: "한국어", FlagIcon: KR },
+  { code: "ja", name: "日本語", FlagIcon: JP },
+  { code: "he", name: "עברית", FlagIcon: IL },
 ];
 
 export default function Nav({}: NavProps) {
@@ -153,7 +157,7 @@ export default function Nav({}: NavProps) {
               className={`flex items-center space-x-2 px-3 py-1.5 font-medium text-white hover:bg-white/10 rounded transition-all duration-300 ${
                 isScrolled ? "text-sm" : "text-base"
               }`}>
-              <span>{currentLanguage.flag}</span>
+              <currentLanguage.FlagIcon className="w-5 h-3" />
               <span>{currentLanguage.name}</span>
               <FaChevronDown
                 className={`w-4 h-4 transition-transform duration-200 ${
@@ -173,7 +177,7 @@ export default function Nav({}: NavProps) {
                         ? "bg-gray-50 text-primary font-medium"
                         : "text-gray-700"
                     }`}>
-                    <span>{lang.flag}</span>
+                    <lang.FlagIcon className="w-5 h-3" />
                     <span>{lang.name}</span>
                   </button>
                 ))}
@@ -222,7 +226,7 @@ export default function Nav({}: NavProps) {
                           ? "bg-white text-primary font-medium"
                           : "text-white hover:bg-white/10"
                       }`}>
-                      <span>{lang.flag}</span>
+                      <lang.FlagIcon className="w-5 h-3" />
                       <span>{lang.name}</span>
                     </button>
                   ))}

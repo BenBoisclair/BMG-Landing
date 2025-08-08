@@ -9,6 +9,9 @@ import zhTranslation from './locales/zh.json';
 import esTranslation from './locales/es.json';
 import hiTranslation from './locales/hi.json';
 import arTranslation from './locales/ar.json';
+import koTranslation from './locales/ko.json';
+import jaTranslation from './locales/ja.json';
+import heTranslation from './locales/he.json';
 
 export const defaultNS = 'translation';
 export const resources = {
@@ -32,6 +35,15 @@ export const resources = {
   },
   ar: {
     translation: arTranslation
+  },
+  ko: {
+    translation: koTranslation
+  },
+  ja: {
+    translation: jaTranslation
+  },
+  he: {
+    translation: heTranslation
   }
 } as const;
 
@@ -53,7 +65,7 @@ i18n
       caches: ['localStorage'],
       lookupLocalStorage: 'i18nextLng'
     },
-    supportedLngs: ['en', 'th', 'it', 'zh', 'es', 'hi', 'ar']
+    supportedLngs: ['en', 'th', 'it', 'zh', 'es', 'hi', 'ar', 'ko', 'ja', 'he']
   });
 
 export default i18n;

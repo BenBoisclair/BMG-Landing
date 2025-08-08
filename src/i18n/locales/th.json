@@ -84,7 +84,13 @@
       "finishes": "การเสร็จสิ้นที่มีให้เลือก",
       "applications": "การใช้งานที่แนะนำ",
       "maintenance": "การดูแลและบำรุงรักษา",
-      "relatedStones": "หินที่เกี่ยวข้อง"
+      "relatedStones": "หินที่เกี่ยวข้อง",
+      "advantages": "ข้อดี:",
+      "standardSizes": "ขนาดมาตรฐาน",
+      "technicalSpecs": "รายละเอียดทางเทคนิค",
+      "weightPerSqm": "น้ำหนักต่อ 1 ตารางเมตร:",
+      "thickness": "ความหนา:",
+      "note": "หมายเหตุ:"
     }
   },
   "common": {
@@ -99,6 +105,9 @@
     "addressLine1": "111 หมู่ 5 ถนนบางกรวย-ไทรน้อย",
     "addressLine2": "ตำบลบางรักพัฒนา อำเภอบางบัวทอง",
     "addressLine3": "จังหวัดนนทบุรี 11110",
+    "address2Line1": "9 11 หมู่ 10 ถนนบรมราชชนนี",
+    "address2Line2": "แขวงศาลาธรรมสพน์ เขตทวีวัฒนา",
+    "address2Line3": "กรุงเทพมหานคร 10170",
     "phoneLabel": "โทรศัพท์:",
     "emailLabel": "อีเมล:",
     "form": {

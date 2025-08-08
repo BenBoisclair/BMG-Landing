@@ -84,7 +84,13 @@
       "finishes": "Available Finishes",
       "applications": "Recommended Applications",
       "maintenance": "Care & Maintenance",
-      "relatedStones": "Related Stones"
+      "relatedStones": "Related Stones",
+      "advantages": "Advantages",
+      "standardSizes": "Standard Sizes",
+      "technicalSpecs": "Technical Specifications",
+      "weightPerSqm": "Weight per sqm:",
+      "thickness": "Thickness:",
+      "note": "Note:"
     }
   },
   "common": {
@@ -99,6 +105,9 @@
     "addressLine1": "111 Moo 5 Bangkruai-Sainoi Road",
     "addressLine2": "Bangrak Pattana, Bang Bua Thong",
     "addressLine3": "Nonthaburi 11110",
+    "address2Line1": "9 11 Moo 10 Borommaratchachonnani Road",
+    "address2Line2": "Sala Thammasop, Thawi Watthana",
+    "address2Line3": "Bangkok 10170",
     "phoneLabel": "Phone:",
     "emailLabel": "Email:",
     "form": {

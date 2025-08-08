@@ -1,10 +1,10 @@
 ---
-import Hero from '../components/Hero.tsx';
-import About from '../components/About.tsx';
+import Hero from '../components/Hero';
+import About from '../components/About';
 import Layout from '../layouts/Layout.astro';
-import Showcase from '../components/Showcase.tsx';
-import Materials from '../components/Materials.tsx';
-import NewsHighlight from '../components/NewsHighlight.tsx';
+import Showcase from '../components/Showcase';
+import Materials from '../components/Materials';
+import NewsHighlight from '../components/NewsHighlight';
 
 // SEO data for homepage
 const title = "BMG Bangkok Modern Granite - Premium Marble & Granite Thailand | บางกอกโมเดอร์นแกรนิต";
@@ -63,18 +63,84 @@ const localBusinessSchema = {
         "@type": "OfferCatalog",
         "name": "Marble",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Italian Carrara Marble" }},
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Thassos White Marble" }},
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Spanish Crema Marfil" }}
+          { 
+            "@type": "Offer", 
+            "itemOffered": { 
+              "@type": "Product", 
+              "name": "Italian Carrara Marble",
+              "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "THB",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          },
+          { 
+            "@type": "Offer", 
+            "itemOffered": { 
+              "@type": "Product", 
+              "name": "Thassos White Marble",
+              "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "THB",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          },
+          { 
+            "@type": "Offer", 
+            "itemOffered": { 
+              "@type": "Product", 
+              "name": "Spanish Crema Marfil",
+              "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "THB",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          }
         ]
       },
       {
         "@type": "OfferCatalog", 
         "name": "Granite",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Brazil Black Granite" }},
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Indian Kashmir White" }},
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Zimbabwe Black Granite" }}
+          { 
+            "@type": "Offer", 
+            "itemOffered": { 
+              "@type": "Product", 
+              "name": "Brazil Black Granite",
+              "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "THB",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          },
+          { 
+            "@type": "Offer", 
+            "itemOffered": { 
+              "@type": "Product", 
+              "name": "Indian Kashmir White",
+              "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "THB",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          },
+          { 
+            "@type": "Offer", 
+            "itemOffered": { 
+              "@type": "Product", 
+              "name": "Zimbabwe Black Granite",
+              "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "THB",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          }
         ]
       }
     ]

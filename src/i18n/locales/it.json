@@ -84,7 +84,13 @@
       "finishes": "Finiture Disponibili",
       "applications": "Applicazioni Consigliate",
       "maintenance": "Cura e Manutenzione",
-      "relatedStones": "Pietre Correlate"
+      "relatedStones": "Pietre Correlate",
+      "advantages": "Vantaggi:",
+      "standardSizes": "Dimensioni Standard",
+      "technicalSpecs": "Specifiche Tecniche",
+      "weightPerSqm": "Peso per mq:",
+      "thickness": "Spessore:",
+      "note": "Nota:"
     }
   },
   "common": {
