@@ -6,7 +6,8 @@
     "products": "Products",
     "articles": "Articles",
     "news": "News",
-    "contact": "Contact"
+    "contact": "Contact",
+    "policy": "Privacy Policy"
   },
   "about": {
     "years": "30 Years",
@@ -57,7 +58,8 @@
     "companyInfo": "Contact Us",
     "siteMap": "SITE MAP",
     "followUs": "Follow Us",
-    "privacyPolicy": "Privacy Policy"
+    "privacyPolicy": "Privacy Policy",
+    "termsAndConditions": "Terms & Conditions"
   },
   "products": {
     "title": "Our Products",
@@ -210,6 +212,228 @@
         "location": "Made from 100% genuine marble",
         "description": ""
       }
+    }
+  },
+  "policy": {
+    "title": "Privacy Notice",
+    "subtitle": "Data Protection Policy",
+    "effectiveDate": "Bangkok Modern Granite Co., Ltd.",
+    "section1": {
+      "title": "General Information",
+      "content1": "Bangkok Modern Granite Co., Ltd. recognizes and respects privacy rights and places importance on managing personal data in accordance with the law. Therefore, we have prepared this Privacy Notice to inform data subjects about measures and practices for protecting personal data under the Personal Data Protection Act B.E. 2562 and other related laws.",
+      "content2": "To ensure that our construction contracting, trading, import-export, and stone product manufacturing businesses, as well as business operations, protect your personal data properly and efficiently, Bangkok Modern Granite Co., Ltd. issues this Privacy Notice as follows:"
+    },
+    "section2": {
+      "title": "Definitions",
+      "company": "Company",
+      "companyDef": "means Bangkok Modern Granite Co., Ltd.",
+      "personalData": "Personal Data",
+      "personalDataDef": "means data about individuals under the Personal Data Protection Act B.E. 2562 and other related laws",
+      "processing": "Processing",
+      "processingDef": "means operations on personal data as defined by personal data protection laws or other related laws, such as collecting or receiving data, using data, organizing or storing, disclosing data, sending or transferring data, deleting or destroying or anonymizing personal data"
+    },
+    "section3": {
+      "title": "Methods of Collection and Receipt of Personal Data",
+      "content": "The Company primarily provides services to agencies or organizations, which means business data such as business information, transactions, payment history, and contact with the Company are considered juristic person data and not personal data under data protection law definitions. However, the Company may collect or receive your personal data when agencies or organizations appoint you as a representative to coordinate and conduct business with the Company on behalf of your agency or organization, including collecting personal data necessary for organizational management. The Company collects and receives your personal data through the following channels:",
+      "table": {
+        "business": "Business/Service",
+        "channel": "Collection Channel",
+        "row1": {
+          "business": "Import trade and stone product manufacturing",
+          "channel": "Collected directly from data subjects through Company contact channels"
+        },
+        "row2": {
+          "business": "Human resources",
+          "channel": "Collected directly from data subjects"
+        }
+      },
+      "note": "The Company does not intend to serve minors as a target group or employ them as employees or workers, and does not collect or receive special categories of personal data (per Section 26 of the Personal Data Protection Act) for use or processing in business operations. If the Company needs to process your special categories of personal data in the future, the Company will request your explicit consent electronically or in writing before or during the collection or receipt of such special categories of personal data, unless such collection or receipt falls under exceptions specified by personal data protection law or other laws."
+    },
+    "section4": {
+      "title": "Purposes of Personal Data Processing",
+      "content": "The collection, use, and disclosure of your personal data will be carried out by the Company only as necessary and in accordance with personal data protection law requirements. The Company, as a data controller under personal data protection law, collects, uses, and discloses your personal data with the following details:",
+      "trade": {
+        "title": "Import Trade and Stone Products Business",
+        "group": {
+          "label": "Data Subject Group:",
+          "value": "Representatives of agencies or organizations who coordinate and conduct business with the Company"
+        },
+        "purpose": {
+          "label": "Purpose/Reason the Company needs to collect or use your personal data:",
+          "value": "To contact and coordinate necessary communications, business dealings, request additional information, or respond to inquiries"
+        },
+        "types": {
+          "label": "Types of personal data the Company collects:",
+          "value": "Identification data including name, surname, ID card/passport number and information appearing on ID card or passport. Contact information including address, phone number, fax number, email, social media channels, or other electronic contact information"
+        },
+        "legal": {
+          "label": "Legal basis allowing the Company to process your personal data:",
+          "value": "Necessary for the performance of a contract to which you are bound with the Company (Contract)"
+        },
+        "disclosure": {
+          "label": "To whom does the Company disclose your personal data:",
+          "value": "None"
+        },
+        "retention": {
+          "label": "Personal data retention period:",
+          "value": "Stored for 1 year and anonymized immediately when no longer necessary"
+        }
+      },
+      "hr": {
+        "title": "Human Resources",
+        "group": {
+          "label": "Data Subject Group:",
+          "value": "Employees and workers"
+        },
+        "purpose": {
+          "label": "Purpose/Reason the Company needs to collect or use your personal data:",
+          "value": "For the benefit of Company operations in human resource management for both employees and workers"
+        },
+        "types": {
+          "label": "Types of personal data the Company collects:",
+          "value": "Identification data including name, surname, ID card/passport number and information appearing on ID card or passport. Contact information including address, phone number, email, or other electronic contact information. Financial information including bank account numbers"
+        },
+        "legal": {
+          "label": "Legal basis allowing the Company to process your personal data:",
+          "value": "Necessary for the performance of your employment contract with the Company and to support human resource management (Contract)"
+        },
+        "disclosure": {
+          "label": "To whom does the Company disclose your personal data:",
+          "value": "None"
+        },
+        "retention": {
+          "label": "Personal data retention period:",
+          "value": "Stored for 1 year and anonymized immediately when no longer necessary"
+        }
+      }
+    },
+    "section5": {
+      "title": "Your Rights Regarding Personal Data",
+      "content": "Data subjects have rights under personal data protection law, and the Company places utmost importance on caring for and facilitating you as a data subject in requesting or exercising these rights under the rules, procedures, and conditions specified by personal data protection law as follows:",
+      "rights": {
+        "notification": {
+          "title": "Right to be informed",
+          "desc": "The Company will notify you of the \"Privacy Notice\" with clear details and disclose it to you through the website or official Company communication channels"
+        },
+        "withdrawal": {
+          "title": "Right to withdraw consent",
+          "desc": "You can request to withdraw consent previously given to the Company"
+        },
+        "access": {
+          "title": "Right to access data",
+          "desc": "You can request details about your personal data and request copies of personal data (there may be fees for data preparation) as well as request the Company to disclose how such data was obtained"
+        },
+        "correction": {
+          "title": "Right to rectification",
+          "desc": "You can request to update and correct incorrect personal data to ensure such data is accurate, current, and not misleading"
+        },
+        "deletion": {
+          "title": "Right to erasure",
+          "desc": "You can request the Company to delete, destroy, or anonymize personal data"
+        },
+        "transfer": {
+          "title": "Right to data portability",
+          "desc": "You can request copies of your personal data and request transfer of such data to another data controller (when technically feasible and there may be operational costs)"
+        },
+        "suspension": {
+          "title": "Right to restrict processing",
+          "desc": "You can request the Company to restrict the use of personal data and request retention of such personal data for establishing legal claims, compliance with or exercise of legal claims, or defense against legal claims"
+        },
+        "objection": {
+          "title": "Right to object to processing",
+          "desc": "You can object to the processing of personal data"
+        }
+      },
+      "note": "In some cases, the Company may refuse the above requests if there are lawful grounds or for any operations for purposes or cases required by law or court orders, or cases that may impact and cause damage to the rights or freedoms of data subjects or other persons"
+    },
+    "section6": {
+      "title": "Security Measures for Personal Data",
+      "content": "The Company has implemented security measures for personal data. Examples of security measures and management for protecting personal data that the Company uses include:",
+      "measures": {
+        "access": {
+          "title": "Access Control",
+          "desc": "By limiting access to your personal data from employees, officers, or internal personnel of the Company and unauthorized persons, both physically and through authentication mechanisms to prevent your personal data from being used, disclosed, destroyed, or accessed without authorization"
+        },
+        "training": {
+          "title": "Training and awareness for employees, officers, or internal personnel",
+          "desc": "To create awareness and understanding of operational procedures for protecting personal data and handling problems or personal data breach incidents"
+        },
+        "dpo": {
+          "title": "Appointment of Data Protection Officer and establishment of personal data protection work processes",
+          "desc": "To support the legal duties of the Data Protection Officer, coordinate with data subjects and relevant government officials as required by law"
+        }
+      }
+    },
+    "section7": {
+      "title": "Updates to the Privacy Notice",
+      "content": "The Company will review this Privacy Notice annually or when necessary or when personal data protection laws or technology changes to ensure the Company's personal data protection measures are effective and comply with laws, standards, or international measures related to personal data protection. The Company will notify you every time the Privacy Notice is updated by publishing the notice on the Company website"
+    },
+    "section8": {
+      "title": "Contact Channels",
+      "content": "If you have any questions about this Privacy Notice or wish to exercise your rights as specified in this Privacy Notice, you can contact the Company through the Data Protection Officer at:",
+      "phone": "Phone: 0-2888-7788",
+      "mail": "Mailing address:",
+      "dpo": "Data Protection Officer",
+      "company": "Bangkok Modern Granite Co., Ltd.",
+      "address": "Address: 9/11 Moo 10 Borommaratchachonnani Road, Sala Thammasop, Thawi Watthana, Bangkok 10170"
+    },
+    "section9": {
+      "title": "Effective Date",
+      "content": "This Privacy Notice shall be effective from May 31, 2022",
+      "signatory": "Mr. Sirichai Sricharoenlumsa",
+      "position": "Managing Director"
+    }
+  },
+  "terms": {
+    "title": "Privacy Notice",
+    "subtitle": "Bangkok Modern Granite Co., Ltd.",
+    "section1": {
+      "title": "Introduction",
+      "content": "Bangkok Modern Granite Co., Ltd. (\"the Company\") respects your privacy and is committed to protecting your personal data in compliance with the Personal Data Protection Act B.E. 2562 (PDPA) of Thailand and other applicable laws."
+    },
+    "section2": {
+      "title": "Collection of Personal Data",
+      "content": "We collect only the personal data necessary for our business operations, such as: Identification information (name, surname, ID card or passport details), Contact details (address, phone number, email, social media accounts), Employment-related information (for employees, job applicants, or contractors). Sensitive personal data will not be collected unless required by law and with your explicit consent."
+    },
+    "section3": {
+      "title": "Purpose of Use",
+      "content": "Your personal data may be used for:",
+      "purposes": [
+        "Business communication and coordination",
+        "Human resources management, including employment and contracting",
+        "Legal compliance and regulatory requirements"
+      ]
+    },
+    "section4": {
+      "title": "Disclosure of Personal Data",
+      "content": "We will not disclose your personal data to third parties unless required by law, or unless you have provided explicit consent."
+    },
+    "section5": {
+      "title": "Your Rights",
+      "content": "Under the PDPA, you have the following rights:",
+      "rights": [
+        "Right to be informed",
+        "Right to access and obtain a copy of your personal data",
+        "Right to request correction or update of your data",
+        "Right to request deletion or anonymization of your data",
+        "Right to withdraw consent",
+        "Right to object to data processing"
+      ]
+    },
+    "section6": {
+      "title": "Data Security",
+      "content": "We implement appropriate technical and organizational measures to safeguard personal data against unauthorized access, use, disclosure, alteration, or destruction."
+    },
+    "section7": {
+      "title": "Updates to this Notice",
+      "content": "This Privacy Notice may be updated from time to time. Any changes will be published on our official website."
+    },
+    "section8": {
+      "title": "Contact Information",
+      "dpo": "Data Protection Officer (DPO)",
+      "company": "Bangkok Modern Granite Co., Ltd.",
+      "address": "Address: 9/11 Moo 10, Borommaratchachonnani Road, Sala Thammasop, Thawi Watthana, Bangkok 10170, Thailand",
+      "phone": "Tel: +66 (0) 2888 7788"
     }
   }
 }

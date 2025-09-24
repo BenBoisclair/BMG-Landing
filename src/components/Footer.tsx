@@ -153,12 +153,17 @@ export default function Footer({}: FooterProps) {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
               <a
-                href="/20220531-BMG-Privacy-Notice-Thai.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/policy"
                 className="text-sm text-gray-300 hover:text-white transition-colors duration-200">
                 {t("footer.privacyPolicy")}
               </a>
+              <span className="hidden md:inline text-gray-300">|</span>
+              <a
+                href="/terms"
+                className="text-sm text-gray-300 hover:text-white transition-colors duration-200">
+                {t("footer.termsAndConditions")}
+              </a>
+              <span className="hidden md:inline text-gray-300">|</span>
               <p className="text-sm text-gray-300">
                 Copyright © 2025 All Rights Reserved.
               </p>

@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TermsComponent from '../components/Terms.tsx';
+
+// SEO data for terms page
+const title = "Terms & Conditions - BMG Bangkok Modern Granite | ข้อกำหนดและเงื่อนไข";
+const description = "Terms and Conditions for BMG Bangkok Modern Granite Co., Ltd. Read our terms of service and usage policies. | ข้อกำหนดและเงื่อนไขการใช้บริการของบริษัท บางกอกโมเดอร์นแกรนิต จำกัด";
+const image = `${Astro.url.origin}/favicon.svg`;
+
+// Terms Page Schema
+const termsPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Terms and Conditions",
+  "description": "Terms and Conditions for Bangkok Modern Granite Co., Ltd.",
+  "url": `${Astro.url.origin}/terms`,
+  "isPartOf": {
+    "@id": `${Astro.url.origin}/#website`
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Terms of Service",
+    "description": "Terms and conditions governing the use of BMG's services and website"
+  },
+  "datePublished": "2024-01-01",
+  "dateModified": "2024-01-01",
+  "publisher": {
+    "@type": "Organization",
+    "@id": `${Astro.url.origin}/#organization`,
+    "name": "Bangkok Modern Granite Co., Ltd."
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": Astro.url.origin
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Terms & Conditions",
+        "item": `${Astro.url.origin}/terms`
+      }
+    ]
+  }
+};
+---
+
+<Layout title={title} description={description} image={image}>
+  <script type="application/ld+json" set:html={JSON.stringify(termsPageSchema)}></script>
+  <TermsComponent client:load />
+</Layout>

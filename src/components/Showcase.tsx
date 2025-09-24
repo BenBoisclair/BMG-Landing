@@ -18,7 +18,7 @@ export default function Showcase() {
 
   if (!isClient || !ready) {
     return (
-      <section className="w-full bg-gradient-to-r from-primary via-primary to-secondary py-16">
+      <section className="w-full bg-primary">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="text-white text-3xl md:text-4xl font-bold">
@@ -32,17 +32,23 @@ export default function Showcase() {
 
   const currentCategoryData = showcaseData[activeCategory];
   const currentItem = currentCategoryData.items[activeItem];
-  
+
   const getItemTitle = (categoryKey: string, itemId: string) => {
-    return t(`showcaseItems.${categoryKey}.${itemId}.title`, { defaultValue: itemId });
+    return t(`showcaseItems.${categoryKey}.${itemId}.title`, {
+      defaultValue: itemId,
+    });
   };
-  
+
   const getItemLocation = (categoryKey: string, itemId: string) => {
-    return t(`showcaseItems.${categoryKey}.${itemId}.location`, { defaultValue: '' });
+    return t(`showcaseItems.${categoryKey}.${itemId}.location`, {
+      defaultValue: "",
+    });
   };
-  
+
   const getItemDescription = (categoryKey: string, itemId: string) => {
-    return t(`showcaseItems.${categoryKey}.${itemId}.description`, { defaultValue: '' });
+    return t(`showcaseItems.${categoryKey}.${itemId}.description`, {
+      defaultValue: "",
+    });
   };
 
   const goToNextImage = () => {
@@ -78,7 +84,7 @@ export default function Showcase() {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-r from-primary via-primary to-secondary py-16">
+    <section className="w-full bg-primary py-16">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
@@ -100,7 +106,7 @@ export default function Showcase() {
                   onClick={() => handleCategoryChange(index)}
                   className={`px-6 py-3 rounded-full text-sm cursor-pointer font-medium transition-all duration-300 whitespace-nowrap ${
                     activeCategory === index
-                      ? "bg-secondary text-white shadow-lg"
+                      ? "bg-secondary/80 text-white shadow-lg"
                       : "text-white hover:bg-white/20"
                   }`}>
                   {category.label}
