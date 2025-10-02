@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import "../i18n/i18n";
-import { newsData } from "../data/newsData";
+import "@/i18n/i18n";
+import { newsData } from "@/data/newsData";
 
 const NewsHighlight: React.FC = () => {
   const { t, i18n, ready } = useTranslation();

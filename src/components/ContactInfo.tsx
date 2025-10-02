@@ -7,7 +7,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import "../i18n/i18n";
+import "@/i18n/i18n";
 
 const ContactInfo: React.FC = () => {
   const { t, ready } = useTranslation();
@@ -56,10 +56,6 @@ const ContactInfo: React.FC = () => {
               <div className="flex items-start">
                 <FaMapMarkerAlt className="text-primary mt-1 mr-3 flex-shrink-0" />
                 <div>
-                  <div className="flex gap-1 items-center">
-                    <p className="font-semibold">{t("contact.companyName")}</p>
-                    <p className="font-semibold">(Tak)</p>
-                  </div>
                   <p>{t("contact.addressLine1")}</p>
                   <p>{t("contact.addressLine2")}</p>
                   <p>{t("contact.addressLine3")}</p>
@@ -68,10 +64,6 @@ const ContactInfo: React.FC = () => {
               <div className="flex items-start">
                 <FaMapMarkerAlt className="text-primary mt-1 mr-3 flex-shrink-0" />
                 <div>
-                  <div className="flex gap-1 items-center">
-                    <p className="font-semibold">{t("contact.companyName")}</p>
-                    <p className="font-semibold">(Bangkok)</p>
-                  </div>
                   <p>{t("contact.address2Line1")}</p>
                   <p>{t("contact.address2Line2")}</p>
                   <p>{t("contact.address2Line3")}</p>
@@ -113,9 +105,9 @@ const ContactInfo: React.FC = () => {
                 <div>
                   <p className="font-semibold">{t("contact.emailLabel")}</p>
                   <a
-                    href="mailto:bmgthailand@gmail.com"
+                    href="mailto:bmgthai@bmg.co.th"
                     className="text-primary hover:underline transition-colors duration-200">
-                    bmgthailand@gmail.com
+                    bmgthai@bmg.co.th
                   </a>
                 </div>
               </div>
@@ -124,11 +116,11 @@ const ContactInfo: React.FC = () => {
                 <div>
                   <p className="font-semibold">Facebook:</p>
                   <a
-                    href="https://facebook.com/bmgthailand"
+                    href="https://www.facebook.com/bmgthailand"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:underline transition-colors duration-200">
-                    bmgthailand
+                    BMG บางกอกโมเดอร์นแกรนิต
                   </a>
                 </div>
               </div>
@@ -137,11 +129,11 @@ const ContactInfo: React.FC = () => {
                 <div>
                   <p className="font-semibold">Instagram:</p>
                   <a
-                    href="https://instagram.com/bmgstone"
+                    href="https://instagram.com/bangkokmoderngranite"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:underline transition-colors duration-200">
-                    @bmgstone
+                    bangkokmoderngranite
                   </a>
                 </div>
               </div>

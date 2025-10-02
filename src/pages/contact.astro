@@ -1,9 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ContactInfo from '../components/ContactInfo';
-import ContactForm from '../components/ContactForm';
-import bgContact from '../assets/Contact/bg-contact.jpg';
-import bgContactMobile from '../assets/Contact/bg-contact-mobile.jpg';
+import Layout from '@/layouts/Layout.astro';
+import ContactInfo from '@/components/ContactInfo';
+import ContactForm from '@/components/ContactForm';
+import bgContact from '@/assets/Contact/bg-contact.jpg';
+import bgContactMobile from '@/assets/Contact/bg-contact-mobile.jpg';
+import takMap from '@/assets/takmap.jpg';
 
 // SEO data for contact page
 const title = "Contact Us - BMG Bangkok Modern Granite | ติดต่อเรา - บางกอกโมเดอร์นแกรนิต";
@@ -56,10 +57,10 @@ const contactPageSchema = {
       "email": "info@bmgranite.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "111 Moo 5 Bangkruai-Sainoi Road, Bangrak Pattana",
-        "addressLocality": "Bang Bua Thong", 
-        "addressRegion": "Nonthaburi",
-        "postalCode": "11110",
+        "streetAddress": "9/11 Moo 10 Boromraj-Chonnee Road",
+        "addressLocality": "Sala Dhammasob, Taweewattana",
+        "addressRegion": "Bangkok",
+        "postalCode": "10170",
         "addressCountry": "TH"
       },
       "geo": {
@@ -103,6 +104,16 @@ const contactPageSchema = {
     </section>
 
     <ContactInfo client:load />
+
+    <section class="tak-factory-section py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src={takMap.src} alt="BMG Tak Factory Map" class="w-full h-auto" />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="map-section py-12 bg-gray-50">
       <div class="container mx-auto px-4">

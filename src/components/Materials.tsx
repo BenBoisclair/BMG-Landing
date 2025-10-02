@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaChevronDown } from "react-icons/fa";
-import "../i18n/i18n";
+import "@/i18n/i18n";
 
-import { getStonesByCategory } from "../data/stoneData";
-import type { Stone } from "../data/stoneData";
+import { getStonesByCategory } from "@/data/stoneData";
+import type { Stone } from "@/data/stoneData";
 
 export default function Materials() {
   const { t } = useTranslation();

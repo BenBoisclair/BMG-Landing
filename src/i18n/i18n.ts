@@ -2,16 +2,16 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-import enTranslation from './locales/en.json';
-import thTranslation from './locales/th.json';
-import itTranslation from './locales/it.json';
-import zhTranslation from './locales/zh.json';
-import esTranslation from './locales/es.json';
-import hiTranslation from './locales/hi.json';
-import arTranslation from './locales/ar.json';
-import koTranslation from './locales/ko.json';
-import jaTranslation from './locales/ja.json';
-import heTranslation from './locales/he.json';
+import enTranslation from '@/i18n/locales/en.json';
+import thTranslation from '@/i18n/locales/th.json';
+import itTranslation from '@/i18n/locales/it.json';
+import zhTranslation from '@/i18n/locales/zh.json';
+import esTranslation from '@/i18n/locales/es.json';
+import hiTranslation from '@/i18n/locales/hi.json';
+import arTranslation from '@/i18n/locales/ar.json';
+import koTranslation from '@/i18n/locales/ko.json';
+import jaTranslation from '@/i18n/locales/ja.json';
+import heTranslation from '@/i18n/locales/he.json';
 
 export const defaultNS = 'translation';
 export const resources = {

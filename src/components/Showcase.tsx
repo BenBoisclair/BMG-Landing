@@ -18,7 +18,7 @@ export default function Showcase() {
 
   if (!isClient || !ready) {
     return (
-      <section className="w-full bg-primary">
+      <section className="w-full bg-primary py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="text-white text-3xl md:text-4xl font-bold">
@@ -84,7 +84,7 @@ export default function Showcase() {
   ];
 
   return (
-    <section className="w-full bg-primary py-16">
+    <section className="w-full bg-primary py-16 md:py-24">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">

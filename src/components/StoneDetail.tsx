@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import "../i18n/i18n";
-import { getStonesByCategory } from "../data/stoneData";
-import type { Stone } from "../data/stoneData";
+import "@/i18n/i18n";
+import { getStonesByCategory } from "@/data/stoneData";
+import type { Stone } from "@/data/stoneData";
 
 interface StoneDetailProps {
   stone: Stone;

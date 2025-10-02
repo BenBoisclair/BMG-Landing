@@ -23,8 +23,8 @@ export default function Footer({}: FooterProps) {
   const socialLinks = [
     {
       name: "Facebook",
-      url: "https://facebook.com/bmgthailand",
-      handle: "bmgthailand",
+      url: "https://www.facebook.com/bmgthailand",
+      handle: "BMG บางกอกโมเดอร์นแกรนิต",
       icon: FaFacebookF,
     },
     {
@@ -153,7 +153,7 @@ export default function Footer({}: FooterProps) {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
               <a
-                href="/policy"
+                href="/privacy"
                 className="text-sm text-gray-300 hover:text-white transition-colors duration-200">
                 {t("footer.privacyPolicy")}
               </a>

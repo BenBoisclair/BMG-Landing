@@ -1,13 +1,13 @@
 import { useTranslation } from "react-i18next";
 import { useEffect, useRef, useState } from "react";
-import "../i18n/i18n";
-import storyImg1 from "../assets/Story/story-imgc-01.png";
-import storyImg2 from "../assets/Story/story-imgc-02.png";
-import storyTxt1 from "../assets/Story/story-txt01.png";
-import storyTxt2 from "../assets/Story/story-txt02.png";
-import year30Top from "../assets/Story/30year-top.png";
-import bgOurStory from "../assets/Story/bg-ourstory-new.jpg";
-import logoTransparent from "../assets/logo-transparent.svg";
+import "@/i18n/i18n";
+import storyImg1 from "@/assets/Story/story-imgc-01.png";
+import storyImg2 from "@/assets/Story/story-imgc-02.png";
+import storyTxt1 from "@/assets/Story/story-txt01.png";
+import storyTxt2 from "@/assets/Story/story-txt02.png";
+import year30Top from "@/assets/Story/30year-top.png";
+import bgOurStory from "@/assets/Story/bg-ourstory-new.jpg";
+import logoTransparent from "@/assets/logo-transparent.svg";
 
 export default function Story() {
   const { t } = useTranslation();

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaChevronRight } from 'react-icons/fa';
-import '../i18n/i18n';
-import thirtyYearImg from '../assets/30-Year.png';
+import '@/i18n/i18n';
+import thirtyYearImg from '@/assets/30-Year.png';
 
 const About: React.FC = () => {
   const { t, ready } = useTranslation();

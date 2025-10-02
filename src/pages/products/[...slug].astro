@@ -1,7 +1,7 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import StoneDetail from '../../components/StoneDetail';
-import { getStoneBySlug, stoneData } from '../../data/stoneData';
+import Layout from '@/layouts/Layout.astro';
+import StoneDetail from '@/components/StoneDetail';
+import { getStoneBySlug, stoneData } from '@/data/stoneData';
 
 export async function getStaticPaths() {
   const paths = stoneData.map((stone) => ({
@@ -40,7 +40,7 @@ const productSchema = {
     "name": "BMG"
   },
   "category": stone.category === 'granite' ? 'Granite' : 'Marble',
-  "material": stone.material || stone.category,
+  "material": stone.category === 'granite' ? 'Granite' : 'Marble',
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -71,11 +71,6 @@ const productSchema = {
     }
   },
   "additionalProperty": [
-    {
-      "@type": "PropertyValue",
-      "name": "Origin",
-      "value": stone.origin || "Various"
-    },
     {
       "@type": "PropertyValue", 
       "name": "Colors",

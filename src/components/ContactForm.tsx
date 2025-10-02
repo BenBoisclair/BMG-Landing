@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FaChevronRight } from "react-icons/fa";
-import ReCAPTCHA from "react-google-recaptcha";
 import "../i18n/i18n";
 
 interface FormData {
@@ -13,7 +12,7 @@ interface FormData {
 }
 
 const ContactForm: React.FC = () => {
-  const { t, i18n, ready } = useTranslation();
+  const { t, ready } = useTranslation();
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -23,12 +22,33 @@ const ContactForm: React.FC = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [recaptchaValue, setRecaptchaValue] = useState<string | null>(null);
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
   const [isClient, setIsClient] = useState(false);
+  const [recaptchaLoaded, setRecaptchaLoaded] = useState(false);
+  const isDevelopment = import.meta.env.DEV;
 
   useEffect(() => {
     setIsClient(true);
+
+    // Skip reCAPTCHA loading in development mode
+    if (isDevelopment) {
+      setRecaptchaLoaded(true);
+      console.log('reCAPTCHA disabled in development mode');
+      return;
+    }
+
+    // Load reCAPTCHA Enterprise script in production
+    if (typeof window !== 'undefined' && !window.grecaptcha) {
+      const script = document.createElement('script');
+      script.src = `https://www.google.com/recaptcha/enterprise.js?render=${import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY}`;
+      script.async = true;
+      script.defer = true;
+      script.onload = () => {
+        setRecaptchaLoaded(true);
+      };
+      document.head.appendChild(script);
+    } else if (window.grecaptcha) {
+      setRecaptchaLoaded(true);
+    }
   }, []);
 
   const handleChange = (
@@ -41,41 +61,88 @@ const ContactForm: React.FC = () => {
     }));
   };
 
-  const handleRecaptchaChange = (value: string | null) => {
-    setRecaptchaValue(value);
+  const executeRecaptcha = async (): Promise<string | null> => {
+    // Skip reCAPTCHA in development mode
+    if (isDevelopment) {
+      console.log('Skipping reCAPTCHA in development mode');
+      return 'dev-token';
+    }
+
+    if (!window.grecaptcha?.enterprise) {
+      console.error('reCAPTCHA not loaded');
+      return null;
+    }
+
+    try {
+      const token = await window.grecaptcha.enterprise.execute(
+        import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY,
+        { action: 'CONTACT_FORM' }
+      );
+      return token;
+    } catch (error) {
+      console.error('reCAPTCHA execution error:', error);
+      return null;
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    if (!recaptchaValue) {
+    // Execute reCAPTCHA
+    const token = await executeRecaptcha();
+    if (!token) {
       alert(
         t(
           "contact.form.recaptchaError",
-          "กรุณายืนยันว่าคุณไม่ใช่โปรแกรมอัตโนมัติ"
+          "กรุณาลองใหม่อีกครั้ง"
         )
       );
+      setIsSubmitting(false);
       return;
     }
 
-    setIsSubmitting(true);
-
-    // SECURITY NOTE: This is a demo form - no actual backend integration
-    // Form data is not sent anywhere and only shows a success message
-    // For production, implement proper backend form handling and validation
-    setTimeout(() => {
-      alert(t("contact.form.success", "ส่งข้อความเรียบร้อยแล้ว"));
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        message: "",
+    try {
+      // Send form data to API
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          phone: formData.phone,
+          company: formData.company,
+          recaptchaToken: token,
+        }),
       });
-      recaptchaRef.current?.reset();
-      setRecaptchaValue(null);
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert(t("contact.form.success", "ส่งข้อความเรียบร้อยแล้ว"));
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          message: "",
+        });
+      } else {
+        alert(
+          result.error || t("contact.form.error", "เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง")
+        );
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert(
+        t("contact.form.error", "เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง")
+      );
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   if (!isClient || !ready) {
@@ -227,25 +294,12 @@ const ContactForm: React.FC = () => {
               />
             </div>
 
-            <div className="mb-6 flex justify-center">
-              <ReCAPTCHA
-                ref={recaptchaRef}
-                sitekey={import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY}
-                onChange={handleRecaptchaChange}
-                hl={
-                  i18n.language === "th"
-                    ? "th"
-                    : i18n.language === "zh"
-                      ? "zh-CN"
-                      : i18n.language
-                }
-              />
-            </div>
+            {/* reCAPTCHA Enterprise runs invisibly in the background */}
 
             <div className="text-center">
               <button
                 type="submit"
-                disabled={isSubmitting || !recaptchaValue}
+                disabled={isSubmitting || (!isDevelopment && !recaptchaLoaded)}
                 className="group relative inline-flex items-center overflow-hidden rounded-none bg-secondary text-white font-bold transition-all duration-300 hover:pr-16 disabled:opacity-50 disabled:cursor-not-allowed">
                 <span className="px-8 py-3">
                   {isSubmitting

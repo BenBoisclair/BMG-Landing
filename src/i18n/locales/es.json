@@ -69,6 +69,9 @@
     "addressLine1": "111 Moo 5 Carretera Bangkruai-Sainoi",
     "addressLine2": "Bangrak Pattana, Bang Bua Thong",
     "addressLine3": "Nonthaburi 11110",
+    "address2Line1": "9/11 Moo 10 Carretera Boromraj-Chonnee",
+    "address2Line2": "Sala Dhammasob, Taweewattana",
+    "address2Line3": "Bangkok 10170 Tailandia",
     "phoneLabel": "Teléfono:",
     "emailLabel": "Correo:",
     "form": {
