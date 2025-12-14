@@ -32,13 +32,13 @@ const ContactForm: React.FC = () => {
     // Skip reCAPTCHA loading in development mode
     if (isDevelopment) {
       setRecaptchaLoaded(true);
-      console.log('reCAPTCHA disabled in development mode');
+      console.log("reCAPTCHA disabled in development mode");
       return;
     }
 
     // Load reCAPTCHA Enterprise script in production
-    if (typeof window !== 'undefined' && !window.grecaptcha) {
-      const script = document.createElement('script');
+    if (typeof window !== "undefined" && !window.grecaptcha) {
+      const script = document.createElement("script");
       script.src = `https://www.google.com/recaptcha/enterprise.js?render=${import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY}`;
       script.async = true;
       script.defer = true;
@@ -64,23 +64,23 @@ const ContactForm: React.FC = () => {
   const executeRecaptcha = async (): Promise<string | null> => {
     // Skip reCAPTCHA in development mode
     if (isDevelopment) {
-      console.log('Skipping reCAPTCHA in development mode');
-      return 'dev-token';
+      console.log("Skipping reCAPTCHA in development mode");
+      return "dev-token";
     }
 
     if (!window.grecaptcha?.enterprise) {
-      console.error('reCAPTCHA not loaded');
+      console.error("reCAPTCHA not loaded");
       return null;
     }
 
     try {
       const token = await window.grecaptcha.enterprise.execute(
         import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY,
-        { action: 'CONTACT_FORM' }
+        { action: "CONTACT_FORM" }
       );
       return token;
     } catch (error) {
-      console.error('reCAPTCHA execution error:', error);
+      console.error("reCAPTCHA execution error:", error);
       return null;
     }
   };
@@ -92,22 +92,17 @@ const ContactForm: React.FC = () => {
     // Execute reCAPTCHA
     const token = await executeRecaptcha();
     if (!token) {
-      alert(
-        t(
-          "contact.form.recaptchaError",
-          "กรุณาลองใหม่อีกครั้ง"
-        )
-      );
+      alert(t("contact.form.recaptchaError", "กรุณาลองใหม่อีกครั้ง"));
       setIsSubmitting(false);
       return;
     }
 
     try {
       // Send form data to API
-      const response = await fetch('/api/contact', {
-        method: 'POST',
+      const response = await fetch("/api/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name: formData.name,
@@ -132,14 +127,13 @@ const ContactForm: React.FC = () => {
         });
       } else {
         alert(
-          result.error || t("contact.form.error", "เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง")
+          result.error ||
+            t("contact.form.error", "เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง")
         );
       }
     } catch (error) {
-      console.error('Form submission error:', error);
-      alert(
-        t("contact.form.error", "เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง")
-      );
+      console.error("Form submission error:", error);
+      alert(t("contact.form.error", "เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง"));
     } finally {
       setIsSubmitting(false);
     }

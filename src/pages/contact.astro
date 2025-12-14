@@ -1,10 +1,10 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import ContactInfo from '@/components/ContactInfo';
-import ContactForm from '@/components/ContactForm';
 import bgContact from '@/assets/Contact/bg-contact.jpg';
 import bgContactMobile from '@/assets/Contact/bg-contact-mobile.jpg';
 import takMap from '@/assets/takmap.jpg';
+import ExternalContactForm from '../components/ExternalContactForm.astro';
 
 // SEO data for contact page
 const title = "Contact Us - BMG Bangkok Modern Granite | ติดต่อเรา - บางกอกโมเดอร์นแกรนิต";
@@ -103,6 +103,8 @@ const contactPageSchema = {
       </div>
     </section>
 
+    <ExternalContactForm />
+
     <ContactInfo client:load />
 
     <section class="tak-factory-section py-12 bg-white">
@@ -118,12 +120,12 @@ const contactPageSchema = {
     <section class="map-section py-12 bg-gray-50">
       <div class="container mx-auto px-4">
         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <iframe 
+          <iframe
             src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY}&q=place_id:ChIJtbRJs0qR4jAR5d-y2jucBI0&zoom=16&maptype=roadmap`}
-            width="100%" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             class="w-full"
@@ -131,8 +133,6 @@ const contactPageSchema = {
         </div>
       </div>
     </section>
-
-    <ContactForm client:load />
   </main>
 </Layout>
 
